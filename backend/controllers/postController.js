@@ -5,7 +5,11 @@ import {Post} from '../models/PostsModel.js';
 
 // get all posts
 const getPosts = async (req, res) => {
-    const posts = await Post.find().sort({createdAt: -1})
+    console.log(res.req.rawHeaders[15].split('/')[3])
+    // const path  = res.req.rawHeaders[15].substring(22);
+    const path  = res.req.rawHeaders[15].split('/')[3]
+    const posts = await Post.find({category: path}).sort({createdAt: -1})
+    
 
     res.status(200).json(posts);
 }

@@ -1,27 +1,60 @@
 //-----------------------------Packages---------------------------
 
-import { BrowserRouter }    from 'react-router-dom';
+import { 
+    createBrowserRouter,
+    createRoutesFromElements,
+    RouterProvider,
+    Route
+
+} from 'react-router-dom';
 
 //----------------------------/Packages---------------------------
 
 
 //---------------------------Components---------------------------
 
-import ApplicationRoutes    from './components/ApplicationRoutes';
-import Footer               from './components/Footer';
+import Home                 from './pages/Home';
+import Farmacie             from './pages/Farmacie';
+import RootLayout           from './layouts/RootLayout';
 
 //--------------------------/Components---------------------------
+
+
+
+const router = createBrowserRouter(
+    createRoutesFromElements(
+        <Route
+            path='/'
+            element={<RootLayout />}
+        >
+            <Route 
+                index
+                element={<Home />}
+            />
+
+            <Route
+                path='stomatologie'
+                element={<Farmacie />}
+            ></Route>
+
+            <Route
+                path='beauty'
+                element={<Farmacie />}
+            ></Route>
+
+            <Route
+                path='farmacie'
+                element={<Farmacie />}
+            ></Route>
+        </Route>
+    )
+)
 
 
 export default function App() {
   return (
     <div className="App">
-        <BrowserRouter>
-            
-            <ApplicationRoutes />
-            <Footer />
-            
-        </BrowserRouter>
+        <RouterProvider router={router} />
     </div>
   );
 }

@@ -4,7 +4,7 @@ const Home = () => {
     return (
         <div className="home">
 
-            <Link 
+            <Link
                 className="home--link"
                 to='stomatologie'
             >
