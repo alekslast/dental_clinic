@@ -1,10 +1,6 @@
 import { useState } from "react";
-// import { useLocation } from "react-router-dom";
 
 export default function PostForm(props) {
-
-    // const checkLocation = useLocation().pathname
-    console.log(props.location)
     
     const [category, setCategory]                   = useState('')
     const [postTitle, setTitle]                     = useState('')
@@ -41,7 +37,7 @@ export default function PostForm(props) {
             setTitle('')
             setBody('')
             setError(null)
-            console.log('New post added!')
+            // console.log('New post added!')
         }
     }
 

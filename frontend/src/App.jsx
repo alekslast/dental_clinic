@@ -1,5 +1,4 @@
 //-----------------------------Packages---------------------------
-
 import { 
     createBrowserRouter,
     createRoutesFromElements,
@@ -8,16 +7,11 @@ import {
 
 } from 'react-router-dom';
 
-//----------------------------/Packages---------------------------
-
 
 //---------------------------Components---------------------------
-
 import Home                 from './pages/Home';
 import Farmacie             from './pages/Farmacie';
 import RootLayout           from './layouts/RootLayout';
-
-//--------------------------/Components---------------------------
 
 
 

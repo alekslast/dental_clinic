@@ -1,7 +1,10 @@
 const Footer = () => {
+
+    const currentYear = new Date().getFullYear()
+
     return (
         <footer>
-            <p>Copyright 2023. Vanya & Sanya</p>
+            <p>Copyright {currentYear}. Vanya & Sanya</p>
         </footer>
     )
 }

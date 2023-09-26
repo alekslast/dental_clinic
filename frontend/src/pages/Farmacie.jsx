@@ -1,7 +1,8 @@
+// React Hooks
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 
-
+// Components
 import PostBanner from "../components/PostBanner";
 import PostForm from "../components/PostForm";
 
@@ -13,7 +14,6 @@ const Farmacie = () => {
 
     const location = useLocation().pathname
     let header;
-    // let newPosts;
     
 
     switch (location) {
@@ -33,13 +33,10 @@ const Farmacie = () => {
     
 
     useEffect(() => {
-
         const fetchPosts = async () => {
             const response = await fetch(`${location}/posts`);
             console.log(response)
             const json = await response.json();
-
-            // console.log(json);
 
             if (response.ok) {
                 setPosts(json);
@@ -48,12 +45,6 @@ const Farmacie = () => {
 
         fetchPosts();
     }, [location])
-
-    // const newPosts = posts.filter(post => {
-    //     console.log(post)
-    //     return post.category === header.toLowerCase()
-    // })
-    // console.log(newPosts)
 
 
     return (
@@ -66,10 +57,6 @@ const Farmacie = () => {
                     {posts && posts.map(post => (
                         <PostBanner key={post._id} post={post} />
                     ))}
-
-                    {/* {newPosts && newPosts.map((post) => (
-                        <PostBanner key={post._id} post={post} />
-                    ))} */}
                 </div>
             </div>
         </>
