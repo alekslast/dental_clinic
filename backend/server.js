@@ -20,7 +20,9 @@ mongoose.connect(
 );
 
 
-app.use('/farmacie/posts', router)
+app.use('/farmacie/posts', router);
+app.use('/stomatologie/posts', router);
+app.use('/beauty/posts', router);
 
 
 app.listen(port, () => {

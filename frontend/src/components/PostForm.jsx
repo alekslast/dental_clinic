@@ -1,6 +1,10 @@
-import { useState } from "react"
+import { useState } from "react";
+// import { useLocation } from "react-router-dom";
 
-export default function PostForm() {
+export default function PostForm(props) {
+
+    // const checkLocation = useLocation().pathname
+    console.log(props.location)
     
     const [category, setCategory]                   = useState('')
     const [postTitle, setTitle]                     = useState('')
@@ -19,7 +23,7 @@ export default function PostForm() {
         }
 
         const response = await fetch(
-            '/farmacie/posts', 
+            `${props.location}/posts`, 
             {
                 method  : 'POST', 
                 body    : JSON.stringify(post),

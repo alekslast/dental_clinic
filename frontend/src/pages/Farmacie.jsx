@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 
 import Navbar from "../components/Navbar";
 
@@ -11,13 +12,16 @@ const Farmacie = () => {
 
     const [posts, setPosts] = useState(null)
 
+    const checkLocation = useLocation().pathname
+    
+
     useEffect(() => {
 
         const fetchPosts = async () => {
-            const response = await fetch('/farmacie/posts');
+            const response = await fetch(`${checkLocation}/posts`);
             const json = await response.json();
 
-            console.log(json);
+            // console.log(json);
 
             if (response.ok) {
                 setPosts(json);
@@ -31,7 +35,7 @@ const Farmacie = () => {
         <>
             <Navbar />
 
-            <PostForm />
+            <PostForm location={checkLocation} />
 
             <div className="farmacie">
                 <h1>Farmacie</h1>
