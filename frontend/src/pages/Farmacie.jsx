@@ -8,7 +8,7 @@ import PostForm from "../components/PostForm";
 
 
 
-const Farmacie = () => {
+function Farmacie() {
 
     const [posts, setPosts] = useState(null)
 

@@ -4,7 +4,7 @@ const Navbar = () => {
     return (
         <header>
             <nav className="nav--container">
-                <Link to='/'>
+                {/* <Link to='/'>
                     <p>Home</p>
                 </Link>
 
@@ -18,6 +18,18 @@ const Navbar = () => {
 
                 <Link to='/farmacie'>
                     <p>Farmacie</p>
+                </Link> */}
+
+                <Link to='/'>
+                    <p>Home</p>
+                </Link>
+
+                <Link to='contact'>
+                    <p>Contact</p>
+                </Link>
+
+                <Link to='about'>
+                    <p>About</p>
                 </Link>
             </nav>
         </header>

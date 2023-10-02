@@ -6,17 +6,12 @@ import Footer from "../components/Footer";
 
 function RootLayout() {
 
-    const location = useLocation()
+    // const location = useLocation()
 
     return (
         <div className="root-layout">
-            {
-                !(location.pathname === '/') && (
-                    <header>
-                        <Navbar />
-                    </header>
-                )
-            }
+        
+            <header><Navbar /></header>
 
             <main><Outlet /></main>
 

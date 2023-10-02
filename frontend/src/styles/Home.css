@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200&family=Tenor+Sans&display=swap');
+
+/* Home */
+:root {
+    --link-container-size: 250px;
+}
+
+.home {
+    height: calc(100vh - 50px - 40px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+  
+  /* .home--link {
+    border: 1px solid #000;
+    width: 100%;
+    height: calc(100vh - 40px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+
+.home--epigraph {
+    position: relative;
+    right: 200px;
+    top: -70px;
+    max-width: 400px;
+
+    & h2, .epigraph--colored-p {
+        color: #b98f47;
+    }
+
+    & h2 {
+        font-size: 32px;
+    }
+
+    & hr {
+        height: 2px;
+        /* background-image: linear-gradient(90deg #60400c, transparent); */
+        background-image: linear-gradient(90deg, #60400c, #c89116);
+        border: none;
+    }
+}
+
+.home--category--parent {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.home--category p {
+    text-align: center;
+    color: #b98e49;
+}
+
+/* .home--category.farm h3 {
+    margin-bottom: 30px;
+} */
+
+.home--link {
+    color: #b98e49;
+}
+
+.home--link {
+    & div {
+        max-width: var(--link-container-size);
+    }
+    
+    & h3 {
+        /* font-family: 'Tenor Sans', sans-serif; */
+        font-style: italic;
+        text-align: center;
+        font-size: 22px;
+        line-height: 90%;
+        padding: 10px 15px;
+        margin-bottom: 12px;
+        background-color: transparent;
+        transition: background-color 0.6s;
+        transition-delay: 0.1s;
+    }
+
+    & .dent--img, .farm--img, .beauty--img {
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: background-image 0.4s;
+        height: var(--link-container-size);
+        width: var(--link-container-size);
+        margin-bottom: 12px;
+    }
+
+    & .dent--img {
+        background-image: url(../assets/dent.jpg);
+    }
+    & .farm--img {
+        background-image: url(../assets/farm.jpg);
+    }
+    & .beauty--img {
+        background-image: url(../assets/beauty.jpg);
+    }
+}
+
+.home--link:hover {
+    color: #f8f7f0;
+
+    & h3 {
+        background-color: #b98e49;
+    }
+    & .dent--img {
+        background-image: url(../assets/dent_hover.jpg);
+    }
+    & .farm--img {
+        background-image: url(../assets/farm_hover.jpg);
+    }
+    & .beauty--img {
+        background-image: url(../assets/beauty_hover.jpg);
+    }
+    
+}
+
+  /* /Home */

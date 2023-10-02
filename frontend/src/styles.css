@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Montserrat+Alternates:wght@200&display=swap');
+
+
 /* -----------------------------------TAGS--------------------------------- */
 * {
   margin: 0;
@@ -6,11 +9,13 @@
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    sans-serif; */
+    font-family: 'Libre Baskerville';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: gray;
 }
 
 a {
@@ -21,9 +26,9 @@ a {
 
 
 /* ---------------------------------CLASSES-------------------------------- */
-.stomatologie, .beauty, .farmacie {
+/* .stomatologie, .beauty, .farmacie {
   height: calc(100vh - 90px);
-}
+} */
 /* --------------------------------/CLASSES-------------------------------- */
 
 
@@ -31,38 +36,36 @@ a {
 
 /* Navigation */
 .nav--container {
+  font-family: 'Libre Baskerville';
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
   align-items: center;
+  max-width: 200px;
   height: 50px;
-  background-color: gray;
+  padding: 20px 0 0 80px;
 }
 
+
 .nav--container a {
+  color: gray;
+  padding: 5px 22px 5px;
+  margin-right: 10px;
+  text-transform: uppercase;
+  transition: all .4s;
+  transition-delay: .03s;
+}
+
+
+.nav--container a:hover {
+  background-color: #b98e49;
   color: #fff;
 }
+
+
 /* /Navigation */
 
 
-/* Home */
-.home {
-  height: calc(100vh - 40px);
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
 
-.home--link {
-  border: 1px solid #000;
-  width: 100%;
-  height: calc(100vh - 40px);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-/* /Home */
 
 
 /* Stomatologie */
@@ -78,7 +81,7 @@ a {
 /* Footer */
 footer {
   height: 40px;
-  background-color: gray;
+  color: #b98e49;
   display: flex;
   justify-content: center;
   align-items: center;

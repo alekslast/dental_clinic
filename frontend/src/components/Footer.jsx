@@ -4,7 +4,7 @@ const Footer = () => {
 
     return (
         <footer>
-            <p>Copyright {currentYear}. Vanya & Sanya</p>
+            <p style={{marginBottom: '20px'}}>Комманда профессионалов в Авиагородке</p>
         </footer>
     )
 }
