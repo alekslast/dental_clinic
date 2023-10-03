@@ -14,8 +14,8 @@ const Home = () => {
             <div className="home--epigraph">
                 <h2>3:16</h2>
                 <hr />
-                <p>Fiidca asa a iubit Dumnezeu lumea...</p>
-                <p className="epigraph--colored-p">ибо так возлюбил Бог это мир, что...</p>
+                <p className="epigraph--first-p">Fiidca asa a iubit Dumnezeu lumea...</p>
+                <p className="epigraph--colored-p">ибо так возлюбил Бог этот мир, что...</p>
             </div>
 
             <div className="home--category--parent">

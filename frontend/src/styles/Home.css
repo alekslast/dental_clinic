@@ -11,30 +11,23 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
 }
   
-  /* .home--link {
-    border: 1px solid #000;
-    width: 100%;
-    height: calc(100vh - 40px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  } */
 
 .home--epigraph {
     position: relative;
-    right: 200px;
     top: -70px;
-    max-width: 400px;
+    max-width: 450px;
+    width: 700px;
+    text-align: center;
 
     & h2, .epigraph--colored-p {
         color: #b98f47;
     }
 
     & h2 {
-        font-size: 32px;
+        font-size: 80px;
     }
 
     & hr {
@@ -42,19 +35,43 @@
         /* background-image: linear-gradient(90deg #60400c, transparent); */
         background-image: linear-gradient(90deg, #60400c, #c89116);
         border: none;
+        margin-bottom: 5px;
+    }
+
+    & p {
+        font-size: 20px;
+        font-family: 'Tenor Sans', sans-serif;
+        line-height: 90%;
+    }
+
+    & .epigraph--first-p {
+        letter-spacing: 1.5px;
     }
 }
 
 .home--category--parent {
+    position: relative;
+    top: -30px;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
+}
+
+.home--category {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: calc(var(--link-container-size) + 100px);
 }
 
 .home--category p {
     text-align: center;
     color: #b98e49;
+    font-size: 20px;
+    max-width: calc(var(--link-container-size) + 100px);
 }
 
 /* .home--category.farm h3 {
@@ -79,7 +96,7 @@
         padding: 10px 15px;
         margin-bottom: 12px;
         background-color: transparent;
-        transition: background-color 0.6s;
+        transition: background-color 0.6s ease-in-out;
         transition-delay: 0.1s;
     }
 
@@ -105,11 +122,11 @@
 }
 
 .home--link:hover {
-    color: #f8f7f0;
+    /* color: #f8f7f0; */
 
-    & h3 {
+    /* & h3 {
         background-color: #b98e49;
-    }
+    } */
     & .dent--img {
         background-image: url(../assets/dent_hover.jpg);
     }
