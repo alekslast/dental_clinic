@@ -1,3 +1,15 @@
+
+
+
+
+
+// COMPONENT TO BE DELETED! 
+// USE 'SectionNavigation.jsx' COMPONENT FOR PARTICULAR SECTION INSTEAD!!!!!!
+
+
+
+
+
 import { Link } from "react-router-dom"
 
 const Navbar = () => {

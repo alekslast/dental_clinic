@@ -10,10 +10,9 @@ function RootLayout() {
 
     return (
         <div className="root-layout">
-        
-            <header><Navbar /></header>
 
-            <main><Outlet /></main>
+            {/* <main><Outlet /></main> */}
+            <Outlet />
 
             <Footer />
         </div>

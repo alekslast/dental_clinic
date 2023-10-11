@@ -3,9 +3,9 @@
 
 /* -----------------------------------TAGS--------------------------------- */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -13,13 +13,18 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif; */
     font-family: 'Libre Baskerville';
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: gray;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: gray;
+    overflow-x: hidden;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 /* ----------------------------------/TAGS--------------------------------- */
@@ -35,30 +40,60 @@ a {
 /* --------------------------------SECTIONS-------------------------------- */
 
 /* Navigation */
-.nav--container {
-  font-family: 'Libre Baskerville';
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  max-width: 200px;
-  height: 50px;
-  padding: 20px 0 0 80px;
+/* .nav--container {
+    font-family: 'Libre Baskerville';
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 200px;
+    height: 50px;
+    padding: 20px 0 0 80px;
 }
 
 
 .nav--container a {
-  color: gray;
-  padding: 5px 22px 5px;
-  margin-right: 10px;
-  text-transform: uppercase;
-  transition: all .4s;
-  transition-delay: .03s;
+    color: gray;
+    padding: 5px 22px 5px;
+    margin-right: 10px;
+    text-transform: uppercase;
+    transition: all .4s;
+    transition-delay: .03s;
 }
 
 
 .nav--container a:hover {
-  background-color: #b98e49;
-  color: #fff;
+    background-color: #b98e49;
+    color: #fff;
+} */
+
+
+.nav-header {
+    display: flex;
+    justify-content: center;
+}
+
+.section-navigation {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    max-width: 1366px;
+    transform: translateY(800%);
+    z-index: 3;
+
+    & a {
+        font-size: 25px;
+        color: #B98E49;
+        text-transform: uppercase;
+        padding: 15px 30px;
+        background-color: transparent;
+        transition: background-color 0.35s ease-in-out;
+    }
+
+    & a:hover {
+        background-color: #FDD5D4;
+    }
 }
 
 
@@ -80,11 +115,11 @@ a {
 
 /* Footer */
 footer {
-  height: 40px;
-  color: #b98e49;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    height: 40px;
+    color: #b98e49;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 /* /Footer */
 

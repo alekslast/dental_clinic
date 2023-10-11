@@ -19,7 +19,7 @@ export default function PostForm(props) {
         }
 
         const response = await fetch(
-            `${props.location}/posts`, 
+            `${props.location}`, 
             {
                 method  : 'POST', 
                 body    : JSON.stringify(post),
