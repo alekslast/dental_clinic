@@ -8,7 +8,7 @@ import PostForm from "../components/PostForm";
 
 
 
-function SectionPosts() {
+export default function SectionPosts() {
 
     const [posts, setPosts] = useState(null)
 
@@ -62,5 +62,3 @@ function SectionPosts() {
         </>
     )
 }
-
-export default SectionPosts;

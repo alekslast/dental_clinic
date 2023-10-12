@@ -11,7 +11,6 @@ import {
 //---------------------------Components---------------------------
 import Home                 from './pages/Home';
 import SectionPosts         from './pages/SectionPosts';
-import RootLayout           from './layouts/RootLayout';
 import SectionLayout        from './layouts/SectionLayout';
 import DentSection          from './pages/DentSection';
 import FarmSection          from './pages/FarmSection';
@@ -24,15 +23,8 @@ const router = createBrowserRouter(
         <>
             <Route
                 path='/'
-                element={<RootLayout />}
-            >
-                <Route 
-                    index
-                    element={<Home />}
-                />
-
-                
-            </Route>
+                element={<Home />}
+            ></Route>
 
 
             <Route element={<SectionLayout />}>

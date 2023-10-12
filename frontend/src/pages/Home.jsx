@@ -1,4 +1,9 @@
+// React Hooks
 import { Link } from "react-router-dom";
+
+
+// Components
+import Footer from "../components/Footer";
 
 
 // Styles
@@ -7,7 +12,8 @@ import '../styles/Home.css';
 
 
 
-const Home = () => {
+
+export default function Home() {
     return (
         <div className="home">
 
@@ -62,8 +68,8 @@ const Home = () => {
                 </div>
             </div>
 
+            <Footer />
+
         </div>
     )
 }
-
-export default Home;

@@ -2,18 +2,21 @@
 import '../styles/BeautySection.css';
 
 // Images
-import beautyLogo from '../assets/BeautySection/logo1.png';
-import lady from '../assets/BeautySection/lady1.png';
-import brush from '../assets/BeautySection/transitionBrush1.png';
-import cardPic1 from '../assets/BeautySection/card-pic1.png';
-import cardPic2 from '../assets/BeautySection/card-pic2.png';
-import cardPic3 from '../assets/BeautySection/card-pic3.png';
-import wave from '../assets/BeautySection/wave1.png';
-import beautyLogoFace from '../assets/BeautySection/beauty-logo-face.png';
-import bgVideo from '../assets/BeautySection/bgVideo.svg';
-import video from '../assets/BeautySection/video1.mp4';
+import beautyLogo       from '../assets/BeautySection/logo1.png';
+import lady             from '../assets/BeautySection/lady1.png';
+import brush            from '../assets/BeautySection/transitionBrush1.png';
+import cardPic1         from '../assets/BeautySection/card-pic1.png';
+import cardPic2         from '../assets/BeautySection/card-pic2.png';
+import cardPic3         from '../assets/BeautySection/card-pic3.png';
+import wave             from '../assets/BeautySection/wave1.png';
+import beautyLogoFace   from '../assets/BeautySection/beauty-logo-face.png';
+import video            from '../assets/BeautySection/video1.mp4';
 
-function BeautySection() {
+
+
+
+
+export default function BeautySection() {
     return (
         <>
             <section className="beauty-section--header">
@@ -126,6 +129,3 @@ function BeautySection() {
         </>
     )
 }
-
-
-export default BeautySection;

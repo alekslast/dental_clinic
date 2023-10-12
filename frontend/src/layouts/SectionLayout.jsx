@@ -3,7 +3,7 @@ import { Outlet, useLocation } from "react-router-dom";
 import SectionNavigation from "../components/SectionNavigation";
 
 
-function SectionLayout() {
+export default function SectionLayout() {
 
     const userLocation = useLocation().pathname
 
@@ -15,6 +15,3 @@ function SectionLayout() {
         </div>
     )
 }
-
-
-export default SectionLayout;
