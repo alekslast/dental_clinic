@@ -1,6 +1,21 @@
-import { useState } from "react";
+// React Hooks
+import { useState }         from "react";
+
+
+// My Hooks
+import { usePostsContext }  from "../customHooks/usePostsContext";
+
+
+
+
 
 export default function PostForm(props) {
+
+    // Destructuring our usePostsContext to get the dispatch as it is the only thing we need
+    // from there at the moment. After that we need to use the dispatch function, which invokes
+    // our postsReducer function in the place, where we actually post our new post and get response
+    // from the server that everything is OK.
+    const { dispatch } = usePostsContext()
     
     const [category, setCategory]                   = useState('')
     const [postTitle, setTitle]                     = useState('')
@@ -38,6 +53,10 @@ export default function PostForm(props) {
             setBody('')
             setError(null)
             // console.log('New post added!')
+
+            // If everything is OK, then run dispatch function, which is gonna update our state locally
+            // adding new post at the top of the list
+            dispatch({type: 'CREATE_POST', payload: json})
         }
     }
 

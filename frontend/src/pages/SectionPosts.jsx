@@ -1,16 +1,21 @@
 // React Hooks
-import { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
+import { useEffect, useState }  from "react";
+import { useLocation }          from "react-router-dom";
 
 // Components
-import PostBanner from "../components/PostBanner";
-import PostForm from "../components/PostForm";
+import PostBanner               from "../components/PostBanner";
+import PostForm                 from "../components/PostForm";
+import { usePostsContext }      from "../customHooks/usePostsContext";
 
 
 
 export default function SectionPosts() {
 
-    const [posts, setPosts] = useState(null)
+    // const [posts, setPosts] = useState(null)
+    // As we use useContext now, we no longer need this useState
+
+    const {posts, dispatch} = usePostsContext()
+
 
     const location = useLocation().pathname
     let header;
@@ -39,7 +44,12 @@ export default function SectionPosts() {
             const json = await response.json();
 
             if (response.ok) {
-                setPosts(json);
+                // setPosts(json);
+                // As we use useContext now, we no longer need this useState
+                
+                dispatch({type: 'SET_POSTS', payload: json})
+
+
             }
         }
 
@@ -55,7 +65,7 @@ export default function SectionPosts() {
                 <h1>{header}</h1>
                 <div className="posts">
                     {posts && posts.map(post => (
-                        <PostBanner key={post._id} post={post} />
+                        <PostBanner key={post._id} post={post} location={location} />
                     ))}
                 </div>
             </div>

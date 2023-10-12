@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 export default function SectionNavigation(props) {
 
     const path = props.path
-    console.log(path)
+    // console.log(path)
 
     return (
         <>
