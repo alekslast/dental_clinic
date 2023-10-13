@@ -1,9 +1,12 @@
-import               'dotenv/config';
-import express  from 'express';
-import mongoose from 'mongoose';
+// Packages
+import                   'dotenv/config';
+import express      from 'express';
+import mongoose     from 'mongoose';
 
 
-import router from './routes/pharmaPosts.js';
+// Components
+import router       from './routes/pharmaPosts.js';
+import adminRouter  from './routes/adminLogin.js';
 
 
 
@@ -20,9 +23,10 @@ mongoose.connect(
 );
 
 
-app.use('/stomatologie/posts', router);
-app.use('/beauty/posts', router);
-app.use('/farmacie/posts', router);
+app.use('/stomatologie/posts',  router);
+app.use('/beauty/posts',        router);
+app.use('/farmacie/posts',      router);
+app.use('/adminLogin',          adminRouter);
 
 
 app.listen(port, () => {

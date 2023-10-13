@@ -4,6 +4,7 @@ import { useState }         from "react";
 
 // My Hooks
 import { usePostsContext }  from "../customHooks/usePostsContext";
+import { useAuthContext }   from "../customHooks/useAuthContext";
 
 
 
@@ -15,12 +16,13 @@ export default function PostForm(props) {
     // from there at the moment. After that we need to use the dispatch function, which invokes
     // our postsReducer function in the place, where we actually post our new post and get response
     // from the server that everything is OK.
-    const { dispatch } = usePostsContext()
+    const { dispatch }                  = usePostsContext()
+    const { user }                      = useAuthContext()
     
-    const [category, setCategory]                   = useState('')
-    const [postTitle, setTitle]                     = useState('')
-    const [postBody, setBody]                       = useState('')
-    const [error, setError]                         = useState(null)
+    const [category, setCategory]       = useState('')
+    const [postTitle, setTitle]         = useState('')
+    const [postBody, setBody]           = useState('')
+    const [error, setError]             = useState(null)
     
 
     
@@ -62,41 +64,45 @@ export default function PostForm(props) {
 
 
     return (
-        <form 
-            className="create-post--form"
-            onSubmit={handleSubmit}
-        >
-            <h3>Add New Post</h3>
+        <>
+            {user && (
+                <form 
+                    className="create-post--form"
+                    onSubmit={handleSubmit}
+                >
+                    <h3>Add New Post</h3>
 
-            <label>Post Category:</label>
-            <select
-                required
-                name        = 'category' 
-                value       = {category}
-                onChange    = {(e) => setCategory(e.target.value)}
-            >
-                <option value='not selected'>--Select one of the options--</option>
-                <option value='stomatologie'>stomatologie</option>
-                <option value='beauty'      >beauty</option>
-                <option value='farmacie'    >farmacie</option>
-            </select>
+                    <label>Post Category:</label>
+                    <select
+                        required
+                        name        = 'category' 
+                        value       = {category}
+                        onChange    = {(e) => setCategory(e.target.value)}
+                    >
+                        <option value='not selected'>--Select one of the options--</option>
+                        <option value='stomatologie'>stomatologie</option>
+                        <option value='beauty'      >beauty</option>
+                        <option value='farmacie'    >farmacie</option>
+                    </select>
 
-            <label>Post Title:</label>
-            <input 
-                type        = 'text'
-                onChange    = {(e) => setTitle(e.target.value)}
-                value       = {postTitle}
-            />
+                    <label>Post Title:</label>
+                    <input 
+                        type        = 'text'
+                        onChange    = {(e) => setTitle(e.target.value)}
+                        value       = {postTitle}
+                    />
 
-            <label>Post Body:</label>
-            <input 
-                type        = 'text'
-                onChange    = {(e) => setBody(e.target.value)}
-                value       = {postBody}
-            />
+                    <label>Post Body:</label>
+                    <input 
+                        type        = 'text'
+                        onChange    = {(e) => setBody(e.target.value)}
+                        value       = {postBody}
+                    />
 
-            <button>Submit</button>
-            {error && <div className='error'>{error}</div>}
-        </form>
+                    <button>Submit</button>
+                    {error && <div className='error'>{error}</div>}
+                </form>
+            )}
+        </>
     )
 }

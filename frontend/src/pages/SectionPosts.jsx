@@ -2,6 +2,10 @@
 import { useEffect, useState }  from "react";
 import { useLocation }          from "react-router-dom";
 
+// My Hooks
+import { useLogout }            from "../customHooks/useLogout";
+import { useAuthContext }       from "../customHooks/useAuthContext";
+
 // Components
 import PostBanner               from "../components/PostBanner";
 import PostForm                 from "../components/PostForm";
@@ -14,10 +18,10 @@ export default function SectionPosts() {
     // const [posts, setPosts] = useState(null)
     // As we use useContext now, we no longer need this useState
 
-    const {posts, dispatch} = usePostsContext()
-
-
-    const location = useLocation().pathname
+    const {posts, dispatch}     = usePostsContext()
+    const { logout }            = useLogout()
+    const { user }              = useAuthContext()
+    const location              = useLocation().pathname
     let header;
     
 
@@ -54,11 +58,22 @@ export default function SectionPosts() {
         }
 
         fetchPosts();
-    }, [location])
+    }, [location, dispatch])
+
+
+
+
+    function handleClick() {
+        logout()
+    }
 
 
     return (
         <>
+            {user && (
+                <button onClick={handleClick}>LOGOUT</button>
+            )}
+            
             <PostForm location={location} />
 
             <div className="farmacie">

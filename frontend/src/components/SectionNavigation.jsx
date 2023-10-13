@@ -10,7 +10,7 @@ export default function SectionNavigation(props) {
         <>
             <header className='nav-header'>
                 <nav className='section-navigation'>
-                    <Link to={path}>
+                    <Link to='/'>
                         Главная
                     </Link>
 

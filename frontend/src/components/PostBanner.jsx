@@ -1,12 +1,14 @@
 // My Hooks
-import { usePostsContext } from "../customHooks/usePostsContext"
+import { usePostsContext }  from "../customHooks/usePostsContext"
+import { useAuthContext }   from "../customHooks/useAuthContext"
 
 
 
 
 export default function PostBanner(props) {
 
-    const { dispatch } = usePostsContext()
+    const { dispatch }  = usePostsContext()
+    const { user }      = useAuthContext()
 
     const { post } = props
 
@@ -36,7 +38,9 @@ export default function PostBanner(props) {
 
             <p>{post.createdAt}</p>
 
-            <button onClick={handleClick}>Delete</button>
+            {user && (
+                <button onClick={handleClick}>Delete</button>
+            )}
         </div>
     )
 }

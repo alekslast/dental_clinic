@@ -1,4 +1,4 @@
-import {Post} from '../models/PostsModel.js';
+import { Post } from '../models/PostsModel.js';
 
 
 
@@ -81,4 +81,10 @@ const updatePost = async (req, res) => {
 
 
 
-export { createPost, getPosts, getSinglePost, deletePost, updatePost };
+export { 
+    createPost, 
+    getPosts, 
+    getSinglePost, 
+    deletePost, 
+    updatePost
+};

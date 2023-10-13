@@ -15,6 +15,7 @@ import SectionLayout        from './layouts/SectionLayout';
 import DentSection          from './pages/DentSection';
 import FarmSection          from './pages/FarmSection';
 import BeautySection        from './pages/BeautySection';
+import AdminLogin           from './components/AdminLogin';
 
 
 
@@ -58,6 +59,11 @@ const router = createBrowserRouter(
             <Route
                 path='farmacie/posts'
                 element={<SectionPosts />}
+            ></Route>
+
+            <Route
+                path='/adminLogin'
+                element={<AdminLogin />}
             ></Route>
         </>
     )

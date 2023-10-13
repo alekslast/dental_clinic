@@ -38,6 +38,12 @@ export function postsReducer(state, action) {
                     return post._id !== action.payload._id
                 })
             }
+        // case 'UPDATE_POST':
+        //     return {
+        //         posts: state.posts.filter(post => {
+        //             return post._id === action.payload._id
+        //         })
+        //     }
         default:
             return state
     }
