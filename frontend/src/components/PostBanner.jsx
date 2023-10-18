@@ -19,7 +19,7 @@ export default function PostBanner(props) {
                 method: 'DELETE'
             })
 
-        const json = await response.json() // this is just THE DELETED document, now the array of all documents
+        const json = await response.json() // this is just THE DELETED document, not the array of all documents
 
         if (response.ok) {
             dispatch({type: 'DELETE_POST', payload: json})

@@ -1,7 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Miriam+Libre&family=Montserrat:wght@300;400&family=Open+Sans&family=Questrial&display=swap');
+
+
+
+/* ----------HEADER---------- */
 .dent-section--header {
-    background-image: url(../assets/BeautySection/fullBack.png);
-    background-size: 100vw 100vh;
+    background-image: url(../assets/DentSection/dent-main-bg.png);
     background-repeat: no-repeat;
+    background-position: center;
+    background-color: #000;
     width: 100vw;
     height: 100vh;
+
+    & .dent-section--header--logo {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        width: max-content;
+        color: #B98E49;
+
+        & .dent-text {
+            margin-left: 50px;
+        }
+
+        & .dent-logo {
+            height: 300px;
+        }
+    
+        & .dent-postfix {
+            position: relative;
+            left: 45px;
+            bottom: 50px;
+            width: max-content;
+            text-align: center;
+        }
+    
+        & .dent-ro {
+            font-family: 'Miriam Libre', sans-serif;
+            font-size: 22px;
+            color: #D6AE45;
+        }
+    
+        & .dent-ru {
+            font-family: 'Miriam Libre', sans-serif;
+            font-size: 16px;
+            color: #B98E49;
+        }
+    
+        & .dent-text {
+            position: relative;
+            left: 30px;
+            top: 150px;
+            font-family: 'Libre Baskerville', serif;
+            font-size: 70px;
+            font-weight: 200;
+            letter-spacing: 2.7px;
+            color: #D6AE45;
+        }
+    
+    }
+}
+
+
+
+
+
+/* ----------INTRO---------- */
+.dent-section--intro {
+    height: 100vh;
+    width: 100vw;
+
+
+    & .dent-section--intro--inner {
+        margin: 0 auto;
+        max-width: 1366px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    & .dent-section--intro--tooth img {
+        width: max-content;
+        height: 100vh;
+    }
+
+    & .dent-section--intro--logo h3 {
+        text-transform: uppercase;
+        font-family: 'Libre Baskerville', serif;
+        font-weight: 200;
+        font-size: 40px;
+        color: #D6AE45;
+        letter-spacing: 1.5px;
+        text-align: right;
+        position: relative;
+        top: 80px;
+        right: 165px;
+    }
+
+    & .dent-section--intro--logo img {
+        width: 526px;
+        height: 85px;
+        position: relative;
+        top: 70px;
+        left: 100px;
+    }
+
+    & .dent-section--intro--text {
+        display: flex;
+        flex-direction: column;
+        margin-left: 120px;
+    }
+
+    & .dent-section--intro--text h4 {
+        font-weight: 200;
+        font-size: 30px;
+        color: #D6AE45;
+        margin: 120px 0 30px;
+    }
+
+    & .dent-section--intro--text h2 {
+        font-family: 'Libre Baskerville', serif;
+        font-weight: 200;
+        font-size: 48px;
+        color: #000;
+        letter-spacing: 1.5px;
+        padding-right: 250px;
+        text-align: left;
+    }
+}
+
+
+
+
+
+/* ----------DOCTORS---------- */
+.dent-section--doctors {
+    position: relative;
+    background-color: #B98E49;
+    height: 100vh;
+    width: 100vw;
+
+    & h2 {
+        position: relative;
+        color: #fff;
+        font-family: 'Libre Baskerville', serif;
+        font-size: 80px;
+        font-weight: 200;
+        letter-spacing: 1.5px;
+        text-align: center;
+        z-index: 3;
+        padding-top: 50px;
+    }
+
+    & .dent--cards {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 45px auto 0;
+        max-width: 1366px;
+    }
+
+    & .dent--card-element {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    & .dent-services-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 30px 0;
+        width: 343px;
+        height: 330px;
+        background-color: #fff;
+        border-radius: 25px;
+        position: relative;
+        transform: translateY(-70%);
+        z-index: 3;
+
+        & h5 {
+            color: #132540;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 24px;
+        }
+
+        & h6 {
+            color: #132540;
+            text-transform: uppercase;
+            font-family: 'Questrial', sans-serif;
+            font-weight: 100;
+            font-size: 16px;
+            letter-spacing: 0.5px;
+            margin: 15px 0 30px 0;
+        }
+
+        & p {
+            color: #132540;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+            text-align: center;
+        }
+    }
+
+    & .dent-circle-placeholder {
+        position: relative;
+        margin: 0 auto;
+        height: 188px;
+        width: 188px;
+        border-radius: 50%;
+        background-color: #fff;
+    }
+
+    & .dent-card-img {
+        position: relative;
+        width: 155px;
+        height: 155px;
+        z-index: 4;
+        border-radius: 50%;
+        transform: translateY(-110%);
+    }
+}
+
+
+
+
+
+/* ----------COMMITED---------- */
+.dent-section--commited {
+    background-image: url(../assets/DentSection/commited-bg.png);
+    background-size: 1366px 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+
+    & .sd-logo {
+        height: 140px;
+        width: 140px;
+        margin-top: 80px;
+    }
+
+    & h2 {
+        font-family: 'Questrial', sans-serif;
+        font-weight: 200;
+        font-size: 70px;
+        color: #000;
+        margin-top: 50px;
+    }
+
+    & p {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        font-size: 20px;
+        color: #132540;
+        margin-top: 80px;
+        padding: 0 360px;
+    }
+}
+
+
+
+
+
+/* ----------LADY DOC---------- */
+.dent-section--lady-doc {
+    height: 100vh;
+    width: 100vw;
+
+
+    & .dent-section--lady-doc--inner {
+        margin: 0 auto;
+        max-width: 1366px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    & img.dent-section--lady-doc--lady {
+        width: max-content;
+        height: 100vh;
+    }
+
+    & .dent-section--lady-doc--content {
+        display: flex;
+        flex-direction: column;
+        margin-left: 50px;
+    }
+
+    & .dent-section--lady-doc--content .sd-logo {
+        width: 83px;
+        height: 75px;
+        position: relative;
+        top: 70px;
+    }    
+
+    & .dent-section--lady-doc--content h4 {
+        font-family: 'Montserrat', sans-serif;  
+        font-weight: 200;
+        font-size: 30px;
+        color: #D6AE45;
+        margin: 120px 0 30px;
+    }
+
+    & .dent-section--lady-doc--content h2 {
+        font-family: 'Questrial', sans-serif;
+        font-weight: 200;
+        font-size: 65px;
+        color: #000;
+        letter-spacing: 1.5px;
+        padding-right: 200px;
+        text-align: left;
+        margin-top: 200px;
+    }
+}
+
+
+
+
+
+/* ----------FOOTER---------- */
+.dent-section--footer {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    color: #D6AE45;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & h3 {
+        font-size: 34px;
+        margin-bottom: 25px;
+    }
+
+    & p {
+        font-size: 18px;
+    }
+
+    & img {
+        position: relative;
+        /* left: 0; */
+        /* right: 0; */
+        width: 100%;
+        height: 100%;
+        max-width: 1366px;
+    }
+
+    & .dent-section--footer--content {
+        position: absolute;
+        bottom: 100px;
+        padding: 0 100px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 250px;
+        max-width: 1366px;
+
+        & .working-hours p {
+            margin-bottom: 10px;
+        }
+
+        & .working-hours b p {
+            margin: 0;
+        }
+
+        & .contact-info p:nth-child(odd) {
+            margin-bottom: 10px;
+        }
+    }
 }
