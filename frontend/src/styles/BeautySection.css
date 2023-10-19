@@ -319,7 +319,7 @@
         padding: 0 100px;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 250px;
+        gap: 180px;
         max-width: 1366px;
 
         & .working-hours p {
@@ -332,6 +332,22 @@
 
         & .contact-info p:nth-child(odd) {
             margin-bottom: 10px;
+        }
+
+        & .socials {
+            display: flex;
+            align-items: center;
+
+            & img {
+                height: 35px;
+                width: 35px;
+                margin-right: 10px;
+                transition: scale 0.25s ease-in-out;
+            }
+
+            & img:hover {
+                scale: 1.15;
+            }
         }
     }
 }

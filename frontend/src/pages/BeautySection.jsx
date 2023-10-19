@@ -1,3 +1,6 @@
+// Components
+import ScrollTopButton  from '../components/ScrollTopButton';
+
 // Styles
 import '../styles/BeautySection.css';
 
@@ -10,6 +13,10 @@ import cardPic2         from '../assets/BeautySection/card-pic2.png';
 import cardPic3         from '../assets/BeautySection/card-pic3.png';
 import wave             from '../assets/BeautySection/wave1.png';
 import beautyLogoFace   from '../assets/BeautySection/beauty-logo-face.png';
+import fbLogo           from '../assets/fb-logo.png';
+import igLogo           from '../assets/ig-logo.png';
+
+// Video
 import video            from '../assets/BeautySection/video1.mp4';
 
 
@@ -19,6 +26,7 @@ import video            from '../assets/BeautySection/video1.mp4';
 export default function BeautySection() {
     return (
         <>
+            <ScrollTopButton />
             <section className="beauty-section--header">
                 <div className='beauty-section--header--logo'>
                     <h2 className='beauty-text'>Beauty</h2>
@@ -123,6 +131,15 @@ export default function BeautySection() {
 
                         <p>(123) 456-7890</p>
                         <p>hello@reallygreatsite.com</p>
+                    </div>
+
+                    <div className='socials'>
+                        <a href='#'>
+                            <img src={fbLogo} />
+                        </a>
+                        <a href='#'>
+                            <img src={igLogo} />
+                        </a>
                     </div>
                 </div>
             </section>

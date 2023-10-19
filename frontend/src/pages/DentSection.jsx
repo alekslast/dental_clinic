@@ -1,3 +1,6 @@
+// Components
+import ScrollTopButton from '../components/ScrollTopButton';
+
 // Styles
 import '../styles/DentSection.css';
 
@@ -11,6 +14,8 @@ import doctor3          from '../assets/DentSection/doctor3.png';
 import sdLogo           from '../assets/DentSection/dent-logo-sd.png';
 import ladyDoc          from '../assets/DentSection/lady-doc1.png';
 import footerPic        from '../assets/DentSection/footer-pic.png';
+import fbLogo           from '../assets/fb-logo.png';
+import igLogo           from '../assets/ig-logo.png';
 
 
 
@@ -18,6 +23,7 @@ import footerPic        from '../assets/DentSection/footer-pic.png';
 export default function DentSection() {
     return (
         <>
+            <ScrollTopButton />
             <section className="dent-section--header">
                 <div className='dent-section--header--logo'>
                     <h2 className='dent-text'>Dent</h2>
@@ -56,7 +62,7 @@ export default function DentSection() {
                     
                     <div className='dent--card-element'>
                         <div className='dent-circle-placeholder' />
-                        <img src={doctor1} className='dent-card-img' />
+                        <img src={doctor3} className='dent-card-img' />
                         <div className='dent-services-card'>
                             <h5>Dr. Samira Hadid, M.D.</h5>
                             <h6>Gynecologist</h6>
@@ -76,7 +82,7 @@ export default function DentSection() {
 
                     <div className='dent--card-element'>
                         <div className='dent-circle-placeholder' />
-                        <img src={doctor3} className='dent-card-img' />
+                        <img src={doctor1} className='dent-card-img' />
                         <div className='dent-services-card'>
                             <h5>Dr. Yuqin Feng, M.D.</h5>
                             <h6>Gynecologist & Obstetrician</h6>
@@ -127,6 +133,15 @@ export default function DentSection() {
 
                         <p>(123) 456-7890</p>
                         <p>hello@reallygreatsite.com</p>
+                    </div>
+
+                    <div className='socials'>
+                        <a href='#'>
+                            <img src={fbLogo} />
+                        </a>
+                        <a href='#'>
+                            <img src={igLogo} />
+                        </a>
                     </div>
                 </div>
             </section>
