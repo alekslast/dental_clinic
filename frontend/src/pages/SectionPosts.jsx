@@ -11,6 +11,9 @@ import PostBanner               from "../components/PostBanner";
 import PostForm                 from "../components/PostForm";
 import { usePostsContext }      from "../customHooks/usePostsContext";
 
+// Styles
+import '../styles/SectionPosts.css';
+
 
 
 export default function SectionPosts() {
@@ -69,9 +72,9 @@ export default function SectionPosts() {
 
 
     return (
-        <>
+        <section className='post-page'>
             {user && (
-                <button onClick={handleClick}>LOGOUT</button>
+                <button onClick={handleClick} className='admin-logout-btn'>ADMIN LOGOUT</button>
             )}
             
             <PostForm location={location} />
@@ -84,6 +87,6 @@ export default function SectionPosts() {
                     ))}
                 </div>
             </div>
-        </>
+        </section>
     )
 }

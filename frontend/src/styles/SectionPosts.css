@@ -1,0 +1,25 @@
+section.post-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #132540;
+    height: 100vh;
+    width: 100vw;
+
+    & .admin-logout-btn {
+        position: absolute;
+        top: 50px;
+        right: 100px;
+        border: 1px solid #3FA3CC;
+        border-radius: 4px;
+        background-color: #3FA3CC;
+        color: #fff;
+        transition: scale 0.3s ease-in-out;
+        padding: 10px 30px;
+    }
+
+    & .admin-logout-btn:hover {
+        scale: 1.05;
+    }
+}

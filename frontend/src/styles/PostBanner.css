@@ -1,0 +1,4 @@
+div.post-banner {
+    display: flex;
+    flex-direction: column;
+}

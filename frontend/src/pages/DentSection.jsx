@@ -7,7 +7,7 @@ import '../styles/DentSection.css';
 // Images
 import dentLogo         from '../assets/DentSection/logo.png';
 import wave             from '../assets/DentSection/wave1.png';
-import toothIntro       from '../assets/DentSection/tooth-intro.png';
+import toothIntro       from '../assets/DentSection/dent-intro.png';
 import doctor1          from '../assets/DentSection/doctor1.png';
 import doctor2          from '../assets/DentSection/doctor2.png';
 import doctor3          from '../assets/DentSection/doctor3.png';

@@ -1,0 +1,7 @@
+section.post-form {
+    
+    & .create-post--form {
+        display: flex;
+        flex-direction: column;
+    }
+}

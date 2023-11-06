@@ -1,6 +1,9 @@
 // React Hooks
 import { useState, useEffect } from "react";
 
+// Styles
+import '../styles/ScrollTopButton.css';
+
 export default function ScrollTopButton() {
 
     const screenHeight                          = window.innerHeight;
@@ -21,32 +24,14 @@ export default function ScrollTopButton() {
         };
     }, []);
 
-    const buttonStyle = {
-        position: 'fixed',
-        bottom: '30px',
-        right: '50px',
-        borderRadius: '99999px',
-        height: '50px',
-        width: '50px',
-        fontSize: '40px',
-        border: 'none',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: '#f6f6f6',
-        cursor: 'pointer',
-        zIndex: 7,
-        color: '#000',
-        fontFamily: "'Questrial', sans-serif",
-        visibility: scrollPosition > 0 ? 'visible' : 'hidden'
-    }
+    const buttonStyle = scrollPosition > 0 ? 'scroll-to-top-btn visible' : 'scroll-to-top-btn'
 
     function handleClick() {
         window.scrollTo(0, 0)
     }
 
     return (
-        <p style={buttonStyle} onClick={handleClick}>&#129081;</p>
+        <button onClick={handleClick} className={buttonStyle}>&#129081;</button>
         // &#129081;
         // &#11165;
         // &#11205;

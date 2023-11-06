@@ -6,6 +6,9 @@ import { useState }         from "react";
 import { usePostsContext }  from "../customHooks/usePostsContext";
 import { useAuthContext }   from "../customHooks/useAuthContext";
 
+// Styles
+import '../styles/PostForm.css';
+
 
 
 
@@ -64,7 +67,7 @@ export default function PostForm(props) {
 
 
     return (
-        <>
+        <section className='post-form'>
             {user && (
                 <form 
                     className="create-post--form"
@@ -93,8 +96,8 @@ export default function PostForm(props) {
                     />
 
                     <label>Post Body:</label>
-                    <input 
-                        type        = 'text'
+                    <textarea 
+                        // type        = 'text'
                         onChange    = {(e) => setBody(e.target.value)}
                         value       = {postBody}
                     />
@@ -103,6 +106,6 @@ export default function PostForm(props) {
                     {error && <div className='error'>{error}</div>}
                 </form>
             )}
-        </>
+        </section>
     )
 }

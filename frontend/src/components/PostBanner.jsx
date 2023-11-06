@@ -2,6 +2,9 @@
 import { usePostsContext }  from "../customHooks/usePostsContext"
 import { useAuthContext }   from "../customHooks/useAuthContext"
 
+// Styles
+import '../styles/PostBanner.css';
+
 
 
 
@@ -27,7 +30,7 @@ export default function PostBanner(props) {
     }
 
     return (
-        <div className="post--banner">
+        <div className="post-banner">
             <h4>
                 <strong>{post.postTitle}</strong>
             </h4>
