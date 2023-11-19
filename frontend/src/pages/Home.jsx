@@ -10,9 +10,6 @@ import Footer from "../components/Footer";
 import '../styles/Home.css';
 
 
-
-
-
 export default function Home() {
     return (
         <div className="home">
@@ -21,7 +18,7 @@ export default function Home() {
                 <h2>3:16</h2>
                 <hr />
                 <p className="epigraph--first-p">Fiidca asa a iubit Dumnezeu lumea...</p>
-                <p className="epigraph--colored-p">ибо так возлюбил Бог этот мир, что...</p>
+                
             </div>
 
             <div className="home--category--parent">
@@ -31,27 +28,30 @@ export default function Home() {
                         to='stomatologie'>
 
                         <div>
-                            <h3>Pastreaza ce ti-e mai scump</h3>
+                           
                             <div className="dent--img" />
                             
                         </div>
                         
                     </Link>
-                    <p>Сохрани то, что тебе дорого.</p>
+                    <p>Pastreaza ce ti-e mai scump</p>
+                   
                 </div>
 
                 <div className="home--category farm">
                     <Link
                         className="home--link"
                         to='farmacie'>
-
                         <div>
-                            <h3>Vrei sa te faci sanatos?</h3>
+
                             <div className="farm--img" />
+
                         </div>
 
                     </Link>
-                    <p>Нездоровые имеют нужду во враче.</p>
+
+                    <p>Vrei sa te faci sanatos?</p>          
+
                 </div>
 
                 <div className="home--category beauty">
@@ -59,17 +59,19 @@ export default function Home() {
                         className="home--link"
                         to='beauty'>
 
-                        <div>
-                            <h3>Tot vizibilul e temporar</h3>
+                        <div>        
+
                             <div className="beauty--img" />
+
                         </div>
                     </Link>
-                    <p>Нездоровые имеют нужду во враче.</p>
+
+                    <p>Tot  ceea ce este invizibil este etern.</p>     
+
                 </div>
-            </div>
-
-            <Footer />
-
+             
+              </div>
+              <Footer />
         </div>
     )
 }

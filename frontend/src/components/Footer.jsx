@@ -1,10 +1,11 @@
 export default function Footer() {
-
-    // const currentYear = new Date().getFullYear()
-
+    const isVisible = false;
+  
     return (
-        <footer>
-            <p style={{marginBottom: '20px'}}>Комманда профессионалов в Авиагородке</p>
+        <div style={{ display: isVisible ? 'block' : 'none' }}>
+       <footer>
+            <p style={{marginBottom: '-300px'}}>Comanda profesioniștilor de la Aviagorodok</p>
         </footer>
+        </div>
     )
 }
