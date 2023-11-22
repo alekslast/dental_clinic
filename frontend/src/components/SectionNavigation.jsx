@@ -22,30 +22,25 @@ export default function SectionNavigation(props) {
             sectionDependentNavStyle = 'section-navigation';
     }
 
-
-
-
-
     return (
         <>
             <header className='nav-header'>
                 <nav className={sectionDependentNavStyle}>
                     <Link to='/'>
-                        Главная
+                    PRINCIPALA
                     </Link>
 
                     <a href='#services'>
-                        Услуги
+                    SERVICII
                     </a>
                     
                     <Link to={`${path}/posts`}>
-                        Акции
+                    ACTIE
                     </Link>
 
                     <a href='#contacts'>
-                        Контакты
+                    CONTACTE
                     </a>
-
                 </nav>
             </header>
         </>

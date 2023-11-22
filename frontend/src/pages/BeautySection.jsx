@@ -19,10 +19,6 @@ import igLogo           from '../assets/ig-logo.png';
 // Video
 import video            from '../assets/BeautySection/video1.mp4';
 
-
-
-
-
 export default function BeautySection() {
     return (
         <>
@@ -49,11 +45,10 @@ export default function BeautySection() {
                         <div className='beauty-section--intro--logo'>
                             <h3>Beauty</h3>
                             <img src={wave} alt='decorative wave' />
-                        </div>
-                        
+                        </div>                     
                         <div className='beauty-section--intro--text'>
-                            <h4>We love seeing happy smiles.</h4>
-                            <h2>Let's make your dental health <br /> a priority!</h2>
+                            <h4>Ne place să vedem zâmbete fericite.</h4>
+                            <h2>Hai să-ți facem frumusețea o prioritate! </h2>
                         </div>
                     </div>
                 </div>
@@ -62,7 +57,7 @@ export default function BeautySection() {
             <section className='beauty-section--services' id='services'>
                 <img src={brush} className='transition-brush' />
 
-                <h2>Services</h2>
+                <h2>Servicii</h2>
 
                 <div className='beauty--cards'>
                     
@@ -70,9 +65,9 @@ export default function BeautySection() {
                         <div className='beauty-circle-placeholder' />
                         <img src={cardPic1} className='beauty-card-img' />
                         <div className='beauty-services-card'>
-                            <h5>Массаж</h5>
-                            <h6>Gynecologist</h6>
-                            <p>With over a decade of experience, Dr. Hadid is the resident expert on general gynecology and women's health.</p>
+                            <h5>Machiaj</h5>
+                            <h6>Oferim următoarele servicii:</h6>
+                            <p>machiaj, extensii de gene, corectarea sprâncenelor</p>
                         </div>
                     </div>
 
@@ -80,9 +75,9 @@ export default function BeautySection() {
                         <div className='beauty-circle-placeholder' />
                         <img src={cardPic2} className='beauty-card-img' />
                         <div className='beauty-services-card'>
-                            <h5>Массаж</h5>
-                            <h6>Gynecologist</h6>
-                            <p>With over a decade of experience, Dr. Hadid is the resident expert on general gynecology and women's health.</p>
+                            <h5>Coafor</h5>
+                            <h6>Oferim următoarele servicii:</h6>
+                            <p>tuns pentru bărbați și femei coafuri pentru doamne, aranjare, vopsire, șuvițe, proceduri de tratament pentru păr</p>
                         </div>
                     </div>
 
@@ -90,9 +85,9 @@ export default function BeautySection() {
                         <div className='beauty-circle-placeholder' />
                         <img src={cardPic3} className='beauty-card-img' />
                         <div className='beauty-services-card'>
-                            <h5>Массаж</h5>
-                            <h6>Gynecologist</h6>
-                            <p>With over a decade of experience, Dr. Hadid is the resident expert on general gynecology and women's health.</p>
+                            <h5>Manichiură</h5>
+                            <h6>Oferim următoarele servicii:</h6>
+                            <p>manichiură, pedichiură și extensii de unghii</p>
                         </div>
                     </div>
                 </div>
@@ -100,12 +95,12 @@ export default function BeautySection() {
 
             <section className='beauty-section--commited'>
                 <img src={beautyLogoFace} alt='logo face' />
-                <h2>Commited to You</h2>
+                <h2>Bun venit în salonul nostru</h2>
                 <p>
-                    East Forge Medical is the region's most trusted provider of women's healthcare. We have a highly trained team of medical experts, advanced facilities, and unwavering commitment to the welfare of our patients.
+                Culorile și aromele toamnei inspiră întotdeauna confort și căldură în zilele reci.
+Salonul nostru de înfrumusețare oferă o gamă largă de servicii pentru a vă ajuta să vă puneți în valoare frumusețea naturală și să vă simțiți incredibil de încrezătoare.
                 </p>
             </section>
-
             <section className='beauty-section--footer'>
                 <video src={video} autoPlay muted loop id='myVideo' />
                 {/* <img src={bgVideo} id='myVideo' /> */}
@@ -114,23 +109,22 @@ export default function BeautySection() {
 
                 <div className='beauty-section--footer--content'>
                     <div className='working-hours'>
-                        <h3>Clinic hours</h3>
-                        <b><p>Monday, Wednesday & Friday</p></b>
-                        <p>9:00 am to 5:00 pm</p>
+                        <h3>Program de lucru</h3>
+                        <b><p>Luni - Duminica</p></b>
+                        <p>9:00  - 20:00 </p>
 
-                        <b><p>Tuesday, Thursday & Saturday</p></b>
-                        <p>8:00 am to 4:00 pm</p>
-
-                        <b><p>Closed on Sundays</p></b>
+                        <b><p>Programare prealabilă </p></b>
+                        <p>Tel: 022 52 52 50</p>
+                        
                     </div>
 
                     <div className='contact-info' id='contacts'>
-                        <h3>Our Clinic</h3>
-                        <p>123 Anywhere St.</p>
-                        <p>Any City, ST 12345</p>
+                        <h3>Adresa</h3>
+                        <p>Or. Chisinau</p>
+                        <p>Dacia 60/5 A</p>
 
-                        <p>(123) 456-7890</p>
-                        <p>hello@reallygreatsite.com</p>
+                        <p>Tel: (022) 52 52 50</p>
+                        <p>vitastef@mail.ru</p>
                     </div>
 
                     <div className='socials'>
