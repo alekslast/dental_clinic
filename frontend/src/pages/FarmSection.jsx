@@ -62,8 +62,9 @@ export default function FarmSection() {
                         </div>
                         
                         <div className='farm-section--intro--text'>
-                            <h4>We love seeing happy smiles.</h4>
-                            <h2>Let's make your dental health <br /> a priority!</h2>
+                            <h4>Ne place să vedem zâmbete sanatoase.</h4>
+                            <h2>Hai să-ți facem sănătatea 
+o prioritate!</h2>
                         </div>
                     </div>
 
@@ -75,7 +76,7 @@ export default function FarmSection() {
 
             <section className='farm-section--services' id='services'>
 
-                <h2>Meet our Doctors</h2>
+                <h2>Servicii</h2>
 
                 <div className='farm--cards'>
                     
@@ -83,9 +84,10 @@ export default function FarmSection() {
                         <div className='farm-circle-placeholder' />
                         <img src={doctor3} className='farm-card-img' />
                         <div className='farm-services-card'>
-                            <h5>Dr. Samira Hadid, M.D.</h5>
-                            <h6>Gynecologist</h6>
-                            <p>With over a decade of experience, Dr. Hadid is the resident expert on general gynecology and women's health.</p>
+                            <h5>Consultatii</h5>  
+                            <br/>                        
+                            <p>Ne mândrim cu faptul că oferim o gamă largă de medicamente și consultanță profesională pentru menținerea sănătății și bunăstării dvs.
+</p>
                         </div>
                     </div>
 
@@ -93,9 +95,9 @@ export default function FarmSection() {
                         <div className='farm-circle-placeholder' />
                         <img src={doctor2} className='farm-card-img' />
                         <div className='farm-services-card'>
-                            <h5>Dr. Aryan Patel, M.D.</h5>
-                            <h6>Gynecologist & Obstetrician</h6>
-                            <p>As the senior doctor in East Forge, Dr. Patel specializes in gynecologic surgery and obstetric care.</p>
+                            <h5>Măsurarea presiunii</h5>
+                           <br/>
+                            <p>Este important să efectuați măsurarea tensiunii arteriale regulat pentru a vă monitoriza starea de sănătate.</p>
                         </div>
                     </div>
 
@@ -103,9 +105,9 @@ export default function FarmSection() {
                         <div className='farm-circle-placeholder' />
                         <img src={doctor1} className='farm-card-img' />
                         <div className='farm-services-card'>
-                            <h5>Dr. Yuqin Feng, M.D.</h5>
-                            <h6>Gynecologist & Obstetrician</h6>
-                            <p>Dr. Feng has over 15 years of experience as a fertility expert and obstetrician.</p>
+                            <h5>Asistență medical-sanitară</h5>
+                           <br/>
+                            <p>Bine ați venit în farmacia noastră, unde sănătatea și bunăstarea dvs. sunt prioritatea noastră.</p>
                         </div>
                     </div>
                 </div>
@@ -113,9 +115,10 @@ export default function FarmSection() {
 
             <section className='farm-section--commited'>
                 <img src={logoPill} alt='logo face' />
-                <h2>Commited to You</h2>
+                <h2>Bun venit în farmacia noastra</h2>
                 <p>
-                    East Forge Medical is the region's most trusted provider of women's healthcare. We have a highly trained team of medical experts, advanced facilities, and unwavering commitment to the welfare of our patients.
+                Bine ați venit în farmacia noastră, unde sănătatea și bunăstarea dvs. sunt prioritatea noastră.
+Ne mândrim cu faptul că oferim o gamă largă de medicamente și consultanță profesională pentru menținerea sănătății și bunăstării dvs.
                 </p>
             </section>
 
@@ -127,23 +130,16 @@ export default function FarmSection() {
 
                 <div className='farm-section--footer--content'>
                     <div className='working-hours'>
-                        <h3>Clinic hours</h3>
-                        <b><p>Monday, Wednesday & Friday</p></b>
-                        <p>9:00 am to 5:00 pm</p>
-
-                        <b><p>Tuesday, Thursday & Saturday</p></b>
-                        <p>8:00 am to 4:00 pm</p>
-
-                        <b><p>Closed on Sundays</p></b>
+                        <h3>Program de lucru</h3>
+                        <b><p>Luni - Duminica <br/>9:00 - 20:00
+                        </p></b><br/>                      
+                        <b><p>Programare prealabilă </p></b>
+                        <p>Tel: 022 52 52 50</p>                       
                     </div>
 
                     <div className='contact-info' id='contacts'>
-                        <h3>Our Clinic</h3>
-                        <p>123 Anywhere St.</p>
-                        <p>Any City, ST 12345</p>
-
-                        <p>(123) 456-7890</p>
-                        <p>hello@reallygreatsite.com</p>
+                        <h3>Adresa</h3>
+                        <p>mun. Chisinau,<br/> bd. Dacia 60/5, sc.4<br/><br/>Tel. 022 52 66 47<br/>Mob +373 78 52 66 </p>                    
                     </div>
                     
                     <div className='socials'>

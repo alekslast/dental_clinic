@@ -43,20 +43,21 @@ export default function DentSection() {
 
                     <div className='dent-section--intro--content'>
                         <div className='dent-section--intro--logo'>
-                            <h3>Home</h3>
+                            <h3>DENT</h3>
                             <img src={wave} alt='decorative wave' />
                         </div>
                         
                         <div className='dent-section--intro--text'>
-                            <h4>We love seeing happy smiles.</h4>
-                            <h2>Let's make your dental health <br /> a priority!</h2>
+                            <h4>Ne place să vedem zâmbete fericite.</h4>
+                            <h2>Hai să-ți facem sănătatea dentară
+o prioritate! <br /> a priority!</h2>
                         </div>
                     </div>
                 </div>
             </section>
 
             <section className='dent-section--doctors' id='services'>
-                <h2>Meet our Doctors</h2>
+                <h2>Servicii</h2>
 
                 <div className='dent--cards'>
                     
@@ -64,9 +65,15 @@ export default function DentSection() {
                         <div className='dent-circle-placeholder' />
                         <img src={doctor3} className='dent-card-img' />
                         <div className='dent-services-card'>
-                            <h5>Dr. Samira Hadid, M.D.</h5>
-                            <h6>Gynecologist</h6>
-                            <p>With over a decade of experience, Dr. Hadid is the resident expert on general gynecology and women's health.</p>
+                            <h5>Tratamentul cariei</h5>
+                            <h6>Oferim următoarele servicii:</h6>
+                            <ul>
+                                <li>Consultaţie</li>
+                                <li>Anestezie</li>
+                                <li>Înălbirea dinţilor</li>
+                                <li>Tratamentul paradontitei</li>
+                                <li>Restauraţie cu ceramica</li>
+                                </ul>
                         </div>
                     </div>
 
@@ -74,9 +81,15 @@ export default function DentSection() {
                         <div className='dent-circle-placeholder' />
                         <img src={doctor2} className='dent-card-img' />
                         <div className='dent-services-card'>
-                            <h5>Dr. Aryan Patel, M.D.</h5>
-                            <h6>Gynecologist & Obstetrician</h6>
-                            <p>As the senior doctor in East Forge, Dr. Patel specializes in gynecologic surgery and obstetric care.</p>
+                            <h5>Ortopedie</h5>
+                            <h6>Oferim următoarele servicii:</h6>
+                            <ul>
+                            <li>Coroniţă metaloceramică</li>
+                            <li>Coroniţă ceramică</li>
+                            <li>Coroniţă presată</li>
+                            <li>Coroniţă implant</li>
+                            <li>Coroniţă ceramică implant</li>
+                            </ul>
                         </div>
                     </div>
 
@@ -84,9 +97,16 @@ export default function DentSection() {
                         <div className='dent-circle-placeholder' />
                         <img src={doctor1} className='dent-card-img' />
                         <div className='dent-services-card'>
-                            <h5>Dr. Yuqin Feng, M.D.</h5>
-                            <h6>Gynecologist & Obstetrician</h6>
-                            <p>Dr. Feng has over 15 years of experience as a fertility expert and obstetrician.</p>
+                            <h5>Chirurgie</h5>
+                            <h6>Oferim următoarele servicii:</h6>
+                            <ul>
+                                <li>Extracţia obişnuită</li>
+                                <li>Extracţia dintelui minte</li>
+                                <li>Extracţia atipică dintelui</li>
+                                <li>Extracţia dintelui retinat</li>
+                                <li>Suturarea (o sutură)</li>
+                            </ul>
+
                         </div>
                     </div>
                 </div>
@@ -94,9 +114,12 @@ export default function DentSection() {
 
             <section className='dent-section--commited'>
                 <img src={sdLogo} alt='logo face' className='sd-logo' />
-                <h2>Commited to You</h2>
+                <h2>Bun venit în clinica noastra</h2>
                 <p>
-                    East Forge Medical is the region's most trusted provider of women's healthcare. We have a highly trained team of medical experts, advanced facilities, and unwavering commitment to the welfare of our patients.
+                Bine ați venit în clinica noastră stomatologică, unde facem dinții sănătoși 
+să devină realitate.
+Personalul nostru medical experimentat și echipamentele moderne vă asigură tratament de înaltă calitate și confort pe tot parcursul îngrijirii stomatologice.
+
                 </p>
             </section>
             
@@ -106,8 +129,8 @@ export default function DentSection() {
 
                     <div className='dent-section--lady-doc--content'>
                         <img src={sdLogo} alt='decorative wave' className='sd-logo' />
-                        <h2>East Forge <br /> Medical</h2>
-                        <h4>Where women's health comes first</h4>
+                        <h2>Avem o multime de servicii.</h2>
+                        <h3>Descărca lista de prețuri a serviciilor noastre</h3>
                     </div>
                 </div>
             </section>
@@ -116,23 +139,19 @@ export default function DentSection() {
                 <img src={footerPic} />
                 <div className='dent-section--footer--content'>
                     <div className='working-hours'>
-                        <h3>Clinic hours</h3>
-                        <b><p>Monday, Wednesday & Friday</p></b>
-                        <p>9:00 am to 5:00 pm</p>
-
-                        <b><p>Tuesday, Thursday & Saturday</p></b>
-                        <p>8:00 am to 4:00 pm</p>
-
-                        <b><p>Closed on Sundays</p></b>
+                        <h3>Program de lucru</h3>
+                        <b><p>Luni - Duminica
+                                9:00 - 20:00
+                        </p></b>
+                       
+                        <b><p>TProgramare prealabilă 
+                            Tel: 022 52 52 50</p></b>               
                     </div>
 
                     <div className='contact-info' id='contacts'>
-                        <h3>Our Clinic</h3>
-                        <p>123 Anywhere St.</p>
-                        <p>Any City, ST 12345</p>
-
-                        <p>(123) 456-7890</p>
-                        <p>hello@reallygreatsite.com</p>
+                        <h3>Adresa</h3>
+                        <p>mun. Chisinau, bd. Dacia 60/5, of. 90 <br/>Tel. 022 52 66 47<br/> Mob +373 78 52 66 </p>                 
+                        <p>vitastef@mail.ru</p>
                     </div>
 
                     <div className='socials'>
