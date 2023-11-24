@@ -16,9 +16,7 @@ export default function Home() {
 
             <div className="home--epigraph">
                 <h2>3:16</h2>
-                <hr />
-                <p className="epigraph--first-p">Fiidca asa a iubit Dumnezeu lumea...</p>
-                
+                <hr />                            
             </div>
 
             <div className="home--category--parent">

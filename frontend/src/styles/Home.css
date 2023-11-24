@@ -1,136 +1,55 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200&family=Tenor+Sans&display=swap');
-
-/* Home */
-:root {
-    --link-container-size: 250px;
+.home--link {
+    color: #b98e49;
 }
 
-.home {
-    height: calc(100vh);
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: url(../assets/homeBg.png);
+.home--link div {
+    max-width: var(--link-container-size);
+}
+
+.home--link h3 {
+    font-style: italic;
+    text-align: center;
+    font-size: 22px;
+    line-height: 90%;
+    padding: 10px 15px;
+    margin-bottom: 12px;
+    background-color: transparent;
+    transition: background-color 0.6s ease-in-out;
+    transition-delay: 0.1s;
+}
+
+.home--link .dent--img,
+.home--link .farm--img,
+.home--link .beauty--img {
+    background-size: contain;
     background-repeat: no-repeat;
-    background-size: 100vw 100vh;
-}
-  
-
-.home--epigraph {
-    position: relative;
-    top: -70px;
-    max-width: 450px;
-    width: 700px;
-    text-align: center;
-
-    & h2, .epigraph--colored-p {
-        color: #b98f47;
-    }
-
-    & h2 {
-        font-size: 80px;
-    }
-
-    & hr {
-        height: 2px;
-        background-image: linear-gradient(90deg, #60400c, #c89116);
-        border: none;
-        margin-bottom: 5px;
-    }
-
-    & p {
-        font-size: 20px;
-        font-family: 'Tenor Sans', sans-serif;
-        line-height: 90%;
-    }
-
-    & .epigraph--first-p {
-        letter-spacing: 1.5px;
-    }
+    background-position: center;
+    transition: background-image 0.4s;
+    height: var(--link-container-size);
+    width: var(--link-container-size);
+    margin-bottom: 12px;
 }
 
-.home--category--parent {
-    position: relative;
-    top: -30px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    width: 100%;
+.home--link .dent--img {
+    background-image: url(../assets/dent.jpg);
 }
 
-.home--category {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: calc(var(--link-container-size) + 100px);
+.home--link .farm--img {
+    background-image: url(../assets/farm.jpg);
 }
 
-.home--category p {
-    font-family: Miriam Libre;
-    text-align: center;
-    color: #b98e49;
-    font-size: 20px;
-    max-width: calc(var(--link-container-size) + 100px);
+.home--link .beauty--img {
+    background-image: url(../assets/beauty.jpg);
 }
 
-.home--link {
-    color: #b98e49;
+.home--link:hover .dent--img {
+    background-image: url(../assets/dent_hover.jpg);
 }
 
-.home--link {
-    & div {
-        max-width: var(--link-container-size);
-    }
-    
-    & h3 {
-        font-style: italic;
-        text-align: center;
-        font-size: 22px;
-        line-height: 90%;
-        padding: 10px 15px;
-        margin-bottom: 12px;
-        background-color: transparent;
-        transition: background-color 0.6s ease-in-out;
-        transition-delay: 0.1s;
-    }
-
-    & .dent--img, .farm--img, .beauty--img {
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-        transition: background-image 0.4s;
-        height: var(--link-container-size);
-        width: var(--link-container-size);
-        margin-bottom: 12px;
-    }
-
-    & .dent--img {
-        background-image: url(../assets/dent.jpg);
-    }
-    & .farm--img {
-        background-image: url(../assets/farm.jpg);
-    }
-    & .beauty--img {
-        background-image: url(../assets/beauty.jpg);
-    }
+.home--link:hover .farm--img {
+    background-image: url(../assets/farm_hover.jpg);
 }
 
-.home--link:hover {
-    
-    & .dent--img {
-        background-image: url(../assets/dent_hover.jpg);
-    }
-    & .farm--img {
-        background-image: url(../assets/farm_hover.jpg);
-    }
-    & .beauty--img {
-        background-image: url(../assets/beauty_hover.jpg);
-    }
-    
+.home--link:hover .beauty--img {
+    background-image: url(../assets/beauty_hover.jpg);
 }
-
-  /* /Home */
