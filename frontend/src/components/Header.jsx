@@ -19,7 +19,7 @@ const Header = () => {
       </nav>
 
       <div className="phone">
-        <p>022 525252</p>
+        <p>+373 22 52 52 50</p>
       </div>
     </header>
   );
