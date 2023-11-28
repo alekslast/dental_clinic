@@ -1,7 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Miriam+Libre&family=Montserrat:wght@300;400&family=Open+Sans&family=Questrial&display=swap');
-
-
-
+@import url('https://fonts.googleapis.com/css2?family=Codec+Pro:wght@200;300;400&family=Open+Sans&display=swap');
 
 /* ----------HEADER---------- */
 .beauty-section--header {
@@ -35,13 +32,14 @@
     }
 
     & .beauty-ro {
-        font-family: 'Miriam Libre', sans-serif;
+        font-family: 'Codec Pro', sans-serif;
+        font: 'Codec Pro';
         font-size: 22px;
         color: #D6AE45;
     }
 
     & .beauty-ru {
-        font-family: 'Miriam Libre', sans-serif;
+        font-family: 'Codec Pro', sans-serif;
         font-size: 16px;
         color: #FDD5D4;
     }
@@ -50,7 +48,7 @@
         position: relative;
         left: 30px;
         top: 150px;
-        font-family: 'Libre Baskerville', serif;
+        font-family: 'Codec Pro', serif;
         font-size: 70px;
         font-weight: 200;
         letter-spacing: 2.7px;
@@ -83,7 +81,7 @@
 
     & .beauty-section--intro--logo h3 {
         text-transform: uppercase;
-        font-family: 'Libre Baskerville', serif;
+        font-family: 'Monserrat', sans-serif;
         font-weight: 200;
         font-size: 40px;
         color: #B98E49;
@@ -106,6 +104,7 @@
         display: flex;
         flex-direction: column;
         margin-left: 120px;
+        font-family: 'Monserrat', sans-serif;
     }
 
     & .beauty-section--intro--text h4 {
@@ -113,10 +112,11 @@
         font-size: 30px;
         color: #9F0B0B;
         margin: 120px 0 30px;
+        font-family: 'Monserrat', sans-serif;
     }
 
     & .beauty-section--intro--text h2 {
-        font-family: 'Libre Baskerville', serif;
+        font-family: 'Monserrat', sans-serif;
         font-weight: 200;
         font-size: 48px;
         color: #000;
@@ -140,7 +140,7 @@
     & h2 {
         position: relative;
         color: #000;
-        font-family: 'Libre Baskerville', serif;
+        font-family: 'Codec Pro', serif;
         font-size: 80px;
         font-weight: 200;
         letter-spacing: 1.5px;
@@ -186,14 +186,14 @@
         & h5 {
             margin-top: 30px;
             color: #132540;
-            font-family: 'Miriam Libre', sans-serif;
+            font-family: 'Codec Pro', sans-serif;
             font-size: 24px;
         }
 
         & h6 {
             color: #132540;
             text-transform: uppercase;
-            font-family: 'Questrial', sans-serif;
+            font-family: 'Codec Pro', sans-serif;
             font-weight: 100;
             font-size: 16px;
             letter-spacing: 0.5px;
@@ -202,7 +202,7 @@
 
         & p {
             color: #132540;
-            font-family: 'Open Sans', sans-serif;
+            font-family: 'Codec Pro', sans-serif;
             font-size: 14px;
             text-align: center;
         }
@@ -265,7 +265,7 @@
     }
 
     & h2 {
-        font-family: 'Questrial', sans-serif;
+        font-family: 'Codec Pro', sans-serif;
         font-weight: 200;
         font-size: 70px;
         color: #000;
@@ -273,7 +273,7 @@
     }
 
     & p {
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Codec Pro', sans-serif;
         font-weight: 300;
         font-size: 20px;
         color: #132540;
@@ -291,7 +291,7 @@
     width: 100vw;
     height: 100vh;
     position: relative;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Codec Pro', sans-serif;
     color: #D6AE45;
     background-color: #000;
 

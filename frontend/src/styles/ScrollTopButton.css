@@ -14,7 +14,7 @@
     cursor: pointer;
     z-index: 7;
     color: #000;
-    font-family: 'Questrial', sans-serif;
+    font-family: 'Codec Pro', sans-serif;
     visibility: hidden;
     transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out;
 }

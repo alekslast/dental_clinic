@@ -33,11 +33,9 @@ export default function SectionNavigation(props) {
                     <a href='#services'>
                     SERVICII
                     </a>
-                    
                     <Link to={`${path}/posts`}>
                     ACTIE
                     </Link>
-
                     <a href='#contacts'>
                     CONTACTE
                     </a>

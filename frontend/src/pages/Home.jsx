@@ -3,20 +3,19 @@ import { Link } from "react-router-dom";
 
 // Components
 import Footer from "../components/Footer";
+import Header from '../components/Header';
 
 // Styles
 import '../styles/Home.css';
+import '../styles/Header.css';
 
 export default function Home() {
     return (
         <div className="home">
-            <div className="home--epigraph">
-                <h2>3:16</h2>
-                <hr />
-            </div>
-
+          <Header /> {/* Добавлен Header */}
+           
             <div className="home--category--parent">
-                <div className="home--category">
+                <div className="home--category dent">
                     <Link
                         className="home--link dent"
                         to='stomatologie'>
@@ -51,6 +50,11 @@ export default function Home() {
             </div>
 
             <Footer />
+             {/* Add the left background image */}
+             <div className="background-image left" />
+
+            {/* Add the right background image */}
+            <div className="background-image right" />
         </div>
     )
 }

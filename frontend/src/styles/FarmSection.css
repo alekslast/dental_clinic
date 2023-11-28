@@ -48,13 +48,13 @@
     }
 
     & .farm-ro {
-        font-family: 'Miriam Libre', sans-serif;
+        font-family: 'Codec Pro', sans-serif;
         font-size: 22px;
         color: #D6AE45;
     }
 
     & .farm-ru {
-        font-family: 'Miriam Libre', sans-serif;
+        font-family: 'Codec Pro', sans-serif;
         font-size: 16px;
         color: #D6AE45;
     }
@@ -63,7 +63,7 @@
         position: relative;
         left: 75px;
         top: 150px;
-        font-family: 'Libre Baskerville', serif;
+        font-family: 'Codec Pro', serif;
         font-size: 70px;
         font-weight: 200;
         letter-spacing: 2.7px;
@@ -105,7 +105,7 @@
 
     & .farm-section--intro--logo h3 {
         text-transform: uppercase;
-        font-family: 'Libre Baskerville', serif;
+        font-family: 'Codec Pro', serif;
         font-weight: 200;
         font-size: 40px;
         color: #B98E49;
@@ -138,7 +138,7 @@
     }
 
     & .farm-section--intro--text h2 {
-        font-family: 'Libre Baskerville', serif;
+        font-family: 'Codec Pro', serif;
         font-weight: 200;
         font-size: 48px;
         color: #000;
@@ -162,7 +162,7 @@
     & h2 {
         position: relative;
         color: #fff;
-        font-family: 'Libre Baskerville', serif;
+        font-family: 'Codec Pro', serif;
         font-size: 80px;
         font-weight: 200;
         letter-spacing: 1.5px;
@@ -201,14 +201,14 @@
 
         & h5 {
             color: #132540;
-            font-family: 'Montserrat', sans-serif;
+            font-family: 'Codec Pro', sans-serif;
             font-size: 24px;
         }
 
         & h6 {
             color: #132540;
             text-transform: uppercase;
-            font-family: 'Questrial', sans-serif;
+            font-family: 'Codec Pro', sans-serif;
             font-weight: 100;
             font-size: 16px;
             letter-spacing: 0.5px;
@@ -217,7 +217,7 @@
 
         & p {
             color: #132540;
-            font-family: 'Montserrat', sans-serif;
+            font-family: 'Codec Pro', sans-serif;
             font-size: 16px;
             text-align: center;
         }
@@ -263,7 +263,7 @@
     }
 
     & h2 {
-        font-family: 'Questrial', sans-serif;
+        font-family: 'Codec Pro', sans-serif;
         font-weight: 200;
         font-size: 70px;
         color: #000;
@@ -271,7 +271,7 @@
     }
 
     & p {
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Codec Pro', sans-serif;
         font-weight: 300;
         font-size: 20px;
         color: #132540;
@@ -280,16 +280,12 @@
     }
 }
 
-
-
-
-
 /* ----------FOOTER---------- */
 .farm-section--footer {
     width: 100vw;
     height: max-content;
     position: relative;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Codec Pro', sans-serif;
     color: #D6AE45;
     background-color: #000;
 

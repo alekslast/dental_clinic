@@ -3,11 +3,11 @@
 
 /* Home */
 :root {
-    --link-container-size: 250px;
+    --link-container-size: 200px;
 }
 
 .home {
-    height: calc(100vh);
+    height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -17,47 +17,54 @@
     background-size: 100vw 100vh;
 }
   
+/* Дополнение к Header.css */
 
 .home--epigraph {
     position: relative;
-    top: -70px;
     max-width: 450px;
-    width: 700px;
     text-align: center;
 
     & h2, .epigraph--colored-p {
-        color: #b98f47;
+        color: #6B480D; /* Изменен цвет текста для согласования с цветом меню при hover */
     }
 
     & h2 {
-        font-size: 80px;
+        font-size: 45px;
+        font-family: 'Modern Antiqua';
+        width: 114px;
+        height: 39px;
+        margin-bottom: 10px;
     }
 
     & hr {
         height: 2px;
-        background-image: linear-gradient(90deg, #60400c, #c89116);
+        background-image: linear-gradient(90deg, #6B480D, #F4C963);
         border: none;
         margin-bottom: 5px;
+        width: 298px;
     }
 
     & p {
-        font-size: 20px;
-        font-family: 'Tenor Sans', sans-serif;
-        line-height: 90%;
+        font-size: 16px;
+        font-family: 'Modern Antiqua', sans-serif;
+        color: #6B480D; /* Изменен цвет текста для согласования с цветом меню при hover */
     }
 
-    & .epigraph--first-p {
+    .epigraph--first-p {
         letter-spacing: 1.5px;
     }
 }
 
+
+
 .home--category--parent {
     position: relative;
-    top: -30px;
+    top: 200px;
     display: flex;
     justify-content: space-evenly;
     align-items: flex-start;
-    width: 100%;
+    width: 70%;
+
 }
 
 .home--category {
@@ -70,7 +77,7 @@
 }
 
 .home--category p {
-    font-family: Miriam Libre;
+    font-family: 'Codec Pro';
     text-align: center;
     color: #b98e49;
     font-size: 20px;
@@ -145,4 +152,24 @@
     }
 }
 
+
+.background-image {
+    position: absolute;
+    width: 380px;
+    height: 634px;
+    background-size: cover;
+    z-index: -1; /* This places the background behind other content */
+}
+
+.background-image.left {
+    bottom: 0;
+    left: 0;
+    background-image: url('../assets/left_background_flover.png'); /* Replace with the actual path to your image */
+}
+
+.background-image.right {
+    top: 0; /* Adjust as needed to position the image slightly above the center */
+    right: 0;
+    background-image: url('../assets/right_background_flover.png'); /* Replace with the actual path to your image */
+}
 /* /Home */
