@@ -1,9 +1,11 @@
 /* Importing Google Fonts for the project */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200&family=Tenor+Sans&display=swap');
 
+
+
 /* Home */
 :root {
-    --link-container-size: 200px;
+    --link-container-size: 170px;
 }
 
 .home {
@@ -116,24 +118,25 @@
     }
 }
 
-
 .background-image {
     position: absolute;
-    width: 380px;
-    height: 634px;
-    background-size: cover;
     z-index: -1; /* This places the background behind other content */
 }
 
 .background-image.left {
     bottom: 0;
     left: 0;
-    background-image: url('../assets/left_background_flover.png'); /* Replace with the actual path to your image */
+    background-image: url('../assets/left_background_flover.png');
+    background-size: 380px 634px; /* Правильные размеры для левой картинки */
+    width: 380px;
+    height: 634px;
 }
 
 .background-image.right {
-    top: 0; /* Adjust as needed to position the image slightly above the center */
+    top: 0;
     right: 0;
-    background-image: url('../assets/right_background_flover.png'); /* Replace with the actual path to your image */
+    background-image: url('../assets/right_background_flover.png');
+    background-size: 351px 395px; /* Правильные размеры для правой картинки */
+    width: 351px;
+    height: 395px;
 }
-/* /Home */

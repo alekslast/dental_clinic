@@ -21,7 +21,7 @@
   }
 
   & h2 {
-      font-size: 45px;
+      font-size: 32px;
       font-family: 'Modern Antiqua';
       width: 114px;
       height: 39px;
@@ -37,7 +37,7 @@
   }
 
   & p {
-      font-size: 16px;
+      font-size: 14px;
       font-family: 'Modern Antiqua', sans-serif;
       color: #6B480D; /* Изменен цвет текста для согласования с цветом меню при hover */
   }
@@ -52,7 +52,7 @@
   }
 
   & h2 {
-      font-size: 45px;
+      font-size: 32px;
       font-family: 'Modern Antiqua';
       width: 114px;
       height: 39px;
@@ -68,7 +68,7 @@
   }
 
   & p {
-      font-size: 16px;
+      font-size: 14px;
       font-family: 'Modern Antiqua', sans-serif;
       color: #6B480D; /* Изменен цвет текста для согласования с цветом меню при hover */
   }
@@ -99,6 +99,7 @@
   }
   
   .menu ul {
+   
     list-style: none;
     display: flex;
     margin: 0; /* Добавлено, чтобы убрать внешний отступ у списка */
@@ -106,12 +107,14 @@
   }
   
   .menu li {
+    font-size: 14px;
     margin: 0 15px;
     position: relative; /* Добавлено, чтобы позиционировать дочерний элемент */
   }
   
   /* Общие стили для ссылок в меню */
   .menu a {
+    
     text-decoration: none;
     color: #6B480D; /* Цвет текста */
     transition: color 0.3s ease; /* Плавное изменение цвета текста при hover */
