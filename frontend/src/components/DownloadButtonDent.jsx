@@ -3,7 +3,7 @@ import React from 'react';
 
 const DownloadButton = () => {
   const handleDownload = () => {
-    const fileUrl = process.env.PUBLIC_URL + '../Price/price.xlsx';
+    const fileUrl = process.env.PUBLIC_URL + '../PriceDent/Aero_RU.doc';
 
     fetch(fileUrl)
       .then((response) => response.blob())
@@ -11,7 +11,7 @@ const DownloadButton = () => {
         const url = window.URL.createObjectURL(new Blob([blob]));
         const a = document.createElement('a');
         a.href = url;
-        a.download = 'price.xlsx';
+        a.download = '316_Dent_Price_Ru.doc';
         document.body.appendChild(a);
         a.click();
         document.body.removeChild(a);

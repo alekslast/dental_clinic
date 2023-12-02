@@ -35,13 +35,13 @@
         }
     
         & .dent-ro {
-            font-family: 'Codec Pro', sans-serif;
+            font-family: 'Monserrat', sans-serif;
             font-size: 22px;
             color: #D6AE45;
         }
     
         & .dent-ru {
-            font-family: 'Codec Pro', sans-serif;
+            font-family: 'Monserrat', sans-serif;
             font-size: 16px;
             color: #B98E49;
         }
@@ -50,7 +50,7 @@
             position: relative;
             left: 30px;
             top: 150px;
-            font-family: 'Codec Pro', san-serif;
+            font-family: 'Monserrat', san-serif;
             font-size: 70px;
             font-weight: 200;
             letter-spacing: 2.7px;
@@ -85,7 +85,7 @@
 
     & .dent-section--intro--logo h3 {
         text-transform: uppercase;
-        font-family: 'Codec Pro', san-serif;
+        font-family: 'Monserrat', san-serif;
         font-weight: 200;
         font-size: 40px;
         color: #D6AE45;
@@ -118,9 +118,9 @@
     }
 
     & .dent-section--intro--text h2 {
-        font-family: 'Codec Pro', serif;
+        font-family: 'Monserrat', serif;
         font-weight: 200;
-        font-size: 48px;
+        font-size: 14px;
         color: #000;
         letter-spacing: 1.5px;
         padding-right: 250px;
@@ -142,7 +142,7 @@
     & h2 {
         position: relative;
         color: #fff;
-        font-family: 'Codec Pro', serif;
+        font-family: 'Monserrat', serif;
         font-size: 80px;
         font-weight: 200;
         letter-spacing: 1.5px;
@@ -180,26 +180,43 @@
         z-index: 3;
 
         & h5 {
-            color: #132540;
-            font-family: 'Codec Pro', sans-serif;
+            color: #D6AE45;
+            font-family: 'Monserrat', sans-serif;
             font-size: 24px;
         }
 
         & h6 {
-            color: #132540;
+            color: #D6AE45;
             text-transform: uppercase;
-            font-family: 'Codec Pro', sans-serif;
+            font-family: 'Monserrat', sans-serif;
             font-weight: 100;
             font-size: 16px;
             letter-spacing: 0.5px;
             margin: 15px 0 30px 0;
         }
 
+        & ul{
+            color: #132540;
+            font-size: 12px;
+        }
+
         & p {
             color: #132540;
-            font-family: 'Codec Pro', sans-serif;
-            font-size: 16px;
+            font-family: 'Monserrat', sans-serif;
+            font-size: 12px;
             text-align: center;
+        }
+        & .custom-button {
+            background-color: #D6AE45;
+            color: #fff; /* Цвет текста */
+            margin-top: 20px;
+            padding: 10px 20px; /* Отступы вокруг текста */
+            border: none; /* Убираем границу */
+            border-radius: 5px; /* Закругляем углы */
+            cursor: pointer; /* Делаем курсор в форме руки при наведении */
+        }
+       & .custom-button:hover {
+            background-color: #daa00f; /* новый цвет при наведении */
         }
     }
 
@@ -222,10 +239,6 @@
     }
 }
 
-
-
-
-
 /* ----------COMMITED---------- */
 .dent-section--commited {
     background-image: url(../assets/DentSection/commited-bg.png);
@@ -243,7 +256,7 @@
     }
 
     & h2 {
-        font-family: 'Codec Pro', sans-serif;
+        font-family: 'Monserrat', sans-serif;
         font-weight: 200;
         font-size: 70px;
         color: #000;
@@ -251,13 +264,14 @@
     }
 
     & p {
-        font-family: 'Codec Pro', sans-serif;
+        font-family: 'Monserrat', sans-serif;
         font-weight: 300;
         font-size: 20px;
         color: #132540;
         margin-top: 80px;
         padding: 0 360px;
     }
+    
 }
 
 
@@ -297,7 +311,7 @@
     }    
 
     & .dent-section--lady-doc--content h4 {
-        font-family: 'Codec Pro', sans-serif;  
+        font-family: 'Monserrat', sans-serif;  
         font-weight: 200;
         font-size: 30px;
         color: #D6AE45;
@@ -305,7 +319,7 @@
     }
 
     & .dent-section--lady-doc--content h2 {
-        font-family: 'Codec Pro', sans-serif;
+        font-family: 'Monserrat', sans-serif;
         font-weight: 200;
         font-size: 65px;
         color: #000;
@@ -317,15 +331,12 @@
 }
 
 
-
-
-
 /* ----------FOOTER---------- */
 .dent-section--footer {
     width: 100vw;
     height: max-content;
     position: relative;
-    font-family: 'Codec Pro', sans-serif;
+    font-family: 'Monserrat', sans-serif;
     color: #D6AE45;
     background-color: #000;
     display: flex;
@@ -338,7 +349,7 @@
     }
 
     & p {
-        font-size: 18px;
+        font-size: 12px;
     }
 
     & img {

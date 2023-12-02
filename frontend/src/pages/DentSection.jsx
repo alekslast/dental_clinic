@@ -1,5 +1,6 @@
 // Components
 import ScrollTopButton from '../components/ScrollTopButton';
+import DownloadButton from '../components/DownloadButtonDent';
 
 // Styles
 import '../styles/DentSection.css';
@@ -35,22 +36,24 @@ export default function DentSection() {
                 </div>
             </section>
 
-            <section className='dent-section--intro'>
+            <section className='dent-section--intro' id='promoții'>
                 <div className='dent-section--intro--inner'>
                     <div className='dent-section--intro--tooth'>
                         <img src={toothIntro} />
                     </div>
 
-                    <div className='dent-section--intro--content'>
+                    <div className='dent-section--intro--content' >
                         <div className='dent-section--intro--logo'>
                             <h3>DENT</h3>
                             <img src={wave} alt='decorative wave' />
                         </div>
                         
                         <div className='dent-section--intro--text'>
-                            <h4>Ne place să vedem zâmbete fericite.</h4>
-                            <h2>Hai să-ți facem sănătatea dentară
-o prioritate! <br /> a priority!</h2>
+                            <h4>Bine ați venit la Shevchenko Dent!</h4>
+                            <h2>Creăm o experiență unică pentru fiecare pacient,
+                                  Aveți încredere, îngrijirea zâmbetului 
+                                  dumneavoastră este misiunea noastră, 
+                                  și vă așteptăm cu nerăbdare!</h2>
                         </div>
                     </div>
                 </div>
@@ -74,8 +77,10 @@ o prioritate! <br /> a priority!</h2>
                                 <li>Tratamentul paradontitei</li>
                                 <li>Restauraţie cu ceramica</li>
                                 </ul>
-                        </div>
+                                <DownloadButton />      
                     </div>
+                        </div>
+                     
 
                     <div className='dent--card-element'>
                         <div className='dent-circle-placeholder' />
@@ -90,7 +95,9 @@ o prioritate! <br /> a priority!</h2>
                             <li>Coroniţă implant</li>
                             <li>Coroniţă ceramică implant</li>
                             </ul>
+                            <DownloadButton /> 
                         </div>
+                           
                     </div>
 
                     <div className='dent--card-element'>
@@ -106,13 +113,13 @@ o prioritate! <br /> a priority!</h2>
                                 <li>Extracţia dintelui retinat</li>
                                 <li>Suturarea (o sutură)</li>
                             </ul>
-
-                        </div>
+                            <DownloadButton />  
+                        </div>                        
                     </div>
                 </div>
             </section>
 
-            <section className='dent-section--commited'>
+            {/* <section className='dent-section--commited'>
                 <img src={sdLogo} alt='logo face' className='sd-logo' />
                 <h2>Bun venit în clinica noastra</h2>
                 <p>
@@ -133,19 +140,19 @@ Personalul nostru medical experimentat și echipamentele moderne vă asigură tr
                         <h3>Descărca lista de prețuri a serviciilor noastre</h3>
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             <section className='dent-section--footer'>
                 <img src={footerPic} />
                 <div className='dent-section--footer--content'>
                     <div className='working-hours'>
                         <h3>Program de lucru</h3>
-                        <b><p>Luni - Duminica
+                        <p>Luni - Duminica
                                 9:00 - 20:00
-                        </p></b>
+                        </p>
                        
-                        <b><p>TProgramare prealabilă 
-                            Tel: 022 52 52 50</p></b>               
+                        <p>TProgramare prealabilă 
+                            Tel: 022 52 52 50</p>              
                     </div>
 
                     <div className='contact-info' id='contacts'>

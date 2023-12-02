@@ -1,6 +1,6 @@
 // Components
 import ScrollTopButton  from '../components/ScrollTopButton';
-import DownloadButton from '../components/DownloadButton';
+import DownloadButton from '../components/DownloadButtonBeauty';
 
 // Styles
 import '../styles/BeautySection.css';
@@ -89,7 +89,7 @@ export default function BeautySection() {
                                 <li>Coafuri pentru doamne</li>   
                                 <li>Proceduri  pentru păr</li>                            
                              </ul>
-                             <button class="custom-button">Descărcați prețuri</button>
+                             <DownloadButton />  
                             </div>                                                
                         </div>
                     <div className='beauty--card-element'>
@@ -102,7 +102,7 @@ export default function BeautySection() {
                                 <li>Manichiură</li>
                                 <li>Pedichiură </li>
                                 <li>Extensii de unghii</li>  
-                                <button class="custom-button">Descărcați prețuri</button>                           
+                                <DownloadButton />  
                              </ul>
                         </div>  
                     </div>
@@ -145,7 +145,8 @@ export default function BeautySection() {
             <p>Luni - Duminica</p>
             <p>9:00  - 20:00 </p>
             <p>Programare prealabilă </p>
-            <p>Tel: 022 52 52 50</p>                     
+            <p>Tel: 022 52 52 50 
+            <br/>Mob +373 78 52 66  </p>                  
         </div>
 
         <div className='contact-info' id='contacts'>
@@ -163,10 +164,7 @@ export default function BeautySection() {
         </a>
     </div>
     </div>
-
-   
 </div>
-
             </section>
         </>
     )

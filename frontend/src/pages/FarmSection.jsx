@@ -53,18 +53,23 @@ export default function FarmSection() {
                 
             </section>
 
-            <section className='farm-section--intro'>
+            <section className='farm-section--intro' id='promoții'>
                 <div className='farm-section--intro--inner'>
                     <div className='farm-section--intro--content'>
                         <div className='farm-section--intro--logo'>
                             <h3>Home</h3>
                             <img src={wave} alt='decorative wave' />
-                        </div>
-                        
+                        </div>                       
                         <div className='farm-section--intro--text'>
-                            <h4>Ne place să vedem zâmbete sanatoase.</h4>
-                            <h2>Hai să-ți facem sănătatea 
-o prioritate!</h2>
+                            <h4>Bine ați venit la Farmacia Noastră!</h4>
+                            <h2>
+                                 Suntem aici pentru a vă oferi 
+                                servicii farmaceutice de înaltă calitate 
+                                și pentru a răspunde nevoilor dumneavoastră de 
+                                sănătate. Cu o echipă dedicată și o gamă variată 
+                                de produse, suntem gata să vă ajutăm să vă mențineți
+                                sănătatea și bunăstarea.
+                            </h2>
                         </div>
                     </div>
 
@@ -105,7 +110,7 @@ o prioritate!</h2>
                         <div className='farm-circle-placeholder' />
                         <img src={doctor1} className='farm-card-img' />
                         <div className='farm-services-card'>
-                            <h5>Asistență medical-sanitară</h5>
+                            <h5>Asistență<br/> medical-sanitară</h5>
                            <br/>
                             <p>Bine ați venit în farmacia noastră, unde sănătatea și bunăstarea dvs. sunt prioritatea noastră.</p>
                         </div>
@@ -113,14 +118,14 @@ o prioritate!</h2>
                 </div>
             </section>
 
-            <section className='farm-section--commited'>
+            {/* <section className='farm-section--commited'>
                 <img src={logoPill} alt='logo face' />
                 <h2>Bun venit în farmacia noastra</h2>
                 <p>
                 Bine ați venit în farmacia noastră, unde sănătatea și bunăstarea dvs. sunt prioritatea noastră.
 Ne mândrim cu faptul că oferim o gamă largă de medicamente și consultanță profesională pentru menținerea sănătății și bunăstării dvs.
                 </p>
-            </section>
+            </section> */}
 
             <section className='farm-section--footer'>
                 <video src={video} autoPlay muted loop className='farm-bgVideo' />
@@ -131,9 +136,9 @@ Ne mândrim cu faptul că oferim o gamă largă de medicamente și consultanță
                 <div className='farm-section--footer--content'>
                     <div className='working-hours'>
                         <h3>Program de lucru</h3>
-                        <b><p>Luni - Duminica <br/>9:00 - 20:00
-                        </p></b><br/>                      
-                        <b><p>Programare prealabilă </p></b>
+                        <p>Luni - Duminica <br/>9:00 - 20:00
+                        </p><br/>                      
+                        <p>Programare prealabilă </p>
                         <p>Tel: 022 52 52 50</p>                       
                     </div>
 

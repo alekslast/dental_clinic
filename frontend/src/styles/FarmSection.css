@@ -48,13 +48,13 @@
     }
 
     & .farm-ro {
-        font-family: 'Codec Pro', sans-serif;
+        font-family: 'Monserrat', sans-serif;
         font-size: 22px;
         color: #D6AE45;
     }
 
     & .farm-ru {
-        font-family: 'Codec Pro', sans-serif;
+        font-family: 'Monserrat', sans-serif;
         font-size: 16px;
         color: #D6AE45;
     }
@@ -63,7 +63,7 @@
         position: relative;
         left: 75px;
         top: 150px;
-        font-family: 'Codec Pro', serif;
+        font-family: 'Monserrat', serif;
         font-size: 70px;
         font-weight: 200;
         letter-spacing: 2.7px;
@@ -105,7 +105,7 @@
 
     & .farm-section--intro--logo h3 {
         text-transform: uppercase;
-        font-family: 'Codec Pro', serif;
+        font-family: 'Monserrat', serif;
         font-weight: 200;
         font-size: 40px;
         color: #B98E49;
@@ -133,14 +133,14 @@
     & .farm-section--intro--text h4 {
         font-weight: 200;
         font-size: 30px;
-        color: #31719E;
+        color: #B98E49;
         margin: 120px 0 30px;
     }
 
     & .farm-section--intro--text h2 {
-        font-family: 'Codec Pro', serif;
+        font-family: 'Monserrat', serif;
         font-weight: 200;
-        font-size: 48px;
+        font-size: 14px;
         color: #000;
         letter-spacing: 1.5px;
         padding-right: 20px;
@@ -162,7 +162,7 @@
     & h2 {
         position: relative;
         color: #fff;
-        font-family: 'Codec Pro', serif;
+        font-family: 'Monserrat', serif;
         font-size: 80px;
         font-weight: 200;
         letter-spacing: 1.5px;
@@ -200,15 +200,15 @@
         z-index: 3;
 
         & h5 {
-            color: #132540;
-            font-family: 'Codec Pro', sans-serif;
+            color: #B98E49;
+            font-family: 'Monserrat', sans-serif;
             font-size: 24px;
         }
 
         & h6 {
             color: #132540;
             text-transform: uppercase;
-            font-family: 'Codec Pro', sans-serif;
+            font-family: 'Monserrat', sans-serif;
             font-weight: 100;
             font-size: 16px;
             letter-spacing: 0.5px;
@@ -217,9 +217,9 @@
 
         & p {
             color: #132540;
-            font-family: 'Codec Pro', sans-serif;
-            font-size: 16px;
-            text-align: center;
+            font-family: 'Monserrat', sans-serif;
+            font-size: 14px;
+            text-align: left;
         }
     }
 
@@ -263,7 +263,7 @@
     }
 
     & h2 {
-        font-family: 'Codec Pro', sans-serif;
+        font-family: 'Monserrat', sans-serif;
         font-weight: 200;
         font-size: 70px;
         color: #000;
@@ -271,7 +271,7 @@
     }
 
     & p {
-        font-family: 'Codec Pro', sans-serif;
+        font-family: 'Monserrat', sans-serif;
         font-weight: 300;
         font-size: 20px;
         color: #132540;
@@ -285,7 +285,7 @@
     width: 100vw;
     height: max-content;
     position: relative;
-    font-family: 'Codec Pro', sans-serif;
+    font-family: 'Monserrat', sans-serif;
     color: #D6AE45;
     background-color: #000;
 

@@ -32,14 +32,14 @@
     }
 
     & .beauty-ro {
-        font-family: 'Codec Pro', sans-serif;
-        font: 'Codec Pro';
+        font-family: 'Monserrat', sans-serif;
+        font: 'Monserrat';
         font-size: 22px;
         color: #D6AE45;
     }
 
     & .beauty-ru {
-        font-family: 'Codec Pro', sans-serif;
+        font-family: 'Monserrat', sans-serif;
         font-size: 16px;
         color: #B98E49;
     }
@@ -48,7 +48,7 @@
         position: relative;
         left: 30px;
         top: 150px;
-        font-family: 'Codec Pro', serif;
+        font-family: 'Monserrat', serif;
         font-size: 70px;
         font-weight: 200;
         letter-spacing: 2.7px;
@@ -111,16 +111,15 @@
     & .beauty-section--intro--text h4 {
         font-weight: 200;
         font-size: 30px;
-        color: #9F0B0B;
+        color: #D6AE45;
         margin: 120px 0 30px;
-        font-family: 'Monserrat', sans-serif;
     }
 
     & .beauty-section--intro--text h2 {
         font-family: 'Monserrat', sans-serif;
         width: 700px;
         font-weight: 200;
-        font-size: 20px;
+        font-size: 12px;
         color: #000;
         letter-spacing: 1.5px;
         padding-right: 240px;
@@ -142,7 +141,7 @@
     & h2 {
         position: relative;
         color: #000;
-        font-family: 'Codec Pro', serif;
+        font-family: 'Monserrat', serif;
         font-size: 80px;
         font-weight: 200;
         letter-spacing: 1.5px;
@@ -187,28 +186,34 @@
 
         & h5 {
             margin-top: 30px;
-            color: #132540;
-            font-family: 'Codec Pro', sans-serif;
+            color: #D6AE45;
+            font-family: 'Monserrat', sans-serif;
             font-size: 24px;
         }
 
         & h6 {
-            color: #132540;
+            color: #D6AE45;
             text-transform: uppercase;
-            font-family: 'Codec Pro', sans-serif;
+            font-family: 'Monserrat', sans-serif;
             font-weight: 100;
             font-size: 16px;
             letter-spacing: 0.5px;
             margin: 15px 0 30px 0;
         }
+        & ul {
+            color: #132540;
+            font-family: 'Monserrat', sans-serif;
+            font-size: 14px;
+            
+        }
 
         & p {
             color: #132540;
-            font-family: 'Codec Pro', sans-serif;
-            font-size: 14px;
+            font-family: 'Monserrat', sans-serif;
+            font-size: 12px;
             text-align: center;
         }
-
+        
         & .beauty-plus-btn {
             height: 25px;
             width: 4px;
@@ -221,7 +226,7 @@
             content: '';
             display: block;
             height: 25px;
-            width: 4px;
+           width: 4px;
             background-color: #9F0B0B;
             border-radius: 999999px;
             transform: rotate(90deg);
@@ -276,7 +281,7 @@
     }
 
     & h2 {
-        font-family: 'Codec Pro', sans-serif;
+        font-family: 'Monserrat', sans-serif;
         font-weight: 200;
         font-size: 70px;
         color: #000;
@@ -284,7 +289,7 @@
     }
 
     & p {
-        font-family: 'Codec Pro', sans-serif;
+        font-family: 'Monserrat', sans-serif;
         font-weight: 300;
         font-size: 20px;
         color: #132540;
