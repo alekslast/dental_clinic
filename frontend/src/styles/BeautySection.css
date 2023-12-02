@@ -85,6 +85,7 @@
         font-weight: 200;
         font-size: 40px;
         color: #B98E49;
+        margin-right:50px;
         letter-spacing: 1.5px;
         text-align: right;
         position: relative;
@@ -117,8 +118,9 @@
 
     & .beauty-section--intro--text h2 {
         font-family: 'Monserrat', sans-serif;
+        width: 700px;
         font-weight: 200;
-        font-size: 48px;
+        font-size: 20px;
         color: #000;
         letter-spacing: 1.5px;
         padding-right: 240px;
@@ -224,6 +226,19 @@
             border-radius: 999999px;
             transform: rotate(90deg);
         }
+
+        & .custom-button {
+            background-color: #D6AE45;
+            color: #fff; /* Цвет текста */
+            margin-top: 20px;
+            padding: 10px 20px; /* Отступы вокруг текста */
+            border: none; /* Убираем границу */
+            border-radius: 5px; /* Закругляем углы */
+            cursor: pointer; /* Делаем курсор в форме руки при наведении */
+        }
+       & .custom-button:hover {
+            background-color: #daa00f; /* новый цвет при наведении */
+        }
     }
 
     & .beauty-circle-placeholder {
@@ -282,10 +297,6 @@
     }
 }
 
-
-
-
-
 /* ----------FOOTER---------- */
 .beauty-section--footer {
     width: 100vw;
@@ -313,6 +324,7 @@
     }
 
     & .beauty-section--footer--content {
+        margin-left: 100px;
         position: absolute;
         bottom: 100px;
         padding: 0 100px;
@@ -329,13 +341,9 @@
             margin: 0;
         }
 
-        & .contact-info p:nth-child(odd) {
-            margin-bottom: 10px;
-        }
-
         & .socials {
             display: flex;
-            align-items: center;
+            align-items: end;
 
             & img {
                 height: 35px;
@@ -362,7 +370,7 @@
 
 .container {
   width: 100%;
-  margin-top: 100px;
+  margin-top: 30px;
   display: flex;
   justify-content: center;
   height: 300px;
@@ -377,24 +385,23 @@
     position: relative;
     overflow: hidden;
 
+   
     &:nth-of-type(1) {
+        background: url("../assets/BeautySection/image (6).jpg") no-repeat 50% / cover;
+      }
+    &:nth-of-type(2) {
         background: url("../assets/BeautySection/image (1).jpg") no-repeat 50% / cover;
-      }
-      
-      &:nth-of-type(2) {
-        background: url("../assets/BeautySection/image (2).jpg") no-repeat 50% / cover;
-      }
-      
-      &:nth-of-type(3) {
-        background: url("../assets/BeautySection/image (3).jpg") no-repeat 50% / cover;
-      }
+      }       
       
       &:nth-of-type(4) {
         background: url("../assets/BeautySection/image (4).jpg") no-repeat 50% / cover;
       }
-      
 
-    .content {
+      &:nth-of-type(3) {
+        background: url("../assets/BeautySection/image (3).jpg") no-repeat 50% / cover;
+      }
+      
+    .gallery {
       font-size: 1.5rem;
       color: #fff;
       display: flex;
@@ -414,17 +421,15 @@
       transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
       visibility: hidden;
 
-      span {
+     & .span {
         display: block;
         margin-top: 5px;
-        font-size: 1.2rem;
       }
     }
-
     &:hover {
       flex: 0 0 250px;
-      box-shadow: 1px 3px 15px #7645d8;
-      transform: translatey(-30px);
+      box-shadow: 1px 3px 15px #FDD5D4;
+      transform: translatey(0px);
     }
 
     &:hover .content {

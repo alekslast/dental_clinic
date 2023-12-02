@@ -1,10 +1,9 @@
 // Components
 import ScrollTopButton  from '../components/ScrollTopButton';
+import DownloadButton from '../components/DownloadButton';
 
 // Styles
 import '../styles/BeautySection.css';
-// Default theme
-
 
 // Images
 import beautyLogo       from '../assets/BeautySection/logo1.png';
@@ -18,7 +17,6 @@ import beautyLogoFace   from '../assets/BeautySection/beauty-logo-face.png';
 import fbLogo           from '../assets/fb-logo.png';
 import igLogo           from '../assets/ig-logo.png';
 
-//Photo Gallery
 
 // Video
 import video            from '../assets/BeautySection/video1.mp4';
@@ -50,8 +48,8 @@ export default function BeautySection() {
                             <img src={wave} alt='decorative wave' />
                         </div>                     
                         <div className='beauty-section--intro--text'>
-                            <h4>Ne place să vedem zâmbete fericite.</h4>
-                            <h2>Hai să-ți facem frumusețea o prioritate! </h2>
+                            <h4>Bine ați venit la "Miro-Studio".</h4>
+                            <h2>Încredințați mâinilor pricepute ale stilistilor noștri și simțiți în fiecare mișcare grijă pentru strălucirea dvs. exterioară și interioară. Creăm imagini unice cu dragoste - pentru voi!</h2>
                         </div>
                     </div>
                 </div>
@@ -67,31 +65,46 @@ export default function BeautySection() {
                     <div className='beauty--card-element'>
                         <div className='beauty-circle-placeholder' />
                         <img src={cardPic1} className='beauty-card-img' />
-                        <div className='beauty-services-card'>
+                        <div className='beauty-services-card'>                                                  
                             <h5>Machiaj</h5>
                             <h6>Oferim următoarele servicii:</h6>
-                            <p>machiaj, extensii de gene, corectarea sprâncenelor</p>
-                        </div>
+                            <ul>
+                                <li>Machiaj</li>
+                                <li>Extensii de gene</li>
+                                <li>Corectarea sprâncenelor</li>                             
+                             </ul>
+                             <DownloadButton />                          
+                        </div> 
+                       
+                                         
                     </div>
-
                     <div className='beauty--card-element'>
                         <div className='beauty-circle-placeholder' />
                         <img src={cardPic2} className='beauty-card-img' />
-                        <div className='beauty-services-card'>
+                        <div className='beauty-services-card'>                                                  
                             <h5>Coafor</h5>
                             <h6>Oferim următoarele servicii:</h6>
-                            <p>tuns pentru bărbați și femei coafuri pentru doamne, aranjare, vopsire, șuvițe, proceduri de tratament pentru păr</p>
+                            <ul>                         
+                                <li>Aranjare, Vopsire, Suvițe</li>    
+                                <li>Coafuri pentru doamne</li>   
+                                <li>Proceduri  pentru păr</li>                            
+                             </ul>
+                             <button class="custom-button">Descărcați prețuri</button>
+                            </div>                                                
                         </div>
-                    </div>
-
                     <div className='beauty--card-element'>
                         <div className='beauty-circle-placeholder' />
                         <img src={cardPic3} className='beauty-card-img' />
-                        <div className='beauty-services-card'>
+                        <div className='beauty-services-card'>                                                  
                             <h5>Manichiură</h5>
                             <h6>Oferim următoarele servicii:</h6>
-                            <p>manichiură, pedichiură și extensii de unghii</p>
-                        </div>
+                            <ul>
+                                <li>Manichiură</li>
+                                <li>Pedichiură </li>
+                                <li>Extensii de unghii</li>  
+                                <button class="custom-button">Descărcați prețuri</button>                           
+                             </ul>
+                        </div>  
                     </div>
                 </div>
             </section>
@@ -101,27 +114,21 @@ export default function BeautySection() {
                 <h2>Bun venit în salonul nostru</h2>            
                 <div class="container">
   <div>
-    <div class="content">
-      <h3>Jane Doe</h3>
-      <span>UI & UX Designer</span>
+    <div class="gallery">
+      <h3>Orar Convenabil</h3>
+      <span>Descoperiți frumusețea la timp.</span>
     </div>
   </div>
   <div>
-    <div class="content">
-      <h1>Alex Smith</h1>
-      <span>CEO Expert</span>
+    <div class="gallery">
+      <h4>Ușor de Găsit</h4>
+      <p>Salonul este ușor de găsit, iar frumusețea - ușor de atins.</p>
     </div>
   </div>
   <div>
-    <div class="content">
-      <h1>Emily New</h1>
-      <span>Web Designer</span>
-    </div>
-  </div>
-  <div>
-    <div class="content">
-      <h1>Lisa Boley</h1>
-      <span>Marketing Coordinator</span>
+    <div class="gallery">
+      <h4>Ridicăm Nivelul Frumuseții</h4>
+      <span> Experiența noastră este secretul frumuseții tale.</span>
     </div>
   </div>
 </div>
@@ -136,21 +143,21 @@ export default function BeautySection() {
                 <div className='beauty-section--footer--content'>
                     <div className='working-hours'>
                         <h3>Program de lucru</h3>
-                        <b><p>Luni - Duminica</p></b>
+                        <p>Luni - Duminica</p>
                         <p>9:00  - 20:00 </p>
-
-                        <b><p>Programare prealabilă </p></b>
-                        <p>Tel: 022 52 52 50</p>
-                        
+                        <p>Programare prealabilă </p>
+                        <p>Tel: 022 52 52 50</p>                     
                     </div>
 
                     <div className='contact-info' id='contacts'>
-                        <h3>Adresa</h3>
-                        <p>Or. Chisinau</p>
-                        <p>Dacia 60/5 A</p>
-
-                        <p>Tel: (022) 52 52 50</p>
-                        <p>vitastef@mail.ru</p>
+                                                
+                            <h3>Adresa</h3>
+                            <div className='address-info'>
+                                <p>Or. Chisinau</p>
+                                <p>Dacia 60/5 A</p>
+                                <p>vitastef@mail.ru</p>
+                            </div>
+                       
                     </div>
 
                     <div className='socials'>
