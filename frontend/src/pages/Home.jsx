@@ -47,14 +47,16 @@ export default function Home() {
                     </Link>
                     <p>Tot ceea ce este invizibil este etern.</p>
                 </div>
+               
             </div>
 
-            <Footer />
+           
              {/* Add the left background image */}
              <div className="background-image left" />
 
             {/* Add the right background image */}
             <div className="background-image right" />
+            <Footer />  
         </div>
     )
 }

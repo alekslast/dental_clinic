@@ -3,6 +3,8 @@ import ScrollTopButton  from '../components/ScrollTopButton';
 
 // Styles
 import '../styles/BeautySection.css';
+// Default theme
+
 
 // Images
 import beautyLogo       from '../assets/BeautySection/logo1.png';
@@ -15,6 +17,8 @@ import wave             from '../assets/BeautySection/wave1.png';
 import beautyLogoFace   from '../assets/BeautySection/beauty-logo-face.png';
 import fbLogo           from '../assets/fb-logo.png';
 import igLogo           from '../assets/ig-logo.png';
+
+//Photo Gallery
 
 // Video
 import video            from '../assets/BeautySection/video1.mp4';
@@ -31,8 +35,7 @@ export default function BeautySection() {
                         <p className='beauty-ro'>Tot vizibilul e temporar</p>
                         <p className='beauty-ru'>Все видимое временно</p>
                     </div>
-                </div>
-                
+                </div>       
             </section>
 
             <section className='beauty-section--intro'>
@@ -58,7 +61,7 @@ export default function BeautySection() {
                 <img src={brush} className='transition-brush' />
 
                 <h2>Servicii</h2>
-
+              
                 <div className='beauty--cards'>
                     
                     <div className='beauty--card-element'>
@@ -95,11 +98,34 @@ export default function BeautySection() {
 
             <section className='beauty-section--commited'>
                 <img src={beautyLogoFace} alt='logo face' />
-                <h2>Bun venit în salonul nostru</h2>
-                <p>
-                Culorile și aromele toamnei inspiră întotdeauna confort și căldură în zilele reci.
-Salonul nostru de înfrumusețare oferă o gamă largă de servicii pentru a vă ajuta să vă puneți în valoare frumusețea naturală și să vă simțiți incredibil de încrezătoare.
-                </p>
+                <h2>Bun venit în salonul nostru</h2>            
+                <div class="container">
+  <div>
+    <div class="content">
+      <h3>Jane Doe</h3>
+      <span>UI & UX Designer</span>
+    </div>
+  </div>
+  <div>
+    <div class="content">
+      <h1>Alex Smith</h1>
+      <span>CEO Expert</span>
+    </div>
+  </div>
+  <div>
+    <div class="content">
+      <h1>Emily New</h1>
+      <span>Web Designer</span>
+    </div>
+  </div>
+  <div>
+    <div class="content">
+      <h1>Lisa Boley</h1>
+      <span>Marketing Coordinator</span>
+    </div>
+  </div>
+</div>
+                
             </section>
             <section className='beauty-section--footer'>
                 <video src={video} autoPlay muted loop id='myVideo' />

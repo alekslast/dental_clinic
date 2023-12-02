@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 
-
 export default function SectionNavigation(props) {
 
     const path = props.path
@@ -26,7 +25,7 @@ export default function SectionNavigation(props) {
         <>
             <header className='nav-header'>
                 <nav className={sectionDependentNavStyle}>
-                    <Link to='/'>
+                    <Link  to='/'>
                     PRINCIPALA
                     </Link>
 
