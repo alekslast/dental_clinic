@@ -36,7 +36,7 @@ export default function BeautySection() {
                 </div>       
             </section>
 
-            <section className='beauty-section--intro'>
+            <section className='beauty-section--intro' id='promoții'>
                 <div className='beauty-section--intro--inner'>
                     <div className='beauty-section--intro--lady'>
                         <img src={lady} />
@@ -44,7 +44,7 @@ export default function BeautySection() {
 
                     <div className='beauty-section--intro--content'>
                         <div className='beauty-section--intro--logo'>
-                            <h3>Beauty</h3>
+                            <h3>PROMOȚII</h3>
                             <img src={wave} alt='decorative wave' />
                         </div>                     
                         <div className='beauty-section--intro--text'>
@@ -136,39 +136,37 @@ export default function BeautySection() {
             </section>
             <section className='beauty-section--footer'>
                 <video src={video} autoPlay muted loop id='myVideo' />
-                {/* <img src={bgVideo} id='myVideo' /> */}
-                {/* <object data={bgVideo} /> */}
-                {/* <embed src={bgVideo} /> */}
-
+               
                 <div className='beauty-section--footer--content'>
-                    <div className='working-hours'>
-                        <h3>Program de lucru</h3>
-                        <p>Luni - Duminica</p>
-                        <p>9:00  - 20:00 </p>
-                        <p>Programare prealabilă </p>
-                        <p>Tel: 022 52 52 50</p>                     
-                    </div>
+    <h2>CONTACTE</h2>
+    <div className='address-info'>
+        <div className='working-hours'>
+            <h3>Program de lucru</h3>
+            <p>Luni - Duminica</p>
+            <p>9:00  - 20:00 </p>
+            <p>Programare prealabilă </p>
+            <p>Tel: 022 52 52 50</p>                     
+        </div>
 
-                    <div className='contact-info' id='contacts'>
-                                                
-                            <h3>Adresa</h3>
-                            <div className='address-info'>
-                                <p>Or. Chisinau</p>
-                                <p>Dacia 60/5 A</p>
-                                <p>vitastef@mail.ru</p>
-                            </div>
-                       
-                    </div>
+        <div className='contact-info' id='contacts'>
+            <h3>Adresa</h3>
+            <p>Or. Chisinau</p>
+            <p>Dacia 60/5 A</p>
+            <p>vitastef@mail.ru</p>
+        </div>
+        <div className='socials'>
+        <a href='#'>
+            <img src={fbLogo} alt="Facebook Logo" />
+        </a>
+        <a href='#'>
+            <img src={igLogo} alt="Instagram Logo" />
+        </a>
+    </div>
+    </div>
 
-                    <div className='socials'>
-                        <a href='#'>
-                            <img src={fbLogo} />
-                        </a>
-                        <a href='#'>
-                            <img src={igLogo} />
-                        </a>
-                    </div>
-                </div>
+   
+</div>
+
             </section>
         </>
     )

@@ -28,13 +28,12 @@ export default function SectionNavigation(props) {
                     <Link  to='/'>
                     PRINCIPALA
                     </Link>
-
+                    <a href='#promoții'>
+                    PROMOȚII
+                    </a>
                     <a href='#services'>
                     SERVICII
                     </a>
-                    <Link to={`${path}/posts`}>
-                    ACTIE
-                    </Link>
                     <a href='#contacts'>
                     CONTACTE
                     </a>
