@@ -1,0 +1,21 @@
+
+.column {
+    display: inline-block;
+    width: 30%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .text {
+    font-size: 14px;
+  }
+  
+  .socialTitle {
+    font-size: 20px;
+  }
+  
