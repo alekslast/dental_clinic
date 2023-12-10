@@ -11,7 +11,7 @@ const Header = () => {
       </div>
 
       <div className="menu">
-       <p>Команда профессионалов в Авиагородке</p>
+       <p>Comanda de profesioniști la Aviagorodok</p>
 
       </div>
       {/* <nav className="menu">
