@@ -10,13 +10,17 @@ const Header = () => {
                 <p>Fiindca atat de mult a iubit Dumnezeu...</p>
       </div>
 
-      <nav className="menu">
+      <div className="menu">
+       <p>Команда профессионалов в Авиагородке</p>
+
+      </div>
+      {/* <nav className="menu">
         <ul>
           <li><Link to='/'>Home</Link></li>
           <li><Link to='/about'>About</Link></li>
           <li><Link to='/contacts'>Contacts</Link></li>
         </ul>
-      </nav>
+      </nav> */}
 
       <div className="phone">
         <p>+373 22 52 52 50</p>

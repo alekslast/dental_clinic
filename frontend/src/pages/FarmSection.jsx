@@ -20,9 +20,6 @@ import igLogo           from '../assets/ig-logo.png';
 // Video
 import video            from '../assets/FarmSection/111.mp4';
 
-
-
-
 export default function FarmSection() {
 
     const screenWidth = window.innerWidth;
@@ -39,8 +36,7 @@ export default function FarmSection() {
             <ScrollTopButton />
             <section className="farm-section--header">
                 <div className='farm-section--header-inner'>
-                    <img src={headerMan} className='header-man' style={{marginLeft: `${sideMargins}%`}} />
-                    <div className='farm-section--header--logo'>
+                     <div className='farm-section--header--logo'>
                         <h2 className='farm-text'>Farm</h2>
                         <img src={pharmLogo} className='dent-logo' />
                         <div className='farm-postfix'>
@@ -48,8 +44,7 @@ export default function FarmSection() {
                             <p className='farm-ro'>Păstrează ce ți-e mai scump</p>
                         </div>
                     </div>
-                    <img src={headerPills} className='header-pills' style={{marginRight: `${sideMargins}%`}} />
-                </div>
+                    </div>
                 
             </section>
 

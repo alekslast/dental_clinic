@@ -41,7 +41,6 @@ export default function DentSection() {
                     <div className='dent-section--intro--tooth'>
                         <img src={toothIntro} />
                     </div>
-
                     <div className='dent-section--intro--content' >
                         <div className='dent-section--intro--logo'>
                             <h3>DENT</h3>

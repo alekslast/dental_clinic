@@ -57,7 +57,6 @@ export default function BeautySection() {
 
             <section className='beauty-section--services' id='services'>
                 <img src={brush} className='transition-brush' />
-
                 <h2>Servicii</h2>
               
                 <div className='beauty--cards'>
@@ -109,31 +108,6 @@ export default function BeautySection() {
                 </div>
             </section>
 
-            <section className='beauty-section--commited'>
-                <img src={beautyLogoFace} alt='logo face' />
-                <h2>Bun venit în salonul nostru</h2>            
-                <div class="container">
-  <div>
-    <div class="gallery">
-      <h3>Orar Convenabil</h3>
-      <span>Descoperiți frumusețea la timp.</span>
-    </div>
-  </div>
-  <div>
-    <div class="gallery">
-      <h4>Ușor de Găsit</h4>
-      <p>Salonul este ușor de găsit, iar frumusețea - ușor de atins.</p>
-    </div>
-  </div>
-  <div>
-    <div class="gallery">
-      <h4>Ridicăm Nivelul Frumuseții</h4>
-      <span> Experiența noastră este secretul frumuseții tale.</span>
-    </div>
-  </div>
-</div>
-                
-            </section>
             <section className='beauty-section--footer'>
                 <video src={video} autoPlay muted loop id='myVideo' />
                

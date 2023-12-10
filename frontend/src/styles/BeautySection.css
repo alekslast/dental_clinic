@@ -2,14 +2,12 @@
 
 /* ----------HEADER---------- */
 .beauty-section--header {
-    height: 100vh;
-    max-width: 100vw;
-    max-height: 768px;
     background-image: url(../assets/BeautySection/fullBack.png);
-    background-size: 1366px 768px;
+    background-size: 100vw 100vh;
     background-repeat: no-repeat;
-    background-position: center;
-    background-color: #000000;
+    width: 100vw;
+    height: 100vh;
+ 
 
     & .beauty-section--header--logo {
         position: relative;
@@ -65,19 +63,19 @@
     background-color: #FDD5D4;
     height: 100vh;
     width: 100vw;
-
     & .beauty-section--intro--inner {
-        margin: 0 auto;
-        max-width: 1366px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
+    margin: 0 auto;     
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 0;
 
-    & .beauty-section--intro--lady img {
-        width: max-content;
+    }
+    .beauty-section--intro--lady img {
+        float: left; /* или используйте display: inline-block; */
         height: 100vh;
     }
+
 
     & .beauty-section--intro--logo h3 {
         text-transform: uppercase;
@@ -89,7 +87,7 @@
         letter-spacing: 1.5px;
         text-align: right;
         position: relative;
-        top: 80px;
+       
         right: 165px;
     }
 
@@ -127,16 +125,13 @@
     }
 }
 
-
-
-
-
 /* ----------SERVICES---------- */
 .beauty-section--services {
     position: relative;
-    background-color: #fff;
+  
     height: 100vh;
     width: 100vw;
+    margin-top: 0;
 
     & h2 {
         position: relative;
@@ -147,8 +142,7 @@
         letter-spacing: 1.5px;
         text-align: center;
         z-index: 3;
-        margin-top: 90px;
-    }
+        }
 
     & .transition-brush {
         position: absolute;
@@ -252,7 +246,7 @@
         height: 188px;
         width: 188px;
         border-radius: 50%;
-        background-color: #fff;
+       
     }
 
     & .beauty-card-img {
@@ -389,78 +383,4 @@ p {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-
-
-.container {
-  width: 100%;
-  margin-top: 30px;
-  display: flex;
-  justify-content: center;
-  height: 300px;
-  gap: 50px;
-
-  > div {
-    flex: 0 0 300px;
-    border-radius: 0.5rem;
-    transition: 0.5s ease-in-out;
-    cursor: pointer;
-    box-shadow: 1px 5px 15px hsl(260, 63%, 15%);
-    position: relative;
-    overflow: hidden;
-
-   
-    &:nth-of-type(1) {
-        background: url("../assets/BeautySection/image (6).jpg") no-repeat 50% / cover;
-      }
-    &:nth-of-type(2) {
-        background: url("../assets/BeautySection/image (1).jpg") no-repeat 50% / cover;
-      }       
-      
-      &:nth-of-type(4) {
-        background: url("../assets/BeautySection/image (4).jpg") no-repeat 50% / cover;
-      }
-
-      &:nth-of-type(3) {
-        background: url("../assets/BeautySection/image (3).jpg") no-repeat 50% / cover;
-      }
-      
-    .gallery {
-      font-size: 1.5rem;
-      color: #fff;
-      display: flex;
-      align-items: center;
-      padding: 15px;
-      opacity: 0;
-      flex-direction: column;
-      height: 100%;
-      justify-content: flex-end;
-      background: rgb(2, 2, 46);
-      background: linear-gradient(
-        0deg,
-        rgba(2, 2, 46, 0.6755077030812324) 0%,
-        rgba(255, 255, 255, 0) 100%
-      );
-      transform: translatey(100%);
-      transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
-      visibility: hidden;
-
-     & .span {
-        display: block;
-        margin-top: 5px;
-      }
-    }
-    &:hover {
-      flex: 0 0 250px;
-     
-      transform: translatey(0px);
-    }
-
-    &:hover .content {
-      opacity: 1;
-      transform: translatey(0%);
-      visibility: visible;
-    }
-  }
 }

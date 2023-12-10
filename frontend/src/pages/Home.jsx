@@ -12,8 +12,7 @@ import '../styles/Header.css';
 export default function Home() {
     return (
         <div className="home">
-          <Header /> {/* Добавлен Header */}
-           
+          <Header /> {/* Добавлен Header */}          
             <div className="home--category--parent">
                 <div className="home--category dent">
                     <Link

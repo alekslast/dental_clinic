@@ -10,9 +10,6 @@ import { useAuthContext }   from "../customHooks/useAuthContext";
 import '../styles/PostForm.css';
 
 
-
-
-
 export default function PostForm(props) {
 
     // Destructuring our usePostsContext to get the dispatch as it is the only thing we need
