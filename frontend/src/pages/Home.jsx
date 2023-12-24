@@ -48,8 +48,6 @@ export default function Home() {
                 </div>
                
             </div>
-
-           
              {/* Add the left background image */}
              <div className="background-image left" />
 

@@ -1,37 +1,74 @@
 /* Importing Google Fonts for the project */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200&family=Tenor+Sans&display=swap');
 
-
-
 /* Home */
 :root {
     --link-container-size: 170px;
 }
 
+
+
 .home {
-    height: 100%;
+    min-height: 100vh; /* Установка минимальной высоты на весь видимый экран */
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start; /* Изменено на flex-start для Header, чтобы он остался вверху */
     align-items: center;
     background-repeat: no-repeat;
     background-size: 100vw 100vh;
 }
-  
 
+.header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between; /* Изменено на space-between, чтобы элементы были разнесены по ширине Header */
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
 
+/* Дополнительные стили для мобильных устройств */
+@media screen and (max-width: 767px) {
+    .home--category--parent {
+        flex-direction: column;
+        align-items: center;
+        margin: 30px auto 0;
+        top: 50px;  /* Уберите эту строку */
+    }
+
+    .header {
+        justify-content: center; /* Для центрирования Header по горизонтали на мобильных устройствах */
+    }
+}
+
+.home--category--parent {
+    position: relative;
+     top: 250px;  /* Уберите эту строку */
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/* Добавьте другие стили, если необходимо */
 
 
 .home--category--parent {
     position: relative;
-    top: 250px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
     width: 70%;
-
+    margin: 0 auto; /* Центрирование по горизонтали в десктопной версии */
+    display: flex;
+    justify-content: space-evenly; /* Строчка в десктопной версии */
+    align-items: center; /* Центрирование по вертикали в десктопной версии */
 }
+
+
+
+
+
 
 .home--category {
     display: flex;

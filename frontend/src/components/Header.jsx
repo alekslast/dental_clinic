@@ -5,22 +5,20 @@ const Header = () => {
   return (
     <header className="header">
       <div className="home--epigraph">
+           <div className="epigraph--logo">
                 <h2>3:16</h2>
+           </div>
                 <hr />
                 <p>Fiindca atat de mult a iubit Dumnezeu...</p>
       </div>
 
       <div className="menu">
-       <p>Comanda de profesioniști la Aviagorodok</p>
-
+          <div className="menu--text">
+            <p>Comanda de profesioniști la Aviagorodok</p> 
+          </div>
+      
       </div>
-      {/* <nav className="menu">
-        <ul>
-          <li><Link to='/'>Home</Link></li>
-          <li><Link to='/about'>About</Link></li>
-          <li><Link to='/contacts'>Contacts</Link></li>
-        </ul>
-      </nav> */}
+     
 
       <div className="phone">
         <p>+373 22 52 52 50</p>
