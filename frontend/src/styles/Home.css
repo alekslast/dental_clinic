@@ -28,7 +28,6 @@
     transition: background-color 0.3s ease;
 }
 
-
 .home--category--parent {
     position: relative;
     top: 250px;  
@@ -52,7 +51,18 @@
         display: flex;
         justify-content: space-evenly;
         align-items: center;  
+
+     
     }
+
+    /* Скрыть текст внутри элементов <p> */
+    .home--category--parent p {
+        display: none;
+    }
+/* Добавляем расстояние между элементами внутри .home--category--parent */
+.home--category--parent > * {
+    margin-bottom: 10px; /* Вы можете выбрать любое желаемое значение */
+}
 
     .header {
         justify-content: center; /* Для центрирования Header по горизонтали на мобильных устройствах */
