@@ -23,14 +23,6 @@
     }
   }
 
-  
-  /* Дополнительные стили для адаптации блока .home--epigraph в мобильной версии */
-  .home--epigraph {
-    max-width: none; /* Сбрасываем максимальную ширину */
-    margin-left: 0; /* Сбрасываем отступ слева */
-  }
-
-  /* Скрываем текст на мобильных устройствах */
   }
 
   /* Сброс стилей для .header при уменьшении экрана */
@@ -45,45 +37,11 @@
   position: relative;
   max-width: 450px;
   text-align: center;
-  margin-left: -120px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 
   /* Дополнение к Header.css */
-
-.home--epigraph {
-  position: relative;
-  max-width: 450px;
-  text-align: center;
-
-  & h2, .epigraph--colored-p {
-      color: #6B480D; /* Изменен цвет текста для согласования с цветом меню при hover */
-  }
-
-  & h2 {
-      font-size: 32px;
-      font-family: 'Modern Antiqua';
-      width: 114px;
-      height: 39px;
-      margin-bottom: 10px;
-  }
-
-  & hr {
-      height: 2px;
-      background-image: linear-gradient(90deg, #6B480D, #F4C963);
-      border: none;
-      margin-bottom: 5px;
-      width: 298px;
-  }
-
-  & p {
-      font-size: 14px;
-      font-family: 'Modern Antiqua', sans-serif;
-      color: #6B480D; /* Изменен цвет текста для согласования с цветом меню при hover */
-  }
-
-  .epigraph--first-p {
-      letter-spacing: 1.5px;
-  }
-}
 
   & h2, .epigraph--colored-p {
       color: #6B480D; /* Изменен цвет текста для согласования с цветом меню при hover */

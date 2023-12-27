@@ -54,74 +54,141 @@
     }
 }
 
+/* HEADER Стили для мобильных устройств */
+@media only screen and (max-width: 767px) {
+ 
+    .beauty-section--header {
+        background-size: cover; /* Используйте cover вместо 100vw 100vh */
+        height: auto; /* Высоту меняем на auto */
+        padding: 20px; /* Добавим отступы для контента внутри */
 
+        & .beauty-section--header--logo {
+            left: 50%;
+            top: 0;
+            transform: translate(-50%, 0%);
+        }
 
+        & .beauty-logo {
+            height: 100px; /* Высоту лого на мобильных устройствах */
+        }
 
+        & .beauty-postfix {
+            left: 0;
+            bottom: 0;
+            text-align: center;
+        }
 
-/* ----------INTRO---------- */
+        & .beauty-text {
+            left: 0;
+            top: 0;
+            font-size: 36px; /* Размер шрифта на мобильных устройствах */
+            letter-spacing: 1px;
+        }
+    }
+}
+
+/* Общие стили для секции INTRO */
 .beauty-section--intro {
     background-color: #FDD5D4;
     height: 100vh;
     width: 100vw;
-    & .beauty-section--intro--inner {
-    margin: 0 auto;     
+}
+
+/* Стили для больших экранов */
+.beauty-section--intro--inner {
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 0;
+}
 
-    }
-    .beauty-section--intro--lady img {
-        float: left; /* или используйте display: inline-block; */
-        height: 100vh;
-    }
+.beauty-section--intro--lady img {
+    float: left;
+    height: 100vh;
+}
 
+.beauty-section--intro--logo {
+    text-align: right;
+    position: relative;
+    right: 165px;
+}
 
-    & .beauty-section--intro--logo h3 {
-        text-transform: uppercase;
-        font-family: 'Monserrat', sans-serif;
-        font-weight: 200;
-        font-size: 40px;
-        color: #B98E49;
-        margin-right:50px;
-        letter-spacing: 1.5px;
-        text-align: right;
-        position: relative;
-       
-        right: 165px;
-    }
+.beauty-section--intro--logo h3 {
+    text-transform: uppercase;
+    font-family: 'Monserrat', sans-serif;
+    font-weight: 200;
+    font-size: 40px;
+    color: #B98E49;
+    margin-right: 50px;
+    letter-spacing: 1.5px;
+}
 
-    & .beauty-section--intro--logo img {
-        width: 526px;
-        height: 85px;
-        position: relative;
-        top: 70px;
-        left: 100px;
-    }
+.beauty-section--intro--logo img {
+    width: 526px;
+    height: 85px;
+    position: relative;
+    top: 70px;
+    left: 100px;
+}
 
-    & .beauty-section--intro--text {
-        display: flex;
-        flex-direction: column;
-        margin-left: 120px;
-        font-family: 'Monserrat', sans-serif;
-    }
+.beauty-section--intro--text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 120px;
+    font-family: 'Monserrat', sans-serif;
+}
 
-    & .beauty-section--intro--text h4 {
-        font-weight: 200;
-        font-size: 30px;
-        color: #D6AE45;
-        margin: 120px 0 30px;
-    }
+.beauty-section--intro--text h4 {
+    font-weight: 200;
+    font-size: 30px;
+    color: #D6AE45;
+    margin: 120px 0 30px;
+}
 
-    & .beauty-section--intro--text h2 {
-        font-family: 'Monserrat', sans-serif;
-        width: 700px;
-        font-weight: 200;
-        font-size: 12px;
-        color: #000;
-        letter-spacing: 1.5px;
-        padding-right: 240px;
-        text-align: left;
+.beauty-section--intro--text h2 {
+    font-family: 'Monserrat', sans-serif;
+    width: 700px;
+    font-weight: 200;
+    font-size: 12px;
+    color: #000;
+    letter-spacing: 1.5px;
+    padding-right: 240px;
+    text-align: left;
+}
+
+/* Стили для мобильных устройств */
+@media only screen and (max-width: 767px) {
+
+    .beauty-section--intro {
+
+        background-size: cover; /* Используйте cover вместо 100vw 100vh */
+        height: auto; /* Высоту меняем на auto */
+        padding: 20px; /* Добавим отступы для контента внутри */
+        background-color: #FDD5D4;
+        display: flex; /* Используем flex-контейнер */
+        flex-direction: column; /* Устанавливаем направление в колонку */
+    
+      &  .beauty-section--intro--inner {
+            flex-direction: column; /* Отображаем элементы в столбик */
+            align-items: center; /* Выравниваем элементы по центру */
+        }
+    
+      &  .beauty-section--intro--lady  {
+           display: none;
+        }
+    
+      &  .beauty-section--intro--logo  {
+            margin-right: 0;
+            width: 30%;    
+        }
+           
+        & .beauty-text {
+            left: 0;
+            top: 0;
+            font-size: 36px; /* Размер шрифта на мобильных устройствах */
+            letter-spacing: 1px;
+        }
     }
 }
 
@@ -259,6 +326,34 @@
     }
 }
 
+/* Медиа-запрос для мобильных устройств */
+@media screen and (max-width: 767px) {
+    .beauty-section--services {
+        & h2 {
+            font-size: 36px; /* Измените размер шрифта для заголовка */
+        }
+
+        & .transition-brush {
+            top: -150px; /* Измените положение переходной кисти */
+            display: none;
+        }
+
+        & .beauty--cards {
+            flex-direction: column; /* Расположите карты в столбец */
+            align-items: center; /* Выравнивание по центру */
+        }
+
+        & .beauty-services-card {
+            width: 100%; /* Ширина занимает 100% экрана */
+            transform: translateY(0); /* Сбрасываем translateY */
+            margin-top: 20px; /* Добавляем отступ между картами */
+        }
+
+        & .beauty-card-img {
+            transform: translateY(0); /* Сбрасываем translateY */
+        }
+    }
+}
 /* ----------COMMITED---------- */
 .beauty-section--commited {
     background-image: url(../assets/BeautySection/massage.png);

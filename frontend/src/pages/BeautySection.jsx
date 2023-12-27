@@ -35,7 +35,6 @@ export default function BeautySection() {
                     </div>
                 </div>       
             </section>
-
             <section className='beauty-section--intro' id='promoții'>
                 <div className='beauty-section--intro--inner'>
                     <div className='beauty-section--intro--lady'>
@@ -44,7 +43,7 @@ export default function BeautySection() {
 
                     <div className='beauty-section--intro--content'>
                         <div className='beauty-section--intro--logo'>
-                            <h3>PROMOȚII</h3>
+                            <h2 className='beauty-text' >PROMOȚII</h2>
                             <img src={wave} alt='decorative wave' />
                         </div>                     
                         <div className='beauty-section--intro--text'>

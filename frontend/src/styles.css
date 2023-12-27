@@ -97,6 +97,8 @@ h2 {
     }
 }
 
+/* /Navigation  BEAUTY*/
+/* Общие стили для навигационного меню */
 .beauty-section-navigation {
     font-family: 'Monserrat', sans-serif;
     top: 10%;
@@ -109,29 +111,49 @@ h2 {
     max-width: 1366px;
     transform: translateY(800%);
     z-index: 3;
-
-    & a {
-        font-size: 20px;
-        margin: 0 -100px;
-        color: #B98E49;
-        text-transform: uppercase;
-        padding: 15px 30px;
-        background-color: transparent;
-        transition: all 0.35s ease-in-out;
-    }
-
-    & a:hover {
-        background-color: #FDD5D4;
-    }
-
-    
 }
 
-/* /Navigation */
+/* beauty-section-navigation
+Стили для мобильных устройств */
+@media only screen and (max-width: 767px) {
+    .beauty-section-navigation {
+        flex-direction: column; /* Отображаем элементы в столбик */
+        align-items: flex-end; /* Выравниваем элементы вправо */
+        margin-left: 0; /* Убираем отступ слева */
+        top: 5%; /* Регулируем вертикальный отступ */
+        right: 5%; /* Размещаем вверху справа */
+        display: none;
+        & a {
+            margin: 10px 0; /* Добавляем отступы между элементами */
+            text-align: right; /* Выравниваем текст по правому краю */
+            width: 100%; /* Растягиваем ссылки на всю ширину */
+        }
+    }
+    
+    /* Стили для бургер-иконки */
+    .burger-icon {
+        display: block; /* Показываем бургер-иконку */
+    }
 
+    .close-icon {
+        display: none; /* Скрываем иконку закрытия */
+    }
+}
 
+/* Стили для ссылок в обоих случаях */
+.beauty-section-navigation a {
+    font-size: 20px;
+    margin: 0 -100px;
+    color: #B98E49;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    background-color: transparent;
+    transition: all 0.35s ease-in-out;
+}
 
-
+.beauty-section-navigation a:hover {
+    background-color: #FDD5D4;
+}
 
 /* Footer */
 footer {
