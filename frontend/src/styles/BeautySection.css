@@ -87,75 +87,80 @@
     }
 }
 
-/* Общие стили для секции INTRO */
+/* ----------INTRO---------- */
 .beauty-section--intro {
     background-color: #FDD5D4;
-    height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
     width: 100vw;
+    height: 100vh;  
+
+    & .beauty-section--intro--inner {
+        margin: 0 auto;     
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    & .beauty-section--intro--lady {
+        width: 50%;
+    }
+
+    & .beauty-section--intro--lady img {
+        width: max-content;
+        height: 100vh;
+        float: left; 
+    }
+
+    & .beauty-section--intro--content {
+        width: 50%;
+    }
+
+    & .beauty-section--intro--logo h3 {
+        text-transform: uppercase;
+        font-family: 'Monserrat', serif;
+        font-weight: 200;
+        font-size: 40px;
+        color: #B98E49;
+        letter-spacing: 1.5px;
+        text-align: center;
+        position: relative;
+        top: 80px;
+    }
+
+    & .beauty-section--intro--logo img {
+        width: 526px;
+        height: 85px;
+        position: relative;
+        top: 70px;
+        left: 100px;
+    }
+
+    & .beauty-section--intro--text {
+        display: flex;
+        flex-direction: column;
+        margin-left: 120px;
+    }
+
+    & .beauty-section--intro--text h4 {
+        font-weight: 200;
+        font-size: 30px;
+        color: #B98E49;
+        margin: 120px 0 30px;
+    }
+
+    & .beauty-section--intro--text h2 {
+        font-family: 'Monserrat', serif;
+        font-weight: 200;
+        font-size: 14px;
+        color: #000;
+        letter-spacing: 1.5px;
+        padding-right: 20px;
+        text-align: left;
+    }
 }
 
-/* Стили для больших экранов */
-.beauty-section--intro--inner {
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 0;
-}
-
-.beauty-section--intro--lady img {
-    float: left;
-    height: 100vh;
-}
-
-.beauty-section--intro--logo {
-    text-align: right;
-    position: relative;
-    right: 165px;
-}
-
-.beauty-section--intro--logo h3 {
-    text-transform: uppercase;
-    font-family: 'Monserrat', sans-serif;
-    font-weight: 200;
-    font-size: 40px;
-    color: #B98E49;
-    margin-right: 50px;
-    letter-spacing: 1.5px;
-}
-
-.beauty-section--intro--logo img {
-    width: 526px;
-    height: 85px;
-    position: relative;
-    top: 70px;
-    left: 100px;
-}
-
-.beauty-section--intro--text {
-    display: flex;
-    flex-direction: column;
-    margin-left: 120px;
-    font-family: 'Monserrat', sans-serif;
-}
-
-.beauty-section--intro--text h4 {
-    font-weight: 200;
-    font-size: 30px;
-    color: #D6AE45;
-    margin: 120px 0 30px;
-}
-
-.beauty-section--intro--text h2 {
-    font-family: 'Monserrat', sans-serif;
-    width: 700px;
-    font-weight: 200;
-    font-size: 12px;
-    color: #000;
-    letter-spacing: 1.5px;
-    padding-right: 240px;
-    text-align: left;
-}
 
 /* Стили для мобильных устройств */
 @media only screen and (max-width: 767px) {
@@ -168,6 +173,7 @@
         background-color: #FDD5D4;
         display: flex; /* Используем flex-контейнер */
         flex-direction: column; /* Устанавливаем направление в колонку */
+      
     
       &  .beauty-section--intro--inner {
             flex-direction: column; /* Отображаем элементы в столбик */
@@ -182,7 +188,51 @@
             margin-right: 0;
             width: 30%;    
         }
+
+        & .beauty-section--intro--logo img {
+            width: 250px;
+            height: 40px;
+            align-items: center;
+            position: relative;
+            top: 70px;      
+            left: 0px;
+        }
            
+        & .beauty-section--intro--logo h3 {
+            text-transform: uppercase;
+            font-family: 'Monserrat', serif;
+            font-weight: 200;
+            font-size: 40px;
+            color: #B98E49;
+            letter-spacing: 1.5px;
+            text-align: center;
+          
+            position: relative;
+            top: 80px;
+            
+        }
+        & .beauty-section--intro--text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+           
+        }
+        & .beauty-section--intro--text h4 {
+            font-weight: 200;
+            width: 500px;
+            font-size: 30px;
+            align-items: center;
+            color: #B98E49;         
+        }
+        & .beauty-section--intro--text h2 {
+            font-family: 'Monserrat', serif;
+            font-weight: 200;
+            font-size: 14px;
+            color: #000;
+            letter-spacing: 1.5px;
+            text-align: left;
+            width: 500px;
+        }       
         & .beauty-text {
             left: 0;
             top: 0;
@@ -195,7 +245,6 @@
 /* ----------SERVICES---------- */
 .beauty-section--services {
     position: relative;
-  
     height: 100vh;
     width: 100vw;
     margin-top: 0;
@@ -224,6 +273,7 @@
         max-width: 1366px;
     }
 
+ 
     & .beauty--card-element {
         display: flex;
         flex-direction: column;
@@ -326,34 +376,120 @@
     }
 }
 
-/* Медиа-запрос для мобильных устройств */
-@media screen and (max-width: 767px) {
+/* ----------SERVICES MOBILE---------- */
+@media only screen and (max-width: 767px) {
     .beauty-section--services {
+        position: relative;
+        height: auto;
+        width: 100vw;
+        margin-top: 0;
+
+        & .beauty-section--services img{
+           display: none;
+        }
+
         & h2 {
-            font-size: 36px; /* Измените размер шрифта для заголовка */
+            color: #000;
+            font-family: 'Monserrat', serif;
+            font-size: 40px;
+            font-weight: 200;
+            letter-spacing: 1.5px;
+            text-align: center;
+            z-index: 3;         
         }
 
         & .transition-brush {
-            top: -150px; /* Измените положение переходной кисти */
-            display: none;
+           display: none;      
         }
 
         & .beauty--cards {
-            flex-direction: column; /* Расположите карты в столбец */
-            align-items: center; /* Выравнивание по центру */
+            display: flex;
+            flex-direction: column; /* Изменили на колонку для мобильных устройств */
+            align-items: center;
+            margin: 150px auto 0;
+            max-width: 100%;
         }
-
+        & .beauty--card-element {
+            display: flex;
+            height: 450px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
         & .beauty-services-card {
-            width: 100%; /* Ширина занимает 100% экрана */
-            transform: translateY(0); /* Сбрасываем translateY */
-            margin-top: 20px; /* Добавляем отступ между картами */
-        }
+            width: 100%;
+            padding: 30px;
+            background-color: #FDD5D4;
+            border-radius: 25px;
+        
+            & h5 {
+              
+                color: #D6AE45;
+                font-family: 'Monserrat', sans-serif;
+                font-size: 20px;
+            }
 
-        & .beauty-card-img {
-            transform: translateY(0); /* Сбрасываем translateY */
+            & h6 {
+                color: #D6AE45;
+                text-transform: uppercase;
+                font-family: 'Monserrat', sans-serif;
+                font-weight: 100;
+                font-size: 14px;
+                letter-spacing: 0.5px;
+                margin: 10px 0 20px 0;
+            }
+
+            & ul {
+                color: #132540;
+                font-family: 'Monserrat', sans-serif;
+                font-size: 14px;
+            }
+
+            & p {
+                color: #132540;
+                font-family: 'Monserrat', sans-serif;
+                font-size: 12px;
+                text-align: center;
+                margin-top: 10px;
+            }
+
+            & .beauty-plus-btn {
+                height: 15px;
+                width: 4px;
+                background-color: #9F0B0B;
+                border-radius: 999999px;
+                margin-top: 20px;
+            }
+
+            & .beauty-plus-btn::after {
+                content: '';
+                display: block;
+                height: 15px;
+                width: 4px;
+                background-color: #9F0B0B;
+                border-radius: 999999px;
+                transform: rotate(90deg);
+            }
+
+            & .custom-button {
+                background-color: #D6AE45;
+                color: #fff;
+                margin-top: 15px;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                text-align: center;
+            }
+
+            & .custom-button:hover {
+                background-color: #daa00f;
+            }
         }
     }
 }
+
+
 /* ----------COMMITED---------- */
 .beauty-section--commited {
     background-image: url(../assets/BeautySection/massage.png);

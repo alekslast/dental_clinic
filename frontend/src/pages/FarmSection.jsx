@@ -75,11 +75,8 @@ export default function FarmSection() {
             </section>
 
             <section className='farm-section--services' id='services'>
-
                 <h2>Servicii</h2>
-
-                <div className='farm--cards'>
-                    
+                <div className='farm--cards'>        
                     <div className='farm--card-element'>
                         <div className='farm-circle-placeholder' />
                         <img src={doctor3} className='farm-card-img' />
