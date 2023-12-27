@@ -321,7 +321,7 @@
             text-transform: uppercase;
             font-family: 'Monserrat', serif;
             font-weight: 200;
-            font-size: 40px;
+            font-size: 28px;
             color: #B98E49;
             letter-spacing: 1.5px;
             text-align: center;
@@ -455,6 +455,87 @@
     }
 }
 
+/* ----------m---------- */
+/* Добавьте стили для бургер-меню в мобильной версии */
+.burger-menu {
+    display: none;
+  }
+  
+  .burger-menu.open {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .burger-icon {
+    cursor: pointer;
+  }
+  
+  .burger-icon span {
+    width: 30px;
+    height: 3px;
+    background-color: #000;
+    margin: 5px 0;
+    transition: 0.4s;
+  }
+  
+  .menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .menu li {
+    margin: 10px 0;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.4s;
+  }
+  
+  .menu a:hover {
+    color: #ffcc00;
+  }
+  
+  /* Медиа-запрос для мобильных устройств */
+  @media only screen and (max-width: 767px) {
+    .burger-menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: #fff; /* Замените на цвет вашего фона */
+    }
+  
+    .menu {
+      display: none; /* Скрыть меню в начале */
+      width: 100%;
+    }
+  
+    .menu.open {
+      display: flex;
+      flex-direction: column;
+      background-color: #fff; /* Замените на цвет вашего фона */
+    }
+  
+    .burger-icon {
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+    }
+  
+    .burger-icon span {
+      background-color: #000;
+    }
+  }
+  
+/* ----------m---------- */
+
 #myVideo {
     position: absolute;
     left: 0;
@@ -464,7 +545,6 @@
     object-fit: cover;
 }
 
-/* ----------FOOTER---------- */
 /* ----------FOOTER---------- */
 .beauty-section--footer {
     position: relative;
