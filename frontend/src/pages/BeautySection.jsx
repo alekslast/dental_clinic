@@ -129,13 +129,13 @@ export default function BeautySection() {
             <p>vitastef@mail.ru</p>
         </div>
         <div className='socials'>
-        <a href='#'>
-            <img src={fbLogo} alt="Facebook Logo" />
-        </a>
-        <a href='#'>
-            <img src={igLogo} alt="Instagram Logo" />
-        </a>
-    </div>
+            <a href='#'>
+                <img src={fbLogo} alt="Facebook Logo" />
+            </a>
+            <a href='#'>
+                <img src={igLogo} alt="Instagram Logo" />
+            </a>
+        </div>
     </div>
 </div>
             </section>
