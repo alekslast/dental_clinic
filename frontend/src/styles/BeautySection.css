@@ -2,12 +2,12 @@
 
 /* ----------HEADER---------- */
 .beauty-section--header {
+    
     background-image: url(../assets/BeautySection/fullBack.png);
     background-size: 100vw 100vh;
     background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
- 
 
     & .beauty-section--header--logo {
         position: relative;
@@ -31,7 +31,6 @@
 
     & .beauty-ro {
         font-family: 'Monserrat', sans-serif;
-        font: 'Monserrat';
         font-size: 22px;
         color: #D6AE45;
     }
@@ -162,6 +161,7 @@
     }
 }
 
+/* ----------INTRO MOBILE---------- */
 /* Стили для мобильных устройств */
 @media only screen and (max-width: 767px) {
 
@@ -255,23 +255,7 @@
             text-align: center;
         }
         
-        & .beauty-plus-btn {
-            height: 25px;
-            width: 4px;
-            background-color: #9F0B0B;
-            border-radius: 999999px;
-            margin-top: 30px;
-        }
-
-        & .beauty-plus-btn::after {
-            content: '';
-            display: block;
-            height: 25px;
-           width: 4px;
-            background-color: #9F0B0B;
-            border-radius: 999999px;
-            transform: rotate(90deg);
-        }
+    
 
         & .custom-button {
             background-color: #D6AE45;
@@ -348,8 +332,8 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-        }
-        & .beauty-services-card {
+        }      
+          & .beauty-services-card {
             width: 100%;
             padding: 30px;
             background-color: #FDD5D4;
@@ -386,24 +370,7 @@
                 margin-top: 10px;
             }
 
-            & .beauty-plus-btn {
-                height: 15px;
-                width: 4px;
-                background-color: #9F0B0B;
-                border-radius: 999999px;
-                margin-top: 20px;
-            }
-
-            & .beauty-plus-btn::after {
-                content: '';
-                display: block;
-                height: 15px;
-                width: 4px;
-                background-color: #9F0B0B;
-                border-radius: 999999px;
-                transform: rotate(90deg);
-            }
-
+        
             & .custom-button {
                 background-color: #D6AE45;
                 color: #fff;
@@ -422,42 +389,8 @@
     }
 }
 
-
-/* ----------COMMITED---------- */
-.beauty-section--commited {
-    background-image: url(../assets/BeautySection/massage.png);
-    background-size: 100vw 100vh;
-    background-repeat: no-repeat;
-    width: 100vw;
-    height: 100vh;
-    text-align: center;
-
-    & img {
-        height: 167px;
-        width: 141px;
-        margin-top: 10px;
-    }
-
-    & h2 {
-        font-family: 'Monserrat', sans-serif;
-        font-weight: 200;
-        font-size: 70px;
-        color: #000;
-        margin-top: 30px;
-    }
-
-    & p {
-        font-family: 'Monserrat', sans-serif;
-        font-weight: 300;
-        font-size: 20px;
-        color: #132540;
-        margin-top: 80px;
-        padding: 0 360px;
-    }
-}
-
-/* ----------m---------- */
-/* Добавьте стили для бургер-меню в мобильной версии */
+/* ----------menu---------- */
+/*  стили для бургер-меню в мобильной версии */
 .burger-menu {
     display: none;
   }
@@ -475,7 +408,7 @@
   .burger-icon span {
     width: 30px;
     height: 3px;
-    background-color: #000;
+    background-color: #867f7f;
     margin: 5px 0;
     transition: 0.4s;
   }
@@ -500,7 +433,7 @@
   }
   
   .menu a:hover {
-    color: #ffcc00;
+    color: #B98E49;
   }
   
   /* Медиа-запрос для мобильных устройств */
@@ -532,15 +465,14 @@
     }
   
     .burger-icon span {
-      background-color: #ffcc00;
+      background-color: #B98E49;
     }
      /* Добавим свойство font-size для уменьшения размера шрифта */
      .burger-menu a {
-        font-size: 14px;
+        font-size: 12px;
     }
   }
   
-/* ----------m---------- */
 
 #myVideo {
     position: absolute;
@@ -607,7 +539,6 @@ h3 {
     width: 25px;
     transition: scale 0.25s ease-in-out;
 }
-
 
 /* Медиа-запрос для десктопных устройств */
 @media only screen and (min-width: 768px) {
@@ -695,7 +626,6 @@ h3 {
         transition: scale 0.25s ease-in-out;
     }
 }
-
 
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
 * {

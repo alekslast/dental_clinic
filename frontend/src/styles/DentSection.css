@@ -121,10 +121,6 @@
     }
 }
 
-
-
-
-
 /* ----------DOCTORS---------- */
 .dent-section--doctors {
     position: relative;
@@ -219,7 +215,7 @@
         height: 188px;
         width: 188px;
         border-radius: 50%;
-        background-color: #fff;
+       
     }
 
     & .dent-card-img {

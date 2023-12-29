@@ -135,6 +135,18 @@ h2 {
     }
 }
 
+@media only screen and (max-width: 767px) {
+    .farm-section-navigation {
+       display: none;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .dent-section-navigation {
+       display: none;
+    }
+}
+
 /* Footer */
 footer {
     height: 40px;

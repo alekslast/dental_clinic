@@ -35,6 +35,7 @@ export default function BeautySection() {
                     </div>
                 </div>       
             </section>
+            
             <section className='beauty-section--intro' id='promoții'>
                 <div className='beauty-section--intro--inner'>
                     <div className='beauty-section--intro--lady'>
@@ -72,9 +73,7 @@ export default function BeautySection() {
                                 <li>Corectarea sprâncenelor</li>                             
                              </ul>
                              <DownloadButton />                          
-                        </div> 
-                       
-                                         
+                        </div>                                                 
                     </div>
                     <div className='beauty--card-element'>
                         <div className='beauty-circle-placeholder' />

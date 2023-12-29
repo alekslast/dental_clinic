@@ -2,13 +2,13 @@
 
 /* ----------HEADER---------- */
 .farm-section--header {
-    max-height: 768px;
+   
     background-image: url(../assets/FarmSection/farm-main-bg.png);
     background-size: 100vw 100vh;
     background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;  
-
+      
     & .farm-section--header--logo {
         position: relative;
         left: 50%;
@@ -43,7 +43,7 @@
 
     & .farm-text {
         position: relative;
-        left: 75px;
+        left: 30px;
         top: 150px;
         font-family: 'Monserrat', serif;
         font-size: 70px;
@@ -52,23 +52,22 @@
         color: #D6AE45;
     }
 }
-/* Медиа-запрос для мобильных устройств */
-/* Медиа-запрос для мобильных устройств */
 @media only screen and (max-width: 767px) {
+    
     .farm-section--header {
-        background-size: cover;
-        height: auto;
-        padding: 20px;
+        background-size: cover; /* Используйте cover вместо 100vw 100vh */
+        height: auto; /* Высоту меняем на auto */
+        padding: 20px; /* Добавим отступы для контента внутри */
+    
 
         & .farm-section--header--logo {
             left: 50%;
             top: 0;
-            transform: translate(-50%, 0%) scale(0.8); /* Уменьшаем масштаб блока */
-            width: max-content;
+            transform: translate(-50%, 0%);
         }
 
         & .farm-logo {
-            height: 100px; /* Высоту лого на мобильных устройствах */
+            height: 100px;
         }
 
         & .farm-postfix {
@@ -84,7 +83,8 @@
             letter-spacing: 1px;
         }
     }
-}
+}    
+
 
 /* ----------INTRO---------- */
 .farm-section--intro {
@@ -99,7 +99,6 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-
     }
 
     & .farm-section--intro--lady {
@@ -123,7 +122,7 @@
         font-size: 40px;
         color: #B98E49;
         letter-spacing: 1.5px;
-        text-align: right;
+        text-align: center;
         position: relative;
         top: 80px;
         right: 140px;
@@ -161,7 +160,15 @@
     }
 }
 
-/* ----------DOCTORS---------- */
+/* ----------INTRO MOBILE---------- */
+/* Стили для мобильных устройств */
+@media only screen and (max-width: 767px) {
+
+    .farm-section--intro {
+      display: none;
+    }
+}
+/* ----------services---------- */
 .farm-section--services {
     position: relative;
     background-color: #00C4E1;
@@ -249,45 +256,25 @@
         border-radius: 50%;
         transform: translateY(-110%);
     }
+    
 }
 
+@media only screen and (max-width: 767px) {
+    .farm-section--services {
+        position: relative;
+        height: auto;
+        width: 100vw;
+        margin-top: 0;
 
+        & .farm--cards {
+            flex-direction: column;
+            align-items: center;
+        }
 
-
-
-/* ----------COMMITED---------- */
-.farm-section--commited {
-    background-image: url(../assets/FarmSection/commited.png);
-    background-size: 1366px 768px;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100vw;
-    height: 100vh;
-    text-align: center;
-
-    & img {
-        height: 93px;
-        width: 85px;
-        margin-top: 120px;
-    }
-
-    & h2 {
-        font-family: 'Monserrat', sans-serif;
-        font-weight: 200;
-        font-size: 70px;
-        color: #000;
-        margin-top: 50px;
-    }
-
-    & p {
-        font-family: 'Monserrat', sans-serif;
-        font-weight: 300;
-        font-size: 20px;
-        color: #132540;
-        margin-top: 80px;
-        padding: 0 360px;
+      
     }
 }
+
 
 /* ----------FOOTER---------- */
 .farm-section--footer {

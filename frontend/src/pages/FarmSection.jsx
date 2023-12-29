@@ -40,8 +40,7 @@ export default function FarmSection() {
                             <p className='farm-ru'>Сохрани то, что тебе дорого</p>
                             <p className='farm-ro'>Păstrează ce ți-e mai scump</p>
                         </div>
-                    </div>
-                   
+                    </div>         
             </section>
 
             <section className='farm-section--intro' id='promoții'>
@@ -106,44 +105,37 @@ export default function FarmSection() {
                 </div>
             </section>
 
-            {/* <section className='farm-section--commited'>
-                <img src={logoPill} alt='logo face' />
-                <h2>Bun venit în farmacia noastra</h2>
-                <p>
-                Bine ați venit în farmacia noastră, unde sănătatea și bunăstarea dvs. sunt prioritatea noastră.
-Ne mândrim cu faptul că oferim o gamă largă de medicamente și consultanță profesională pentru menținerea sănătății și bunăstării dvs.
-                </p>
-            </section> */}
+            <section className='beauty-section--footer'>
+                <video src={video} autoPlay muted loop id='myVideo' />
+               
+                <div className='beauty-section--footer--content'>
+    <h2>CONTACTE</h2>
+    <div className='address-info'>
+        <div className='working-hours'>
+            <h3>Program de lucru</h3>
+            <p>Luni - Duminica</p>
+            <p>9:00  - 20:00 </p>
+            <p>Programare prealabilă </p>
+            <p>Tel: 022 52 52 50 
+            <br/>Mob +373 78 52 66  </p>                  
+        </div>
 
-            <section className='farm-section--footer'>
-                <video src={video} autoPlay muted loop className='farm-bgVideo' />
-                {/* <img src={bgVideo} id='myVideo' /> */}
-                {/* <object data={bgVideo} /> */}
-                {/* <embed src={bgVideo} /> */}
-
-                <div className='farm-section--footer--content'>
-                    <div className='working-hours'>
-                        <h3>Program de lucru</h3>
-                        <p>Luni - Duminica <br/>9:00 - 20:00
-                        </p><br/>                      
-                        <p>Programare prealabilă </p>
-                        <p>Tel: 022 52 52 50</p>                       
-                    </div>
-
-                    <div className='contact-info' id='contacts'>
-                        <h3>Adresa</h3>
-                        <p>mun. Chisinau,<br/> bd. Dacia 60/5, sc.4<br/><br/>Tel. 022 52 66 47<br/>Mob +373 78 52 66 </p>                    
-                    </div>
-                    
-                    <div className='socials'>
-                        <a href='#'>
-                            <img src={fbLogo} />
-                        </a>
-                        <a href='#'>
-                            <img src={igLogo} />
-                        </a>
-                    </div>
-                </div>
+        <div className='contact-info' id='contacts'>
+            <h3>Adresa</h3>
+            <p>Or. Chisinau</p>
+            <p>Dacia 60/5 A</p>
+            <p>vitastef@mail.ru</p>
+        </div>
+        <div className='socials'>
+            <a href='#'>
+                <img src={fbLogo} alt="Facebook Logo" />
+            </a>
+            <a href='#'>
+                <img src={igLogo} alt="Instagram Logo" />
+            </a>
+        </div>
+    </div>
+</div>
             </section>
         </>
     )
