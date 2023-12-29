@@ -2,25 +2,12 @@
 
 /* ----------HEADER---------- */
 .farm-section--header {
-   
     max-height: 768px;
     background-image: url(../assets/FarmSection/farm-main-bg.png);
     background-size: 100vw 100vh;
     background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;  
-
-    & .header-man {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-    }
-
-    & .header-pills {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-    }
 
     & .farm-section--header--logo {
         position: relative;
@@ -63,6 +50,39 @@
         font-weight: 200;
         letter-spacing: 2.7px;
         color: #D6AE45;
+    }
+}
+/* Медиа-запрос для мобильных устройств */
+/* Медиа-запрос для мобильных устройств */
+@media only screen and (max-width: 767px) {
+    .farm-section--header {
+        background-size: cover;
+        height: auto;
+        padding: 20px;
+
+        & .farm-section--header--logo {
+            left: 50%;
+            top: 0;
+            transform: translate(-50%, 0%) scale(0.8); /* Уменьшаем масштаб блока */
+            width: max-content;
+        }
+
+        & .farm-logo {
+            height: 100px; /* Высоту лого на мобильных устройствах */
+        }
+
+        & .farm-postfix {
+            left: 0;
+            bottom: 0;
+            text-align: center;
+        }
+
+        & .farm-text {
+            left: 0;
+            top: 0;
+            font-size: 36px; /* Размер шрифта на мобильных устройствах */
+            letter-spacing: 1px;
+        }
     }
 }
 

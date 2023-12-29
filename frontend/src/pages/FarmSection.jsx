@@ -25,27 +25,23 @@ export default function FarmSection() {
     const screenWidth = window.innerWidth;
     console.log(screenWidth)
     const designedMaxWidth = 1366;
-
     const coeficient = designedMaxWidth / screenWidth;
     console.log(coeficient)
     const sideMargins = (1 - coeficient) * 100 / 2
     console.log(sideMargins)
-
     return (
         <>
             <ScrollTopButton />
             <section className="farm-section--header">
-                <div className='farm-section--header-inner'>
                      <div className='farm-section--header--logo'>
                         <h2 className='farm-text'>Farm</h2>
-                        <img src={pharmLogo} className='dent-logo' />
+                        <img src={pharmLogo} className='farm-logo' />
                         <div className='farm-postfix'>
                             <p className='farm-ru'>Сохрани то, что тебе дорого</p>
                             <p className='farm-ro'>Păstrează ce ți-e mai scump</p>
                         </div>
                     </div>
-                    </div>
-                
+                   
             </section>
 
             <section className='farm-section--intro' id='promoții'>

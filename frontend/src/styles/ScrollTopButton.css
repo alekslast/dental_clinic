@@ -27,3 +27,11 @@
     background-color: #000;
     color: #D6AE45;
 }
+
+
+/* Дополнительные стили для мобильных устройств */
+@media only screen and (max-width: 767px) {
+    .scroll-to-top-btn {
+        font-family: 'Monserrat', sans-serif !important; /* Используйте !important, если нужно переопределить другие стили */
+    }
+}
