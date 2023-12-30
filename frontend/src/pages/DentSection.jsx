@@ -19,8 +19,6 @@ import fbLogo           from '../assets/fb-logo.png';
 import igLogo           from '../assets/ig-logo.png';
 
 
-
-
 export default function DentSection() {
     return (
         <>
@@ -59,7 +57,7 @@ export default function DentSection() {
             </section>
 
             <section className='dent-section--doctors' id='services'>
-                <h2>Servicii</h2>
+                <h2>Medicii</h2>
 
                 <div className='dent--cards'>
                     
@@ -78,27 +76,23 @@ export default function DentSection() {
                                 </ul>
                                 <DownloadButton />      
                     </div>
-                        </div>
-                     
-
+                        </div>                  
                     <div className='dent--card-element'>
                         <div className='dent-circle-placeholder' />
                         <img src={doctor2} className='dent-card-img' />
                         <div className='dent-services-card'>
-                            <h5>Ortopedie</h5>
+                        <h5>Ortopedie</h5>
                             <h6>Oferim următoarele servicii:</h6>
                             <ul>
                             <li>Coroniţă metaloceramică</li>
                             <li>Coroniţă ceramică</li>
                             <li>Coroniţă presată</li>
                             <li>Coroniţă implant</li>
-                            <li>Coroniţă ceramică implant</li>
+                            <li>Coroniţă ceramică implant</li>               
                             </ul>
                             <DownloadButton /> 
-                        </div>
-                           
+                        </div>             
                     </div>
-
                     <div className='dent--card-element'>
                         <div className='dent-circle-placeholder' />
                         <img src={doctor1} className='dent-card-img' />
@@ -118,57 +112,37 @@ export default function DentSection() {
                 </div>
             </section>
 
-            {/* <section className='dent-section--commited'>
-                <img src={sdLogo} alt='logo face' className='sd-logo' />
-                <h2>Bun venit în clinica noastra</h2>
-                <p>
-                Bine ați venit în clinica noastră stomatologică, unde facem dinții sănătoși 
-să devină realitate.
-Personalul nostru medical experimentat și echipamentele moderne vă asigură tratament de înaltă calitate și confort pe tot parcursul îngrijirii stomatologice.
-
-                </p>
-            </section>
-            
-            <section className='dent-section--lady-doc'>
-                <div className='dent-section--lady-doc--inner'>
-                    <img src={ladyDoc} className='dent-section--lady-doc--lady' />
-
-                    <div className='dent-section--lady-doc--content'>
-                        <img src={sdLogo} alt='decorative wave' className='sd-logo' />
-                        <h2>Avem o multime de servicii.</h2>
-                        <h3>Descărca lista de prețuri a serviciilor noastre</h3>
-                    </div>
-                </div>
-            </section> */}
-
-            <section className='dent-section--footer'>
-                <img src={footerPic} />
+          
+  <section className='dent-section--footer'>
+  <img src={footerPic} id='myVideo'/>
                 <div className='dent-section--footer--content'>
-                    <div className='working-hours'>
-                        <h3>Program de lucru</h3>
-                        <p>Luni - Duminica
-                                9:00 - 20:00
-                        </p>
-                       
-                        <p>TProgramare prealabilă 
-                            Tel: 022 52 52 50</p>              
-                    </div>
+    <h2>CONTACTE</h2>
+    <div className='address-info'>
+        <div className='working-hours'>
+            <h3>Program de lucru</h3>
+            <p>Luni - Duminica</p>
+            <p>9:00  - 20:00 </p>
+            <p>Programare prealabilă </p>
+            <p>Tel: 022 52 52 50 
+            <br/>Mob +373 78 52 66  </p>                  
+        </div>
 
-                    <div className='contact-info' id='contacts'>
-                        <h3>Adresa</h3>
-                        <p>mun. Chisinau, bd. Dacia 60/5, of. 90 <br/>Tel. 022 52 66 47<br/> Mob +373 78 52 66 </p>                 
-                        <p>vitastef@mail.ru</p>
-                    </div>
-
-                    <div className='socials'>
-                        <a href='#'>
-                            <img src={fbLogo} />
-                        </a>
-                        <a href='#'>
-                            <img src={igLogo} />
-                        </a>
-                    </div>
-                </div>
+        <div className='contact-info' id='contacts'>
+            <h3>Adresa</h3>
+            <p>Or. Chisinau</p>
+            <p>Dacia 60/5 A</p>
+            <p>vitastef@mail.ru</p>
+        </div>
+        <div className='socials'>
+            <a href='#'>
+                <img src={fbLogo} alt="Facebook Logo" />
+            </a>
+            <a href='#'>
+                <img src={igLogo} alt="Instagram Logo" />
+            </a>
+        </div>
+    </div>
+</div>
             </section>
 
         </>

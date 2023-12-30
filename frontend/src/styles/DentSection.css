@@ -6,57 +6,83 @@
     background-size: 100vw 100vh;
     background-repeat: no-repeat;
     width: 100vw;
-    height: 100vh; 
-
- 
+    height: 100vh;  
+      
     & .dent-section--header--logo {
         position: relative;
         left: 50%;
+        top: -4%;
         transform: translate(-50%, 0%);
         width: max-content;
-        color: #B98E49;
+    }
 
-        & .dent-text {
-            margin-left: 50px;
+    & .dent-logo {
+        height: 300px;
+    }
+
+    & .dent-postfix {
+        position: relative;
+        left: 45px;
+        bottom: 50px;
+        width: max-content;
+        text-align: center;
+    }
+
+    & .dent-ro {
+        font-family: 'Monserrat', sans-serif;
+        font-size: 22px;
+        color: #D6AE45;
+    }
+
+    & .dent-ru {
+        font-family: 'Monserrat', sans-serif;
+        font-size: 16px;
+        color: #D6AE45;
+    }
+
+    & .dent-text {
+        position: relative;
+        left: 30px;
+        top: 150px;
+        font-family: 'Monserrat', serif;
+        font-size: 70px;
+        font-weight: 200;
+        letter-spacing: 2.7px;
+        color: #D6AE45;
+    }
+}
+@media only screen and (max-width: 767px) {
+    
+    .dent-section--header {
+        background-size: cover; /* Используйте cover вместо 100vw 100vh */
+        height: auto; /* Высоту меняем на auto */
+        padding: 20px; /* Добавим отступы для контента внутри */
+    
+
+        & .dent-section--header--logo {
+            left: 50%;
+            top: 0;
+            transform: translate(-50%, 0%);
         }
 
         & .dent-logo {
-            height: 300px;
+            height: 100px;
         }
-    
+
         & .dent-postfix {
-            position: relative;
-            left: 45px;
-            bottom: 50px;
-            width: max-content;
+            left: 0;
+            bottom: 0;
             text-align: center;
         }
-    
-        & .dent-ro {
-            font-family: 'Monserrat', sans-serif;
-            font-size: 22px;
-            color: #D6AE45;
-        }
-    
-        & .dent-ru {
-            font-family: 'Monserrat', sans-serif;
-            font-size: 16px;
-            color: #B98E49;
-        }
-    
+
         & .dent-text {
-            position: relative;
-            left: 30px;
-            top: 150px;
-            font-family: 'Monserrat', san-serif;
-            font-size: 70px;
-            font-weight: 200;
-            letter-spacing: 2.7px;
-            color: #D6AE45;
+            left: 0;
+            top: 0;
+            font-size: 36px; /* Размер шрифта на мобильных устройствах */
+            letter-spacing: 1px;
         }
-    
     }
-}
+}    
 
 /* ----------INTRO---------- */
 .dent-section--intro {
@@ -83,10 +109,10 @@
         font-size: 40px;
         color: #D6AE45;
         letter-spacing: 1.5px;
-        text-align: right;
+        text-align: center;
         position: relative;
         top: 80px;
-        right: 165px;
+        
     }
 
     & .dent-section--intro--logo img {
@@ -113,11 +139,20 @@
     & .dent-section--intro--text h2 {
         font-family: 'Monserrat', serif;
         font-weight: 200;
-        font-size: 14px;
-        color: #000;
+        font-size: 18px;
+        color: #544747;
         letter-spacing: 1.5px;
         padding-right: 250px;
         text-align: left;
+    }
+}
+
+/* ----------INTRO MOBILE---------- */
+/* Стили для мобильных устройств */
+@media only screen and (max-width: 767px) {
+
+    .dent-section--intro {
+      display: none;
     }
 }
 
@@ -129,15 +164,16 @@
     width: 100vw;
 
     & h2 {
-        position: relative;
-        color: #fff;
+        text-transform: uppercase;
         font-family: 'Monserrat', serif;
-        font-size: 80px;
         font-weight: 200;
+        font-size: 40px;
+        color: #fff;
         letter-spacing: 1.5px;
         text-align: center;
-        z-index: 3;
-        padding-top: 50px;
+        position: relative;
+        top: 80px;
+        margin-bottom: 100px;
     }
 
     & .dent--cards {
@@ -169,6 +205,7 @@
         z-index: 3;
 
         & h5 {
+            margin-top: 30px;
             color: #D6AE45;
             font-family: 'Monserrat', sans-serif;
             font-size: 24px;
@@ -185,8 +222,8 @@
         }
 
         & ul{
-            color: #132540;
-            font-size: 12px;
+            color: #544747;
+            font-size: 14px;
         }
 
         & p {
@@ -215,7 +252,7 @@
         height: 188px;
         width: 188px;
         border-radius: 50%;
-       
+        background-color: #fff;
     }
 
     & .dent-card-img {
@@ -227,146 +264,167 @@
         transform: translateY(-110%);
     }
 }
-
-/* ----------COMMITED---------- */
-.dent-section--commited {
-    background-image: url(../assets/DentSection/commited-bg.png);
-    background-size: 1366px 768px;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100vw;
-    height: 100vh;
-    text-align: center;
-
-    & .sd-logo {
-        height: 140px;
-        width: 140px;
-        margin-top: 80px;
-    }
-
-    & h2 {
-        font-family: 'Monserrat', sans-serif;
-        font-weight: 200;
-        font-size: 70px;
-        color: #000;
-        margin-top: 50px;
-    }
-
-    & p {
-        font-family: 'Monserrat', sans-serif;
-        font-weight: 300;
-        font-size: 20px;
-        color: #132540;
-        margin-top: 80px;
-        padding: 0 360px;
-    }
-    
-}
-
-/* ----------LADY DOC---------- */
-.dent-section--lady-doc {
-    height: 100vh;
-    width: 100vw;
-
-    & .dent-section--lady-doc--inner {
-        margin: 0 auto;
-        max-width: 1366px;
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-between;
-    }
-
-    & img.dent-section--lady-doc--lady {
-        width: max-content;
-        height: 100vh;
-    }
-
-    & .dent-section--lady-doc--content {
-        display: flex;
-        flex-direction: column;
-        margin-left: 50px;
-    }
-
-    & .dent-section--lady-doc--content .sd-logo {
-        width: 83px;
-        height: 75px;
+@media only screen and (max-width: 767px) {
+    .dent-section--doctors {
         position: relative;
-        top: 70px;
-    }    
-
-    & .dent-section--lady-doc--content h4 {
-        font-family: 'Monserrat', sans-serif;  
-        font-weight: 200;
-        font-size: 30px;
-        color: #D6AE45;
-       
+        height: auto;
+        width: 100vw;
+        margin-top: 0;    
     }
 
-    & .dent-section--lady-doc--content h2 {
-        font-family: 'Monserrat', sans-serif;
-        font-weight: 200;
-        font-size: 65px;
-        color: #000;
-        letter-spacing: 1.5px;
-        padding-right: 200px;
-        text-align: left;
-        margin-top: 200px;
+    & .dent--cards {
+        display: flex;
+        flex-direction: column; /* Изменили на колонку для мобильных устройств */
+        align-items: center;
+        margin: 150px auto 0;
+        max-width: 100%;
+        margin: 200px auto 0; 
     }
 }
+
 
 /* ----------FOOTER---------- */
 .dent-section--footer {
-    width: 100vw;
-    height: max-content;
     position: relative;
-    font-family: 'Monserrat', sans-serif;
-    color: #D6AE45;
-    background-color: #000;
-   
-   
-    h2 {
-        grid-column: span 3;
-        font-size: 36px;
-        margin-bottom: 20px;
+    height: auto;
+}
+
+.dent-section--footer--content {
+    position: relative;
+    left: 0;
+    transform: none;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.working-hours,
+.contact-info,
+.socials {
+    text-align: center;
+}
+
+.address-info {
+    display: flex;
+    flex-direction: column; /* Изменено на column */
+    gap: 5px;
+}
+
+h3 {
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.socials a {
+    margin: 5px;
+}
+
+.socials img {
+    height: 25px;
+    width: 25px;
+    transition: scale 0.25s ease-in-out;
+}
+
+/* Медиа-запрос для десктопных устройств */
+@media only screen and (min-width: 768px) {
+    .dent-section--footer--content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: left;
     }
-    
+
+    .address-info {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    .socials {
+        display: flex;
+        align-items: center;
+        margin-top: 0;
+    }
+
+    .socials a {
+        margin: 0 10px; /* Расстояние между ссылками */
+    }
+
+    & p {
+        text-decoration:double;
+        color: #000;
+        transition: color 0.3s ease;
+    }
+    .socials img {
+        height: 35px;
+        width: 35px;
+        transition: scale 0.25s ease-in-out;
+    }
+}
+
+/* Медиа-запрос для мобильных устройств */
+@media only screen and (max-width: 767px) {
+    .dent-section--footer {
+        height: auto;
+    }
+
+    .dent-section--footer--content {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+    & p {
+        text-decoration: none;
+        color: #0e0e0e;
+        transition: color 0.3s ease;
+    }
     .working-hours,
     .contact-info,
     .socials {
-        grid-column: span 1;
-        text-align: left;
-    }
-    
-  
-    & img {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        
+        text-align: center;
     }
 
-    & .dent-section--footer--content {
-        position: absolute;
-        bottom: 100px;
-        padding: 0 100px;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 180px;
-      
-        & .socials {
-            display: flex;
-            align-items: center;
+    .address-info {
+        display: flex;
+        flex-direction: column; /* Изменено на column */
+        gap: 5px;
+    }
 
-            & img {
-                height: 35px;
-                width: 35px;
-                margin-right: 10px;
-                transition: scale 0.25s ease-in-out;
-            }
+    h3 {
+        margin-bottom: 5px;
+    }
 
-            & img:hover {
-                scale: 1.15;
-            }
-        }
+    .socials {
+        margin-top: 15px;
+    }
+
+    .socials a {
+        margin: 5px;
+    }
+
+    .socials img {
+        height: 25px;
+        width: 25px;
+        transition: scale 0.25s ease-in-out;
     }
 }

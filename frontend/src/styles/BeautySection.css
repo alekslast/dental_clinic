@@ -152,8 +152,8 @@
     & .beauty-section--intro--text h2 {
         font-family: 'Monserrat', serif;
         font-weight: 200;
-        font-size: 16px;
-        color: #000;
+        font-size: 18px;
+        color: #544747;
         letter-spacing: 1.5px;
         padding-right: 20px;
         text-align: left;
@@ -242,9 +242,9 @@
             margin: 15px 0 30px 0;
         }
         & ul {
-            color: #132540;
+            color: #544747;
             font-family: 'Monserrat', sans-serif;
-            font-size: 16px;
+            font-size: 18px;
             
         }
 
@@ -255,7 +255,26 @@
             text-align: center;
         }
         
+    }
+
+    & .beauty-circle-placeholder {
+          position: relative;
+        margin: 0 auto;
+        height: 188px;
+        width: 188px;
+        border-radius: 50%;
+        background-color: #fff;
+       
+    }
     
+    & .beauty-card-img {
+        position: relative;
+        width: 155px;
+        height: 155px;
+        z-index: 4;
+        border-radius: 50%;
+        transform: translateY(-110%);
+    }
 
         & .custom-button {
             background-color: #D6AE45;
@@ -271,24 +290,8 @@
         }
     }
 
-    & .beauty-circle-placeholder {
-        position: relative;
-        margin: 0 auto;
-        height: 188px;
-        width: 188px;
-        border-radius: 50%;
-       
-    }
+   
 
-    & .beauty-card-img {
-        position: relative;
-        width: 155px;
-        height: 155px;
-        z-index: 4;
-        border-radius: 50%;
-        transform: translateY(-110%);
-    }
-}
 
 /* ----------SERVICES MOBILE---------- */
 @media only screen and (max-width: 767px) {
@@ -326,6 +329,7 @@
             margin: 150px auto 0;
             max-width: 100%;
         }
+        
         & .beauty--card-element {
             display: flex;
             height: 450px;
@@ -567,7 +571,7 @@ h3 {
 
     & p {
         text-decoration: none;
-        color: #e3dfd8;
+        color: #f1eaea;
         transition: color 0.3s ease;
     }
     .socials img {
