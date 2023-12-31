@@ -17,9 +17,11 @@
   .menu {
     margin-top: 10px;
     display: none; /* Скрыть .menu на мобильных устройствах */
+    
     .menu--text p {
       max-width: none; /* Сбрасываем максимальную ширину */
       margin-left: 0; /* Сбрасываем отступ слева */
+      color:#6B480D;
     }
   }
 
@@ -32,6 +34,13 @@
   }
 
 /* мои стили Дополнение к Header.css */
+
+
+.menu--text p {
+  max-width: none; /* Сбрасываем максимальную ширину */
+  margin-left: 0; /* Сбрасываем отступ слева */
+  color:#6B480D;
+}
 
 .home--epigraph {
   position: relative;
