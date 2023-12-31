@@ -134,7 +134,7 @@ export default function DentSection() {
             <p>vitastef@mail.ru</p>
         </div>
         <div className='socials'>
-            <a href='#'>
+            <a href='https://www.facebook.com/profile.php?id=100057058495843&mibextid=ZbWKwL'>
                 <img src={fbLogo} alt="Facebook Logo" />
             </a>
             <a href='#'>

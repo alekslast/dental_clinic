@@ -145,7 +145,7 @@
 
 .home--link:hover {
     & .dent--img {
-        background-image: url(../assets/dent_hover.png);
+        background-image: url(../assets/dent_hover.jpg);
     }
     & .farm--img {
         background-image: url(../assets/farm_hover.png);

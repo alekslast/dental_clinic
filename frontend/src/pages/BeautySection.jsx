@@ -128,10 +128,10 @@ export default function BeautySection() {
             <p>vitastef@mail.ru</p>
         </div>
         <div className='socials'>
-            <a href='#'>
+            <a href='https://www.facebook.com/profile.php?id=100092220443345&mibextid=ZbWKwL'>
                 <img src={fbLogo} alt="Facebook Logo" />
             </a>
-            <a href='#'>
+            <a href='https://www.instagram.com/salon_miro_studio_?igsh=bnpndHhiMjR0dXl0&utm_source=qr'>
                 <img src={igLogo} alt="Instagram Logo" />
             </a>
         </div>

@@ -10,9 +10,9 @@ import headerMan        from '../assets/FarmSection/header-man.png';
 import headerPills      from '../assets/FarmSection/header-pills.png';
 import introGirl        from '../assets/FarmSection/intro-girl.png';
 import wave             from '../assets/FarmSection/wave.png';
-import doctor1          from '../assets/DentSection/doctor1.png';
-import doctor2          from '../assets/DentSection/doctor2.png';
-import doctor3          from '../assets/DentSection/doctor3.png';
+import farm1          from '../assets/FarmSection/card-pic1.png';
+import farm2          from '../assets/FarmSection/card-pic2.png';
+import farm3          from '../assets/FarmSection/card-pic3.png';
 import logoPill         from '../assets/FarmSection/farm-logo.png';
 import fbLogo           from '../assets/fb-logo.png';
 import igLogo           from '../assets/ig-logo.png';
@@ -74,7 +74,7 @@ export default function FarmSection() {
                 <div className='farm--cards'>        
                     <div className='farm--card-element'>
                         <div className='farm-circle-placeholder' />
-                        <img src={doctor3} className='farm-card-img' />
+                        <img src={farm1} className='farm-card-img' />
                         <div className='farm-services-card'>
                             <h5>Consultatii</h5>  
                             <br/>                        
@@ -85,7 +85,7 @@ export default function FarmSection() {
 
                     <div className='farm--card-element'>
                         <div className='farm-circle-placeholder' />
-                        <img src={doctor2} className='farm-card-img' />
+                        <img src={farm2} className='farm-card-img' />
                         <div className='farm-services-card'>
                             <h5>Măsurarea presiunii</h5>
                            <br/>
@@ -95,7 +95,7 @@ export default function FarmSection() {
 
                     <div className='farm--card-element'>
                         <div className='farm-circle-placeholder' />
-                        <img src={doctor1} className='farm-card-img' />
+                        <img src={farm3} className='farm-card-img' />
                         <div className='farm-services-card'>
                             <h5>Asistență<br/> medical-sanitară</h5>
                            <br/>
