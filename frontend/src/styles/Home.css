@@ -5,6 +5,12 @@
 :root {
     --link-container-size: 170px;
 }
+/* Дополнительные стили для мобильных устройств */
+@media  (max-width: 767px) {
+    :root {
+        --link-container-size: 130px;
+    }
+}
 
 .home {
     min-height: 100vh; /* Установка минимальной высоты на весь видимый экран */
