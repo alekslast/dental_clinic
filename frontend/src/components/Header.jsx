@@ -21,7 +21,7 @@ const Header = () => {
      
 
       <div className="phone">
-        <p>+373 22 52 41 97<br/>mob: 0gi60 107 070 </p>
+        <p>+373 22 52 41 97<br/>mob: 060 107 070 </p>
       </div>
     </header>
   );

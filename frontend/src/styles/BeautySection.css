@@ -551,6 +551,11 @@ h3 {
         flex-direction: row;
         justify-content: space-around;
         text-align: left;
+
+        background-size: 100vw 100vh;
+        background-repeat: no-repeat;
+        width: 100vw;
+        height: 100vh;  
     }
 
     .address-info {
