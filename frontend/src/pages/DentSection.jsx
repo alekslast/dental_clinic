@@ -120,17 +120,17 @@ export default function DentSection() {
     <div className='address-info'>
         <div className='working-hours'>
             <h3>Program de lucru</h3>
-            <p>Luni - Duminica</p>
-            <p>9:00  - 20:00 </p>
+            <p>Luni - vineri</p>
+            <p>9:00  - 18:00 </p>
             <p>Programare prealabilă </p>
-            <p>Tel: 022 52 52 50 
-            <br/>Mob +373 78 52 66  </p>                  
+            <p>Tel: 022 52 66 47
+            <br/>   </p>                  
         </div>
         
         <div className='contact-info' id='contacts'>
             <h3>Adresa</h3>
             <p>Or. Chisinau</p>
-            <p>Dacia 60/5 A</p>
+            <p>Dacia 60/5 90</p>
             <p>vitastef@mail.ru</p>
         </div>
         <div className='socials'>

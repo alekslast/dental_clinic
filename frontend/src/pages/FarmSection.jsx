@@ -115,15 +115,15 @@ export default function FarmSection() {
             <p>Luni - Duminica</p>
             <p>9:00  - 20:00 </p>
             <p>Programare prealabilă </p>
-            <p>Tel: 022 52 52 50 
-            <br/>Mob +373 78 52 66  </p>                  
+            <p>Tel: 022 52 41 97 
+            <br/>Mob  </p>                  
         </div>
 
         <div className='contact-info' id='contacts'>
             <h3>Adresa</h3>
             <p>Or. Chisinau</p>
-            <p>Dacia 60/5 A</p>
-            <p>vitastef@mail.ru</p>
+            <p>Dacia 60/5 90</p>
+            <p>lumia-sarbatorilor@mail.ru</p>
         </div>
         <div className='socials'>
             <a href='#'>
