@@ -13,7 +13,6 @@ export default function ScrollTopButton() {
         setScrollPosition(position);
     };
 
-
     useEffect(() => {
         window.addEventListener('scroll', handleScroll, { passive: true });
 
