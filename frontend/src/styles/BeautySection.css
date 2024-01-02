@@ -474,10 +474,12 @@
     }
   }
   
+
+
 /* ----------FOOTER---------- */
 .beauty-section--footer {
     position: relative;
-    z-index: 1; /* Устанавливаем более высокий порядок слоя для блока footer */
+     /* Устанавливаем более высокий порядок слоя для блока footer */
 }
 
 #myVideo {
@@ -487,7 +489,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: ; /* Устанавливаем порядок слоя ниже блока footer */
+    /* Устанавливаем порядок слоя ниже блока footer */
 }
 
 .beauty-section--footer--content {
@@ -588,6 +590,7 @@ h3 {
 
     .beauty-section--footer--content {
         padding: 20px;
+        top: 150px;
     }
 
     h2 {
