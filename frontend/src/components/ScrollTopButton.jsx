@@ -8,8 +8,6 @@ export default function ScrollTopButton() {
 
     const screenHeight                          = window.innerHeight;
     const [scrollPosition, setScrollPosition]   = useState(0);
-
-
     const handleScroll = () => {
         const position = window.scrollY;
         setScrollPosition(position);
@@ -31,7 +29,8 @@ export default function ScrollTopButton() {
     }
 
     return (
-        <button onClick={handleClick} className={buttonStyle}>&#129081;</button>
+        
+        <button onClick={handleClick} className={buttonStyle}>&#11165;</button>
         // &#129081;
         // &#11165;
         // &#11205;

@@ -28,7 +28,6 @@
     color: #D6AE45;
 }
 
-
 /* Дополнительные стили для мобильных устройств */
 @media only screen and (max-width: 767px) {
     .scroll-to-top-btn {
