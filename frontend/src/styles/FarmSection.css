@@ -208,7 +208,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 50px 30px 0;
+        padding: 0px 30px 0;
         width: 343px;
         height: 330px;
         background-color: #fff;
@@ -218,7 +218,6 @@
         z-index: 3;
 
         & h5 {
-            margin-top: 30px;
             color: #B98E49;
             font-family: 'Monserrat', sans-serif;
             font-size: 24px;
