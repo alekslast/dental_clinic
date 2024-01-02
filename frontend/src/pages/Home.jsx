@@ -33,7 +33,7 @@ export default function Home() {
                             <div className="farm--img" />
                         </div>
                     </Link>
-                    <p>Vrei sa te faci sanatos?</p>
+                    <p>Vrei să fii sănătos?</p>
                 </div>
 
                 <div className="home--category beauty">

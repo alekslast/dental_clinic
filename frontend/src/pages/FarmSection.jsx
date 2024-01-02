@@ -37,12 +37,11 @@ export default function FarmSection() {
                         <h2 className='farm-text'>Farm</h2>
                         <img src={pharmLogo} className='farm-logo' />
                         <div className='farm-postfix'>
-                            <p className='farm-ru'>Сохрани то, что тебе дорого</p>
-                            <p className='farm-ro'>Păstrează ce ți-e mai scump</p>
+                            <p className='farm-ru'>Хочешь быть здоров?</p>
+                            <p className='farm-ro'>Vrei să fii sănătos?</p>
                         </div>
                     </div>         
             </section>
-
             <section className='farm-section--intro' id='promoții'>
                 <div className='farm-section--intro--inner'>
                     <div className='farm-section--intro--content'>

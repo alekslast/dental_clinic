@@ -114,7 +114,7 @@ export default function DentSection() {
 
           
   <section className='dent-section--footer'>
-  <img src={footerPic} id='myVideo'/>
+  <img src={footerPic} id='footer_Background'/>
                 <div className='dent-section--footer--content'>
     <h2>CONTACTE</h2>
     <div className='address-info'>
@@ -126,7 +126,7 @@ export default function DentSection() {
             <p>Tel: 022 52 52 50 
             <br/>Mob +373 78 52 66  </p>                  
         </div>
-
+        
         <div className='contact-info' id='contacts'>
             <h3>Adresa</h3>
             <p>Or. Chisinau</p>

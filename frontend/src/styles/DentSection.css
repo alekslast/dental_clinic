@@ -282,11 +282,19 @@
     }
 }
 
-
 /* ----------FOOTER---------- */
 .dent-section--footer {
     position: relative;
     height: auto;
+}
+
+#footer_Background{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .dent-section--footer--content {
@@ -300,7 +308,13 @@
     align-items: center;
     gap: 10px;
     text-align: center;
+    & p {
+        text-decoration: none;
+        color: #302c2c;
+        transition: color 0.3s ease;
+    }
 }
+
 
 h2 {
     font-size: 28px;
@@ -342,7 +356,7 @@ h3 {
     transition: scale 0.25s ease-in-out;
 }
 
-/* Медиа-запрос для десктопных устройств */
+/* Общий медиа-запрос для устройств с шириной экрана 768px и более */
 @media only screen and (min-width: 768px) {
     .dent-section--footer--content {
         display: flex;
@@ -368,19 +382,17 @@ h3 {
     }
 
     & p {
-        text-decoration:double;
+        text-decoration: double;
         color: #000;
         transition: color 0.3s ease;
     }
+
     .socials img {
         height: 35px;
         width: 35px;
         transition: scale 0.25s ease-in-out;
     }
-}
 
-/* Медиа-запрос для мобильных устройств */
-@media only screen and (max-width: 767px) {
     .dent-section--footer {
         height: auto;
     }
@@ -393,11 +405,13 @@ h3 {
         font-size: 28px;
         margin-bottom: 15px;
     }
+
     & p {
         text-decoration: none;
         color: #0e0e0e;
         transition: color 0.3s ease;
     }
+
     .working-hours,
     .contact-info,
     .socials {
