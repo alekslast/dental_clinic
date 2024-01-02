@@ -13,7 +13,7 @@
     background-color: #f6f6f6;
     cursor: pointer;
     z-index: 7;
-    color: #000;
+    color: #B98E49;
     font-family: 'Monserrat', sans-serif;
     visibility: hidden;
     transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out;
@@ -24,7 +24,7 @@
 }
 
 .scroll-to-top-btn:hover {
-    background-color: #000;
+    background-color: #B98E49;
     color: #D6AE45;
 }
 
@@ -32,6 +32,6 @@
 /* Дополнительные стили для мобильных устройств */
 @media only screen and (max-width: 767px) {
     .scroll-to-top-btn {
-        font-family: 'Monserrat', sans-serif !important; /* Используйте !important, если нужно переопределить другие стили */
+        font-family: Arial, Helvetica, sans-serif, sans-serif !important; /* Используйте !important, если нужно переопределить другие стили */
     }
 }
