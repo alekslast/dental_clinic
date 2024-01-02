@@ -28,8 +28,10 @@ export default function ScrollTopButton() {
     }
 
     return (
-        
-        <button onClick={handleClick} className={buttonStyle}>&#11165;</button>
+        <button onClick={handleClick} className={buttonStyle}>
+   
+</button>
+        //<button onClick={handleClick} className={buttonStyle}>&#11165;</button>
         // &#129081;
         // &#11165;
         // &#11205;

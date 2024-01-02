@@ -17,6 +17,9 @@
     font-family: 'Monserrat', sans-serif;
     visibility: hidden;
     transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+    background-image: url('../assets/arrow.png');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .scroll-to-top-btn.visible {
@@ -31,6 +34,6 @@
 /* Дополнительные стили для мобильных устройств */
 @media only screen and (max-width: 767px) {
     .scroll-to-top-btn {
-        font-family: Arial, Helvetica, sans-serif, sans-serif !important; /* Используйте !important, если нужно переопределить другие стили */
+        font-family: Arial, Helvetica, sans-serif, sans-serif !important;
     }
 }
