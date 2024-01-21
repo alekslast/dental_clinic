@@ -131,7 +131,7 @@ export default function DentSection() {
             <h3>Adresa</h3>
             <p>Or. Chisinau</p>
             <p>Dacia 60/5 90</p>
-            <p>vitastef@mail.ru</p>
+            <p>sevcencodent@gmail.com</p>
         </div>
         <div className='socials'>
             <a href='https://www.facebook.com/profile.php?id=100057058495843&mibextid=ZbWKwL'>

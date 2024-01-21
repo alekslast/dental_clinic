@@ -114,6 +114,8 @@ export default function FarmSection() {
             <h3>Program de lucru</h3>
             <p>Luni - Duminica</p>
             <p>9:00  - 20:00 </p>
+            <p>Pauza de masa </p>
+            <p>14.00 - 15.00</p>
             <p>Programare prealabilă </p>
             <p>Tel: 022 52 41 97 
             <br/>Mob  </p>                  

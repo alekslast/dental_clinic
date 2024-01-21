@@ -30,7 +30,7 @@ export default function BeautySection() {
                     <h2 className='beauty-text'>Beauty</h2>
                     <img src={beautyLogo} alt='beauty logo' className='beauty-logo' />
                     <div className='beauty-postfix'>
-                        <p className='beauty-ro'>Tot vizibilul e temporar</p>
+                        <p className='beauty-ro'>Vizibilul e temporar</p>
                         <p className='beauty-ru'>Все видимое временно</p>
                     </div>
                 </div>       
@@ -79,7 +79,7 @@ export default function BeautySection() {
                         <div className='beauty-circle-placeholder' />
                         <img src={cardPic2} className='beauty-card-img' />
                         <div className='beauty-services-card'>                                                  
-                            <h5>Coafor</h5>
+                            <h5>Coafuri</h5>
                             <h6>Oferim următoarele servicii:</h6>
                             <ul>                         
                                 <li>Aranjare, Vopsire, Suvițe</li>    
@@ -117,15 +117,14 @@ export default function BeautySection() {
             <p>Luni - Duminica</p>
             <p>9:00  - 20:00 </p>
             <p>Programare prealabilă </p>
-            <p>Tel: 022 52 52 50 
-            <br/>Mob +373 78 52 66  </p>                  
+            <p>Tel: 022 52 52 50 </p>                  
         </div>
 
         <div className='contact-info' id='contacts'>
             <h3>Adresa</h3>
             <p>Or. Chisinau</p>
             <p>Dacia 60/5 A</p>
-            <p>vitastef@mail.ru</p>
+            <p>vitusihtus@gmail.com</p>
         </div>
         <div className='socials'>
             <a href='https://www.facebook.com/profile.php?id=100092220443345&mibextid=ZbWKwL'>
