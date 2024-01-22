@@ -37,7 +37,7 @@ export default function FarmSection() {
                         <h2 className='farm-text'>Farm</h2>
                         <img src={pharmLogo} className='farm-logo' />
                         <div className='farm-postfix'>
-                            <p className='farm-ru'>Хочешь быть здоров?</p>
+                            <p className='farm-ru'>Хочешь ли быть здоров?</p>
                             <p className='farm-ro'>Vrei să fii sănătos?</p>
                         </div>
                     </div>         
@@ -112,20 +112,20 @@ export default function FarmSection() {
     <div className='address-info'>
         <div className='working-hours'>
             <h3>Program de lucru</h3>
-            <p>Luni - Duminica</p>
+            <p>Luni - vineri</p>
             <p>9:00  - 20:00 </p>
-            <p>Pauza de masa </p>
-            <p>14.00 - 15.00</p>
+            <p>Sambata  </p>
+            <p>9:00 - 16:00</p>
             <p>Programare prealabilă </p>
             <p>Tel: 022 52 41 97 
-            <br/>Mob  </p>                  
+            <br/>Mob. +37360107070 </p>                  
         </div>
 
         <div className='contact-info' id='contacts'>
             <h3>Adresa</h3>
             <p>Or. Chisinau</p>
             <p>Dacia 60/5 90</p>
-            <p>lumia-sarbatorilor@mail.ru</p>
+            <p>lumea-sarbatorilor@mail.ru</p>
         </div>
         <div className='socials'>
             <a href='#'>

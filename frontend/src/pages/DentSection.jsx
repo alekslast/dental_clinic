@@ -28,7 +28,7 @@ export default function DentSection() {
                     <h2 className='dent-text'>Dent</h2>
                     <img src={dentLogo} className='dent-logo' />
                     <div className='dent-postfix'>
-                        <p className='dent-ru'>Сохрани то что тебе дорого.</p>
+                        <p className='dent-ru'>Сохрани то, что тебе дорого.</p>
                         <p className='dent-ro'>Păstrează ce ți-e mai scump</p>
                     </div>
                 </div>
